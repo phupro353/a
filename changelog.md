@@ -1,4 +1,3 @@
-# changelog is located on changelog.md.
-- uwu
-- owo
-# example 3
+# Update
+- Destroyer Branch Nerfed
+- Replaced Sidewinder with Thruster 
