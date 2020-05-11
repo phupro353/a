@@ -582,7 +582,7 @@ body.mobile .icon {
   position: relative;
   top: 0px;
   z-index: 2;
-  max-width: 1000px;
+  max-width: 755px;
   margin: 0 auto;
 }
 body.mobile #startMenuWrapper { max-width: 750px; }
