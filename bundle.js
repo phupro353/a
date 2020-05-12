@@ -3220,7 +3220,7 @@
                     id: "a",
                     type: "1ffa",
                     code: "arrasio5",
-                    at: p.glitch("arrasio5"),
+                    at: 'arrasio-52-git-arrasiotest.apps.us-east-1.starter.openshift-online.com',
                 },].map((a, e) => ({
                     data: a,
                     i: e
