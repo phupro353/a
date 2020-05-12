@@ -2712,7 +2712,7 @@
                                 if (B.graphical.screenshotMode) W[6].draw("Arras.io", h + 200, m - 2, 15, l.guiwhite, "right");
                                 else {
                                     if (b.showDebug) {
-                                        W[6].draw("Arras Template",
+                                        W[6].draw("Arras.io",
                                             h + 200, m - 84 - 2, 15, l.guiwhite, "right");
                                         let b = t.getPeriodicAverage();
                                         W[5].draw("Tank Speed: " + y.toFixed(2) + " gu/s" + (b && .005 <= b ? ` (${b.toFixed(2)} gu/s)` : ""), h + 200, m - 70, 10, l.guiwhite, "right");
