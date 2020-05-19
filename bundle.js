@@ -2913,7 +2913,7 @@
                     m();
                     var c = [
                         ["Tip: Bots won't attack if they're on your team. Use this to your advantage!", "Tip: You can play on mobile by just going to arras.io on your phone! I wouldn't recommend it, though."],
-                        ["Tip: You can have the shield and health bar be separated by going to the options menu.",
+                        ["Stuck on connecting? Push the Starter tab on the client page!",
                             "Tip: If arras is having a low frame rate, you can try enabling low graphics in the options menu.", "Push the Tilde key to access TESTBED if you have a token.", "The server resets every 10 minutes to clear lag, be wary of this!", "All tanks have up to 10x reload!"
                         ],
                         ["Avoid upgrading the reload stat if you wish for a smooth game", "Have Fun!",
