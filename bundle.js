@@ -2867,7 +2867,7 @@
                             return d +
                                 c.join(" and ")
                         },
-                        q = () => b.finalKillers.length ? "\ud83d\udd2a Succumbed to a " + b.finalKillers.map(b => H.addArticle(M[b].name)).join(" and ") : "\ud83e\udd37 Well that was kinda dumb huh";
+                        q = () => b.finalKillers.length ? "\ud83d\udd2a Succumbed to " + b.finalKillers.map(b => H.addArticle(M[b].name)).join(" and ") : "\ud83e\udd37 Well that was kinda dumb huh";
                     return () => {
                         F(l.black, .25);
                         let d = b.screenWidth / 2,
@@ -3218,7 +3218,7 @@
                     untrusted: !0
                 }, {
                     id: "a",
-                    type: "1ffa",
+                    type: "4TDM",
                     code: "arrasio5",
                     at: p.glitch ("arrasio5")
                 },].map((a, e) => ({
