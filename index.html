@@ -128,6 +128,24 @@
                 <option value="glass">Glass Mode</option>
               </select>
               <input id="optCustom" style="display:none" placeholder="Enter your theme code here">
+                                         <audio loop id = "music">
+                            <source
+                                      type = "audio/mpeg"
+                                      src = "https://cdn.glitch.com/04df743c-89de-47b2-b670-f6e9b92134a4%2Fnekopara2_title.ogg?v=1589953707485"/>
+                                 oof no music for u
+                               </audio>
+                          <script>
+                            
+                          function switchAudio() {
+                              if (document.getElementById("optSound").checked === true) {
+                                  document.getElementById("music").play()
+                              } else if (document.getElementById("optSound").checked === false) {
+                                   document.getElementById("music").pause()
+                              }
+                              return;
+                          }
+
+                          </script>
               <table>
                 <tr>
                   <td><div>
@@ -153,8 +171,11 @@
                 </tr><tr>
                   <td><div>
                     <label class="container"><input id="optPointy" tabindex="-1" class="checkbox" type="checkbox"><span class="checkmark"></span>Sharp Edges</label>
-                  </div></td>
-                </tr>
+                        </div></td>
+                </tr><tr>
+                 <td><div>
+       <label class="container"><input id="optSound" tabindex="-1" class="checkbox" type="checkbox" onclick="switchAudio()"><span class="checkmark"></span>Music</label>
+                    <td><div>
               </table>
               <div id="bottomHolder">
             <a style="background:#C98913" href="https://arras.io/">Arras.io</a>
