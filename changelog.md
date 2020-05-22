@@ -1,4 +1,13 @@
 # Update
+- Added music function to client (Press on view options)
+- Added 3 New Tanks:
+
+- Hornet - Branches off Gunner and Tri-Angle
+
+- Typhoon - Branches off Hexa Tank
+
+- Shadow Tank - Branches off Basic at Lvl30
+# Update
 -Added 3 Tanks:
 
 - Creator - Branches off Spawner and Compass
