@@ -2,7 +2,6 @@
 - Bases can no longer be pushed
 - Bots are now Smasher-branch tanks to curb lag
 # Update
-- Added music function to client (Press on view options)
 - Added 3 New Tanks:
 
 - Hornet - Branches off Gunner and Tri-Angle
@@ -10,6 +9,8 @@
 - Typhoon - Branches off Hexa Tank
 
 - Shadow Tank - Branches off Basic at Lvl30
+
+- Added music function to client (Press on view options)
 # Update
 -Added 3 Tanks:
 
