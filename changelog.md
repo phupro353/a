@@ -1,4 +1,7 @@
 # Update
+- Bases can no longer be pushed
+- Bots are now Smasher-branch tanks to curb lag
+# Update
 - Added music function to client (Press on view options)
 - Added 3 New Tanks:
 
