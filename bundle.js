@@ -2912,7 +2912,7 @@
                         e = m();
                     m();
                     var c = [
-                        ["Tip: Bots won't attack if they're on your team. Use this to your advantage!", "Tip: You can play on mobile by just going to arras.io on your phone! I wouldn't recommend it, though."],
+                        ["Stuck on connecting? Click the Starter tab on the client page!", "Stuck on connecting? Remember to click the Starter tab befo"],
                         ["Stuck on connecting? Push the Starter tab on the client page!",
                             "Tip: If arras is having a low frame rate, you can try enabling low graphics in the options menu.", "Push the Tilde key to access TESTBED if you have a token.", "The server resets every 10 minutes to clear lag, be wary of this!", "All tanks have up to 10x reload!"
                         ],
