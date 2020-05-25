@@ -1,6 +1,7 @@
 # Update
 - Bases can no longer be pushed
 - Bots are now Smasher-branch tanks to curb lag
+- Testbed Token is now public! Visit my Discord server to claim!
 # Update
 - Added 3 New Tanks:
 
