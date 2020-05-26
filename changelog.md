@@ -1,4 +1,8 @@
 # Update
+- Some tanks are now unlocked at tier 4 (Lvl60)
+- Added a handful of 
+
+# Update
 - Bases can no longer be pushed
 - Bots are now Smasher-branch tanks to curb lag
 - Testbed Token is now public! Visit my Discord server to claim!
@@ -7,7 +11,7 @@
 
 - Hornet - Branches off Gunner and Tri-Angle
 
-- Typhoon - Branches off Hexa Tank
+- Typhoon - Branches off Cyclone
 
 - Shadow Tank - Branches off Basic at Lvl30
 
