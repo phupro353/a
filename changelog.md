@@ -1,8 +1,15 @@
 # Update
-- Added 3 new tanks
+- Added 4 new tanks
 
+- Heavy Twin - Branches off Twin
 
+- Kraken - Branches off Octo Tank and Cyclone
 
+- Stomper - Branches off Hexa Tank
+
+- Frigate - Branches off Overseer and Cruiser
+
+- Added 2 new bosses to the Testbed branch
 # Update
 - Some tanks are now unlocked at tier 4 (Lvl60)
 - Added a handful of Spawner-branch tanks
