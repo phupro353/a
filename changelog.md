@@ -1,4 +1,7 @@
 # Update
+- Fixed up tank branching
+- Added Auto-tank branches
+# Update
 - Added 4 new tanks
 
 - Heavy Twin - Branches off Twin
