@@ -1942,11 +1942,10 @@
                             ia ? clearInterval(qa) : !b.mobile && (aiptag.cmd.display.push(function() {
                                 aipDisplayTag.display("arras-io_728x90")
                             }), d = document.getElementById("respawn-banner")) && (d.style.display = "block");
-case "K":
-            {
-              player.body.destroy();
-            }
-            break;
+                        case "K":
+                            b.isInGame = !1;
+                            c[0] && (b.message = c[0]);
+                            break;
                         default:
                             throw Error("Unknown message index.");
                         }
@@ -1955,7 +1954,7 @@ case "K":
                         V.logEvent("disconnect");
                         g.open = !1;
                         b.disconnected = !0;
-                        b.isInGame && (b.isInGame = !1, b.died || b.message || (b.message = "Socket closed. Refresh to continue playing!"));
+                        b.isInGame && (b.isInGame = !1, b.died || b.message || (b.message = "Socket closed. If you disconnected, respawn now to regain your score."));
                         console.warn("WebSocket closed: ",
                             a)
                     };
