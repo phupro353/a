@@ -1954,7 +1954,7 @@
                         V.logEvent("disconnect");
                         g.open = !1;
                         b.disconnected = !0;
-                        b.isInGame && (b.isInGame = !1, b.died || b.message || (b.message = "Socket closed. If you disconnected, respawn now to regain your score."));
+                        b.isInGame && (b.isInGame = !1, b.died || b.message || (b.message = "Socket closed. Refresh to continue playing!"));
                         console.warn("WebSocket closed: ",
                             a)
                     };
