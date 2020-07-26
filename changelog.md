@@ -1,6 +1,4 @@
 # Update
-- Added Runner (Basic with the ability to turn invisible and jump) - Branches off Shadow Tank
-# Update
 - Added a ton of new tanks
 # Update
 - Added Exploder tank and branch

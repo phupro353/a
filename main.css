@@ -228,7 +228,8 @@ a.menuTab.discord {
 }
 a.menuTab.stat {
   background: #f00 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAKUlEQVQoU2NkQAP/////DxJiZGRkRJZC4YAkcCpEl6C9QrgNhKweSgoBUcBf8wTAguMAAAAASUVORK5CYII=) 10px 8px no-repeat;
-  /*let canvas = document.body.appendChild(document.createElement('canvas'))
+  /*
+  let canvas = document.body.appendChild(document.createElement('canvas'))
   canvas.width = 10
   canvas.height = 10
   canvas.style.background = '#f00'
@@ -238,9 +239,9 @@ a.menuTab.stat {
   ctx.fillRect(4, 0, 2, 10)
   ctx.fillRect(8, 4, 2, 6)
   copy(canvas.toDataURL())
+  */
   padding: 6px 10px 7px 28px;
 }
-  */
 a.menuTab:link:hover, a.menuTab:visited:hover {
   text-decoration: underline;
 }
