@@ -2876,16 +2876,7 @@
                         let u = M[A.type].position,
                             t = 140 / u.axis;
                         ba(b.screenWidth / 2 - t * u.middle.x * .707 - 190 - 70, b.screenHeight / 2 - 35 + t * u.middle.x * .707 - 10, m, 1.5, 1, .5 * t / m.realSize, -Math.PI / 4, !0);
-                      var textArray = [
-    'lol you died',
-    "balance? what's balance?",
-    'oof!',
-    'you died!',
-    'something went wrong!'
-]
-                      var randomNumber = Math.floor(Math.random()*textArray.length);
-
-                        a.draw((randomNumber), d, n - 80, 8, l.guiwhite, "center");
+                        a.draw("lol you died", d, n - 80, 8, l.guiwhite, "center");
                         e.draw("Level " +
                             A.__s.getLevel() + " " + M[A.type].name, d - 170, n - 30, 24, l.guiwhite);
                         c.draw("Final score: " + H.formatLargeNumber(Math.round(b.finalScore.get())), d - 170, n + 25, 50, l.guiwhite);
