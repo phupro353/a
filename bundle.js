@@ -1342,8 +1342,6 @@
                         KEY_OVER_RIDE: ["I", 73],
                         KEY_PING: [",", 188],
                         KEY_RECORD: ["V", 86],
-                        KEY_REVERSE_MOUSE: ["U", 85],
-                        KEY_REVERSE_TANK: ["Y", 89],
                         KEY_RIGHT: ["L", 76],
                         KEY_SCREENSHOT: ["G", 71],
                         KEY_UP: ["K", 75]
@@ -3070,7 +3068,6 @@
                 help: {
                     KEY_OVER_RIDE: "R",
                     KEY_LEVEL_UP: "N",
-                    KEY_ABILITY: "F",
                     KEY_CHOOSE_1: "Y",
                     KEY_CHOOSE_2: "U",
                     KEY_CHOOSE_3: "I",
@@ -3635,7 +3632,7 @@
                             this.emit("L");
                             break;
                         case a.KEY_ABILITY:
-                            this.emit("A")
+                            this.emit("V")
                     }
                     if (!e.ctrlKey && !e.altKey) {
                         if (a.canSkill) {
@@ -3687,9 +3684,6 @@
                                     break;
                                 case a.KEY_REVERSE_TANK:
                                     this.emit("J");
-                                    break;
-                                  case a.KEY_ABILITY:
-                                    this.emit("V");
                                     break;
                                 case a.KEY_UPGRADE_MAX:
                                     this.statMaxing = !0;
