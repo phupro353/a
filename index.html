@@ -38,7 +38,14 @@
     <div id="startMenuWrapper">
                  <script>
 var bflat = new Audio();
-bflat.src = "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/sysse_ok.ogg";
+                      var brandom = [
+                        ["https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/sysse.ogg",
+                            "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/sysse_ok.ogg", "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/sysse.ogg"
+                        ],
+                    ];
+                    brandom = brandom[Math.floor(Math.random() * brandom.length)];
+                      let mss1 = brandom[Math.floor(Math.random() * brandom.length)];
+bflat.src = (mss1);
 function PlaySound() {
     bflat.play();
 }
