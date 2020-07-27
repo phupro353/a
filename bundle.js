@@ -1942,11 +1942,6 @@
                             ia ? clearInterval(qa) : !b.mobile && (aiptag.cmd.display.push(function() {
                                 aipDisplayTag.display("arras-io_728x90")
                             }), d = document.getElementById("respawn-banner")) && (d.style.display = "block");
-                     case "K":
-            {
-              player.body.destroy();
-            }
-            break;
                         default:
                             throw Error("Unknown message index.");
                         }
