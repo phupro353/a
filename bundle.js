@@ -1856,13 +1856,13 @@
                                 z.rendery = z.cy;
                                 z.renderv = z.view;
                                 ia && (clearInterval(qa), Y.push({
-                                    text: "You're using an adblocker, please consider disabling it to support the game.",
+                                    text: "You're using an adblocker, that's cool!",
                                     status: 2,
                                     alpha: 0,
                                     time: Date.now()
                                 }), qa = setInterval(() => {
                                     Y.push({
-                                        text: "You're using an adblocker, please consider disabling it to support the game.",
+                                        text: "You're using an adblocker, that's cool!",
                                         status: 2,
                                         alpha: 0,
                                         time: Date.now()
@@ -1942,10 +1942,11 @@
                             ia ? clearInterval(qa) : !b.mobile && (aiptag.cmd.display.push(function() {
                                 aipDisplayTag.display("arras-io_728x90")
                             }), d = document.getElementById("respawn-banner")) && (d.style.display = "block");
-                        case "K":
-                            b.isInGame = !1;
-                            c[0] && (b.message = c[0]);
-                            break;
+                     case "K":
+            {
+              player.body.destroy();
+            }
+            break;
                         default:
                             throw Error("Unknown message index.");
                         }
