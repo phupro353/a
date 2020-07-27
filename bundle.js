@@ -3116,7 +3116,7 @@
                 KEY_MOUSE_1: 9,
                 KEY_MOUSE_2: 16,
                 KEY_FUCK_YOU: 192,
-                KEY_KILL_YOURSELF: 79,
+                KEY_SUICIDE: 79,
                 screenWidth: window.innerWidth,
                 screenHeight: window.innerHeight,
                 gameWidth: 0,
@@ -3689,7 +3689,7 @@
                                 case a.KEY_FUCK_YOU:
                                     this.emit("0");
                                     break;
-                                case a.KEY_KILL_YOURSELF:
+                                case a.KEY_SUICIDE:
                                     this.emit("K");
                                     break;
                                 case a.KEY_PING:
