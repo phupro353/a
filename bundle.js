@@ -3083,8 +3083,8 @@
                 KEY_OVER_RIDE: 82,
                 KEY_LEVEL_UP: 78,
                 KEY_ABILITY: 70,
-                KEY_REVERSE_TANK: 86,
                 KEY_REVERSE_MOUSE: 66,
+                                KEY_REVERSE_TANK: 86,
                 KEY_SCREENSHOT: 81,
                 KEY_UPGRADE_MAX: 77,
                 KEY_CLASS_TREE: 84,
@@ -3686,7 +3686,10 @@
                                     this.talk("t", 2);
                                     break;
                                 case a.KEY_REVERSE_TANK:
-                                    this.talk("t", 4);
+                                    this.emit("J");
+                                    break;
+                                  case a.KEY_ABILITY:
+                                    this.emit("V");
                                     break;
                                 case a.KEY_UPGRADE_MAX:
                                     this.statMaxing = !0;
