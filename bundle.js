@@ -2914,9 +2914,9 @@
                     var c = [
                         ["Stuck on connecting? Click the Starter tab on the client page!", "Stuck on connecting? Press the Starter tab on the client page!"],
                         ["Stuck on connecting? Push the Starter tab on the client page!",
-                            "Tip: If arras is having a low frame rate, you can try enabling low graphics in the options menu.", "Push the ` key to access TESTBED if you have a token.", "The server resets every 10 minutes to clear lag, be wary of this!", "All tanks have up to 10x reload!"
+                            "Tip: If arras is having a low frame rate, you can try enabling low graphics in the options menu.", "Want access to TESTBED? Join the Discord Server!", "The server resets every 10 minutes to clear lag, be wary of this!", "All tanks have up to 10x reload!"
                         ],
-                        ["Avoid upgrading the reload stat if you wish for a smooth game", "Have Fun!",
+                        ["Avoid upgrading the reload stat if you wish for a smooth game", "Have fun, and don't forget to join the Discord Server!",
                             "Good Luck!"
                         ]
                     ];
@@ -2934,7 +2934,7 @@
                         e = m();
                     return () => {
                         F(T(l.red, l.guiblack, .3), .25);
-                        a.draw("\ud83d\udc80 Disconnected \ud83d\udc80", b.screenWidth / 2, b.screenHeight / 2, 30, l.guiwhite, "center");
+                        a.draw("\ud83d\udc80 Disconnected! \ud83d\udc80", b.screenWidth / 2, b.screenHeight / 2, 30, l.guiwhite, "center");
                         e.draw(b.message, b.screenWidth / 2, b.screenHeight / 2 + 30, 15, l.orange, "center")
                     }
                 })();
