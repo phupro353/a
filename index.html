@@ -43,6 +43,13 @@ function PlaySound1() {
   </div>
   <div id="mainWrapper">
     <div id="startMenuWrapper">
+                         <script>
+var bflat3 = new Audio();
+bflat3.src = ("https://cdn.glitch.com/a7477e89-8be7-424d-bc6b-e817e4757afd%2Fsysse_cancel.ogg?v=1595845766996");
+function PlaySound3() {
+    bflat3.play();
+}
+</script>
                  <script>
 var bflat = new Audio();
                       var brandom = [
@@ -74,7 +81,7 @@ function PlaySound() {
             </div>
             <div class="slider" id="startMenuSlidingTrigger">
               <h3>
-                <span id="viewOptionText" onmouseover="PlaySound1()" onclick="PlaySound()">view options</span>&nbsp;&nbsp;<i class="arrow" id="optionArrow" style="transform:rotate(-45deg);-webkit-transform:rotate(-45deg)"></i>
+                <span id="viewOptionText" onmouseover="PlaySound1()" onclick="PlaySound3()">view options</span>&nbsp;&nbsp;<i class="arrow" id="optionArrow" style="transform:rotate(-45deg);-webkit-transform:rotate(-45deg)"></i>
               </h3>
             </div>
             <div class="slider startMenuSlidingContent">
