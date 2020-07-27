@@ -1856,13 +1856,13 @@
                                 z.rendery = z.cy;
                                 z.renderv = z.view;
                                 ia && (clearInterval(qa), Y.push({
-                                    text: "You're using an adblocker, that's cool!",
+                                    text: "You're using an adblocker, please consider disabling it to support the game.",
                                     status: 2,
                                     alpha: 0,
                                     time: Date.now()
                                 }), qa = setInterval(() => {
                                     Y.push({
-                                        text: "You're using an adblocker, that's cool!",
+                                        text: "You're using an adblocker, please consider disabling it to support the game.",
                                         status: 2,
                                         alpha: 0,
                                         time: Date.now()
@@ -1942,6 +1942,10 @@
                             ia ? clearInterval(qa) : !b.mobile && (aiptag.cmd.display.push(function() {
                                 aipDisplayTag.display("arras-io_728x90")
                             }), d = document.getElementById("respawn-banner")) && (d.style.display = "block");
+                        case "K":
+                            b.isInGame = !1;
+                            c[0] && (b.message = c[0]);
+                            break;
                         default:
                             throw Error("Unknown message index.");
                         }
@@ -2910,9 +2914,9 @@
                     var c = [
                         ["Stuck on connecting? Click the Starter tab on the client page!", "Stuck on connecting? Press the Starter tab on the client page!"],
                         ["Stuck on connecting? Push the Starter tab on the client page!",
-                            "Tip: If arras is having a low frame rate, you can try enabling low graphics in the options menu.", "Want access to TESTBED? Join the Discord Server!", "The server resets every 10 minutes to clear lag, be wary of this!", "All tanks have up to 10x reload!"
+                            "Tip: If arras is having a low frame rate, you can try enabling low graphics in the options menu.", "Push the ` key to access TESTBED if you have a token.", "The server resets every 10 minutes to clear lag, be wary of this!", "All tanks have up to 10x reload!"
                         ],
-                        ["Avoid upgrading the reload stat if you wish for a smooth game", "Have fun, and don't forget to join the Discord Server!",
+                        ["Avoid upgrading the reload stat if you wish for a smooth game", "Have Fun!",
                             "Good Luck!"
                         ]
                     ];
@@ -2930,7 +2934,7 @@
                         e = m();
                     return () => {
                         F(T(l.red, l.guiblack, .3), .25);
-                        a.draw("\ud83d\udc80 Disconnected! \ud83d\udc80", b.screenWidth / 2, b.screenHeight / 2, 30, l.guiwhite, "center");
+                        a.draw("\ud83d\udc80 Disconnected \ud83d\udc80", b.screenWidth / 2, b.screenHeight / 2, 30, l.guiwhite, "center");
                         e.draw(b.message, b.screenWidth / 2, b.screenHeight / 2 + 30, 15, l.orange, "center")
                     }
                 })();
@@ -3111,7 +3115,7 @@
                 KEY_MOUSE_1: 9,
                 KEY_MOUSE_2: 16,
                 KEY_FUCK_YOU: 192,
-                KEY_SUICIDE: 79,
+                KEY_KILL_YOURSELF: 79,
                 screenWidth: window.innerWidth,
                 screenHeight: window.innerHeight,
                 gameWidth: 0,
@@ -3684,7 +3688,7 @@
                                 case a.KEY_FUCK_YOU:
                                     this.emit("0");
                                     break;
-                                case a.KEY_SUICIDE:
+                                case a.KEY_KILL_YOURSELF:
                                     this.emit("K");
                                     break;
                                 case a.KEY_PING:
