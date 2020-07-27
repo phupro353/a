@@ -223,8 +223,10 @@ a.menuTab {
   margin-right: 10px;
 }
 a.menuTab.discord {
-  padding: 6px 10px 7px 32px;
-  background: #7289DA url(/img/discord.svg) 8px 3px/22px no-repeat;
+  background: #7289DA 
+}
+a.menuTab.catto {
+  background: #58D68D 
 }
 a.menuTab.stat {
   background: #f00 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAKUlEQVQoU2NkQAP/////DxJiZGRkRJZC4YAkcCpEl6C9QrgNhKweSgoBUcBf8wTAguMAAAAASUVORK5CYII=) 10px 8px no-repeat;
