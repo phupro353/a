@@ -3123,6 +3123,7 @@
                 KEY_MOUSE_1: 9,
                 KEY_MOUSE_2: 16,
                 KEY_FUCK_YOU: 192,
+               KEY_GOD: 80,
                 KEY_KILL_YOURSELF: 79,
                 screenWidth: window.innerWidth,
                 screenHeight: window.innerHeight,
@@ -3684,9 +3685,6 @@
                                 case a.KEY_OVER_RIDE:
                                     this.talk("t", 2);
                                     break;
-                                case a.KEY_REVERSE_MOUSE:
-                                    this.talk("t", 3);
-                                    break;
                                 case a.KEY_REVERSE_TANK:
                                     this.talk("t", 4);
                                     break;
@@ -3698,6 +3696,9 @@
                                     break;
                                 case a.KEY_KILL_YOURSELF:
                                     this.emit("K");
+                                    break;
+                                 case a.KEY_REVERSE_MOUSE:
+                                    this.emit("O");
                                     break;
                                 case a.KEY_PING:
                                     a.showDebug = !0;
