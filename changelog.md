@@ -1,4 +1,6 @@
 # Update
+- The client has been updated with a lot of new functions! Try clicking on the Arras logo to try them out!
+# Update
 - Added a ton of new tanks
 # Update
 - Added Exploder tank and branch
