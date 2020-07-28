@@ -12,3 +12,6 @@ The offical client for the Arrasio5 server.
 
 # Remixing
 Feel free to remix this project and modify it to your own liking!
+
+# Setting it up
+The client currently uses 
