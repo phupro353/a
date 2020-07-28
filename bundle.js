@@ -191,7 +191,7 @@
                     case 22:
                         return "#FEFCAA";
                     case 23:
-                        return 150 > Date.now() % 100 ? l.red : l.blue;
+                        return 150 > Date.now() % 300 ? l.red : l.blue;
                     case 24:
                         return 150 > Date.now() % 300 ? l.red : l.red;
                     case 30:
