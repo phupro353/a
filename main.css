@@ -223,7 +223,8 @@ a.menuTab {
   margin-right: 10px;
 }
 a.menuTab.discord {
-  background: #7289DA url(https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/Discord.svg) 10px 8px no-repeat;
+  background: #7289DA url("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/Discord.svg") 10px 8px no-repeat;
+   padding: 6px 10px 7px 32px;
 }
 a.menuTab.catto {
   background: #1E8449 
