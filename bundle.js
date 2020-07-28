@@ -185,16 +185,15 @@
                     case 19:
                         return l.guiblack;
                     case 20:
-                        return 150 > Date.now() % 300 ? l.blue : l.red;
+                         return "#008080";
                     case 21:
-                        return 150 >
-                            Date.now() % 300 ? l.blue : l.grey;
+                        return "#8FFF00";
                     case 22:
-                        return 150 > Date.now() % 300 ? l.grey : l.blue;
+                        return "#FEFCAA";
                     case 23:
-                        return 150 > Date.now() % 300 ? l.red : l.grey;
+                        return 150 > Date.now() % 100 ? l.red : l.blue;
                     case 24:
-                        return 150 > Date.now() % 300 ? l.grey : l.red;
+                        return 150 > Date.now() % 300 ? l.red : l.red;
                     case 30:
                         return "#d21fff";
                     case 31:
