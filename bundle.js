@@ -111,8 +111,8 @@ var unselected = "#252525";
 var selected = "blue";
 var serverid = "ffa";
 var shadowblur = "12";
-var serverat = "arenarras-server-ffa.herokuapp.com";
-var servertype = "ffa";
+var serverat = "arrasio5.glitch.me";
+var servertype = "4tdm";
 var serversecure = 1;
 function unselect() {
   //unselect all shit
@@ -133,8 +133,8 @@ function server1select() {
   document.getElementById("s1").style.textShadow =
     selected + " 0 0 " + shadowblur + "px";
   servertype = "ffa";
-  serverat = "arenarras-server-ffa.herokuapp.com";
-  serverid = "ffa";
+  serverat = "arrasio5.glitch.me";
+  serverid = "a";
   location.hash = serverid;
   serversecure = 1;
 }
@@ -3397,7 +3397,7 @@ if (hashlocate.startsWith("priv=")) {
                 ],
                 timezone: (new Date).getTimezoneOffset() / -60,
                 servers: [{
-                    id: "x",
+                    id: "noneofyourbusiness",
                     type: "0unk",
                     code: "z-unknown-pe6server",
                     at: "private",
