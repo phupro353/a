@@ -7,7 +7,7 @@ The offical client for the Arrasio5 server.
 - Lightweight, separate client! 
 - More colours!
 - Fixed hotkeys! (Be sure your server project has them binded)
-- Deployment to Repl.it or ~~Heroku~~! Still works with Glitch!
+- Deployment to Repl.it or Heroku! Still works with Glitch!
 
 
 # Remixing
