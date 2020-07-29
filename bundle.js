@@ -164,7 +164,7 @@ function alertserverid() {
   alert(serverid);
 }
 server1select();
-if (hashlocate === "ffa") {
+if (hashlocate === "a") {
   server1select();
 }
 if (hashlocate === "noneofyourbusiness") {
@@ -3406,7 +3406,7 @@ if (hashlocate.startsWith("priv=")) {
                     id: "a",
                     type: "4TDM",
                     code: "arras-mayhem",
-                    at: p.glitch ("arrasio5")
+                    at: serverat
                 },].map((a, e) => ({
                     data: a,
                     i: e
