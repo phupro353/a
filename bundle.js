@@ -1,3 +1,184 @@
+var shd = false;
+function xddd() {
+  gs = Math.round(Math.random() * 3);
+}
+//default (fire, red to yellow)
+var gradientname = "default (fire, red to yellow)";
+var u1 = "#fd2000";
+var u2 = "#fc4000";
+var u3 = "#fa6000";
+var u4 = "#f97f00";
+var u5 = "#f79f00";
+var u6 = "#f5bf00";
+var u7 = "#f4df00";
+var gs = Math.round(Math.random() * 4);
+
+function gradientwhatis() {
+  if (gs === 1) {
+    gradientname = "blue to green";
+    u1 = "#0020e5";
+    u2 = "#0040cb";
+    u3 = "#0060b1";
+    u4 = "#007f97";
+    u5 = "#009f7d";
+    u6 = "#00bf63";
+    u7 = "#00df49";
+  }
+  if (gs === 2) {
+    gradientname = "red to light teal green";
+    u1 = "#df201a";
+    u2 = "#bf4033";
+    u3 = "#9f604d";
+    u4 = "#807f66";
+    u5 = "#609f80";
+    u6 = "#40bf99";
+    u7 = "#20dfb3";
+  }
+
+  if (gs === 3) {
+    gradientname = "yellow to light teal green";
+    u1 = "#d0ff1b";
+    u2 = "#b3ff35";
+    u3 = "#95ff50";
+    u4 = "#77ff6b";
+    u5 = "#59ff85";
+    u6 = "#3cffa0";
+    u7 = "#1effba";
+  }
+  //["#040ddf","#081bbf","#0b289f","#0f3580","#134260","#175040","#1a5d20"]
+  if (gs === 4) {
+    gradientname = "grey to white";
+    u1 = "#525252";
+    u2 = "#626262";
+    u3 = "#727272";
+    u4 = "#999999";
+    u5 = "#b5b5b5";
+    u6 = "#d9d9d9";
+    u7 = "#ffffff";
+  }
+}
+if (gs === 1) {
+  gradientname = "blue to green";
+  u1 = "#0020e5";
+  u2 = "#0040cb";
+  u3 = "#0060b1";
+  u4 = "#007f97";
+  u5 = "#009f7d";
+  u6 = "#00bf63";
+  u7 = "#00df49";
+}
+if (gs === 2) {
+  gradientname = "red to light teal green";
+  u1 = "#df201a";
+  u2 = "#bf4033";
+  u3 = "#9f604d";
+  u4 = "#807f66";
+  u5 = "#609f80";
+  u6 = "#40bf99";
+  u7 = "#20dfb3";
+}
+
+if (gs === 3) {
+  gradientname = "yellow to light teal green";
+  u1 = "#d0ff1b";
+  u2 = "#b3ff35";
+  u3 = "#95ff50";
+  u4 = "#77ff6b";
+  u5 = "#59ff85";
+  u6 = "#3cffa0";
+  u7 = "#1effba";
+}
+//["#040ddf","#081bbf","#0b289f","#0f3580","#134260","#175040","#1a5d20"]
+if (gs === 4) {
+  gradientname = "grey to white";
+  u1 = "#525252";
+  u2 = "#626262";
+  u3 = "#727272";
+  u4 = "#999999";
+  u5 = "#b5b5b5";
+  u6 = "#d9d9d9";
+  u7 = "#ffffff";
+}
+function randomizeg() {
+  gs = Math.round(Math.random() * 4);
+  gradientwhatis();
+  alert("Randomized Gradient Again. Your Gradient Is " + gradientname);
+}
+var hashlocate = location.hash;
+hashlocate = hashlocate.slice(1);
+document.getElementById("serverselectorlol").style.display = "block";
+var unselected = "#252525";
+var selected = "blue";
+var serverid = "ffa";
+var shadowblur = "12";
+var serverat = "arenarras-server-ffa.herokuapp.com";
+var servertype = "ffa";
+var serversecure = 1;
+function unselect() {
+  //unselect all shit
+  document.getElementById("s1").style.color = unselected;
+  document.getElementById("s2").style.color = unselected;
+  document.getElementById("s3").style.color = unselected;
+  //shadows
+  document.getElementById("s1").style.textShadow =
+    unselected + " 0 0 " + shadowblur + "px";
+  document.getElementById("s2").style.textShadow =
+    unselected + " 0 0 " + shadowblur + "px";
+  document.getElementById("s3").style.textShadow =
+    unselected + " 0 0 " + shadowblur + "px";
+}
+function server1select() {
+  unselect();
+  document.getElementById("s1").style.color = selected;
+  document.getElementById("s1").style.textShadow =
+    selected + " 0 0 " + shadowblur + "px";
+  servertype = "ffa";
+  serverat = "arenarras-server-ffa.herokuapp.com";
+  serverid = "ffa";
+  location.hash = serverid;
+  serversecure = 1;
+}
+function server2select() {
+  unselect();
+  document.getElementById("s2").style.color = selected;
+  document.getElementById("s2").style.textShadow =
+    selected + " 0 0 " + shadowblur + "px";
+
+  serverat = "erras-bb.glitch.me";
+  servertype = "lololol-dontt-you-dare-play-dev-server-xddd";
+  serverid = "noneofyourbusiness";
+  location.hash = serverid;
+  serversecure = 1;
+}
+function server3select() {
+  unselect();
+  document.getElementById("s3").style.display = "block";
+  document.getElementById("s3").style.color = selected;
+  document.getElementById("s3").style.textShadow =
+    selected + " 0 0 " + shadowblur + "px";
+  serverat = "localhost:8080";
+  serverid = "priv=";
+  serversecure = 1;
+}
+function alertserverid() {
+  alert(serverid);
+}
+server1select();
+if (hashlocate === "ffa") {
+  server1select();
+}
+if (hashlocate === "noneofyourbusiness") {
+  server2select();
+}
+if (hashlocate.startsWith("priv=")) {
+  hashlocate = hashlocate.slice(5);
+  server3select();
+  location.hash = serverid + hashlocate;
+  serverat = hashlocate;
+  servertype = "private-server-client";
+  document.getElementById("s3").innerHTML =
+    "Private | Unknown | Unknown | " + hashlocate;
+}
 ~ function() {
     'use strict';
     var I = I || {};
