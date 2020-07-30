@@ -3054,7 +3054,7 @@
             }
         }, function(r) {
             const p = {
-                openshift: a => `${a}.apps.us-east-2.starter.openshift-online.com/`,
+                openshift: (a, e) => `n-${a}-${e}.7e14.starter-us-west-2.openshiftapps.com`,
                 glitch: a => `${a}.glitch.me`,
                 heroku: a => `${a}.herokuapp.com`,
                 arras: (a, e = 5E3) => `ip-${a}.arras.io:${e}`,
