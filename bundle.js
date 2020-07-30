@@ -3054,7 +3054,7 @@
             }
         }, function(r) {
             const p = {
-                openshift: (a, e) => `n-${a}-${e}.7e14.starter-us-west-2.openshiftapps.com`,
+                openshift: (a, e) => `${a}-${e}.apps.us-east-2.starter.openshift-online.com`,
                 glitch: a => `${a}.glitch.me`,
                 heroku: a => `${a}.herokuapp.com`,
                 arras: (a, e = 5E3) => `ip-${a}.arras.io:${e}`,
@@ -3225,8 +3225,8 @@
                     id: "a",
                     type: "4TDM",
                     code: "arras-mayhem",
-                    at: p.openshift ("arrasio-arras")
-                },].map((a, e) => ({
+                    at: p.openshift ("arrasio", "arras")
+                          },].map((a, e) => ({
                     data: a,
                     i: e
                 })).sort((a, e) => a.data.type < e.data.type ? -1 : e.data.type > a.data.type ? 1 : a.i - e.i).map(({
