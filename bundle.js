@@ -193,7 +193,7 @@
                     case 23:
                         return 150 > Date.now() % 300 ? l.red : l.blue;
                     case 24:
-                        return 150 > Date.now() % 300 ? l.red : l.red;
+                        return 150 > Date.now() % 300 ? l.blue : l.red;
                     case 30:
                         return "#d21fff";
                     case 31:
