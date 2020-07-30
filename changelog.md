@@ -1,5 +1,4 @@
-# Update
-- The server is now hosted on Heroku.com
+
 # Update
 - Map has been redesigned, did I mention the Bases have names too?!
 # Update
