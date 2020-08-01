@@ -2465,7 +2465,7 @@
                                 na = O.max;
                             do {
                                 if (!b.showTree) break;
-                                let a = M.find(b => "Basic" === b.name);
+                                let a = M.find(b => "basic" === b.name);
                                 if (!a) break;
                                 let c = [],
                                     d = [],
