@@ -1,4 +1,7 @@
 # Update
+- Added even more tanks
+- Buffed Heavy-3 Turret's firerate
+# Update
 - Added many new tanks
 # Update
 - Map has been redesigned, did I mention the Bases have names too?!
