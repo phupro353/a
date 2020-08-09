@@ -3056,7 +3056,7 @@
             const p = {
                 openshift: (a, e) => `n-${a}-${e}.7e14.starter-us-west-2.openshiftapps.com`,
                 glitch: a => `${a}.glitch.me`,
-                replit: a => `${a}.glitch.me`,
+                replit: (a, e) => `${e}.${a}.repl.co`,
                 heroku: a => `${a}.herokuapp.com`,
                 arras: (a, e = 5E3) => `ip-${a}.arras.io:${e}`,
                 arrasUnknown: (a, e = 5E3) => `ipu-${a}.arras.io:${e}`
