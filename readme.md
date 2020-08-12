@@ -15,7 +15,7 @@ Feel free to remix this project and modify it to your own liking!
 
 # Setting it up
 The client currently uses arrasio5 as a server, but you can edit it!
-- Go to line 3228 in bundle.js and edit the code. It should look like this:
+- Go to line ~3228 in bundle.js and edit the code. It should look like this:
 
                  -   id: "a",
                  -   type: "4TDM",
