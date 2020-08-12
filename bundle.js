@@ -434,6 +434,12 @@
                 }
                 return btoa(b).replace(/=+/, "")
             }
+      
+      var smallaudio = new Audio();
+smallaudio.src = ("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/sysse_ok.ogg");
+function PlaySound210() {
+    smallaudio.play();
+}
 
             function t() {
                 if (!ua) {
@@ -1453,6 +1459,7 @@
                 }
             }
             document.getElementById("startButton").onclick = () => {
+                           PlaySound210()
                 t()
             };
             let La = WebSocket.prototype.close;
