@@ -3067,7 +3067,7 @@ function PlaySound210() {
                 heroku: a => `${a}.herokuapp.com`,
                 arras: (a, e = 5E3) => `ip-${a}.arras.io:${e}`,
                 arrasUnknown: (a, e = 5E3) => `ipu-${a}.arras.io:${e}`
-            };
+            }
             var w = (new Date).getDate();
             const a = 25 <= w ? 3 : 0;
             w = 25 <= w ? 0 : 3;
