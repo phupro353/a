@@ -1,6 +1,7 @@
 # Arras Mayhem
 The offical client for the Arrasio5 server.
 
+*Ignore the additonal files! They are for maximum compatibility with third-party hosting services!*
 # Features
 - Sound effects!
 - Music!
