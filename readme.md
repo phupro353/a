@@ -23,7 +23,7 @@ The client is able to be hosted as either a Node.js Express, PHP, Go HTTP or Pyt
 - Python Flask server:
    ``python main.py`` 
    - <https://repl.it/@umineko/arras-flask>
-   - <https://github.com/seaguli/arras-flask>
+   - <https://gitlab.com/seaguli/arras-flask>
 - Go HTTP server:
    ``go build`` 
    - <https://repl.it/@umineko/arras-go>
