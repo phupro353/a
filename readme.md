@@ -30,8 +30,8 @@ The client is able to be hosted as either a Node.js Express, PHP, Go HTTP, Ruby 
    - <https://gitlab.com/seaguli/arras-go>
 - Ruby Webrick server:
    ``ruby main.rb`` 
-   - <https://repl.it/@umineko/arras-go>
-   - <https://gitlab.com/seaguli/arras-go>
+   - <https://repl.it/@umineko/arras-ruby>
+   - <https://gitlab.com/seaguli/arras-ruby>
    
 Additonal code is availbile on my Github project's page, <https://github.com/seaguli/arras-mayhem>
 # Remixing
