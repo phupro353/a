@@ -8,10 +8,10 @@ The offical client for the Arrasio5 server.
 - More colours!
 - Fixed hotkeys! (Be sure your server project has them binded)
 - Deployment to Repl.it or Heroku! Still works with Glitch!
-- Webserver compatibility with 4 different languages!
+- Webserver compatibility with 5 different languages!
 
 # Webservers
-The client is able to be hosted as either a Node.js Express, PHP, Go HTTP or Python Flask webserver. Details below! Examples are linked as well.
+The client is able to be hosted as either a Node.js Express, PHP, Go HTTP, Ruby Webrick or Python Flask webserver. Details below! Examples are linked as well.
 
 - NodeJS Express server:
    ``node index.js``
@@ -26,6 +26,10 @@ The client is able to be hosted as either a Node.js Express, PHP, Go HTTP or Pyt
    - <https://gitlab.com/seaguli/arras-flask>
 - Go HTTP server:
    ``go build`` 
+   - <https://repl.it/@umineko/arras-go>
+   - <https://gitlab.com/seaguli/arras-go>
+- Ruby Webrick server:
+   ``ruby main.rb`` 
    - <https://repl.it/@umineko/arras-go>
    - <https://gitlab.com/seaguli/arras-go>
    
