@@ -18,7 +18,7 @@ The client is able to be hosted as either a Node.js Express, PHP Apache2 or Pyth
 - PHP Apache2 server:
    ``heroku-php-apache2`` **HEROKU ONLY**
 - Python Flask server:
-   ``python main.py``
+   ``python main.py`` 
 # Remixing
 Feel free to remix this project and modify it to your own liking!
 
