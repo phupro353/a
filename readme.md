@@ -11,12 +11,12 @@ The offical client for the Arrasio5 server.
 - Deployment to Repl.it or Heroku! Still works with Glitch!
 
 # Webservers
-The client is able to be hosted as either a Node.js Express, PHP Apache2 or Python Flask webserver. Details below!
+The client is able to be hosted as either a Node.js Express, PHP Apache2 or Python Flask webserver. Details below! These start scripts were tested with Heroku.
 
 - NodeJS Express server:
    ``node index.js``
 - PHP Apache2 server:
-   ``heroku-php-apache2``for Heroku
+   ``heroku-php-apache2`` **HEROKU ONLY**
 - Python Flask server:
    ``python main.py``
 # Remixing
