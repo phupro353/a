@@ -191,13 +191,13 @@
                     case 22:
                         return "#FEFCAA";
                     case 23:
-                        return 150 > Date.now() % 300 ? l.red : l.blue;
+                           return "#d21fff";
                     case 24:
-                        return 150 > Date.now() % 300 ? l.blue : l.red;
+                       return "#226ef6";
                     case 30:
-                        return "#d21fff";
+                          return 150 > Date.now() % 300 ? l.red : l.blue;
                     case 31:
-                        return "#226ef6";
+                       return 150 > Date.now() % 300 ? l.blue : l.red;
                     case 32:
                         return "#ff1000";
                     case 33:
@@ -559,7 +559,7 @@ function PlaySound210() {
                 g.strokeStyle = u;
                 g.stroke()
             }
-            var somethinglolcuzimlazy = ""
+            var somethinglolcuzimlazy = "" //no token here keep looking
             function Qa(b, a, c, h, u) {
                 if (!(.05 > u)) {
                     var d = c.render.status.getFade();
