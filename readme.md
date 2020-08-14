@@ -10,7 +10,7 @@ The offical client for the Arrasio5 server.
 - Deployment to Repl.it or Heroku! Still works with Glitch!
 
 # Webservers
-The client is able to be hosted as either a Node.js Express, PHP or Python Flask webserver. Details below! Examples are linked as well.
+The client is able to be hosted as either a Node.js Express, PHP, Go HTTP or Python Flask webserver. Details below! Examples are linked as well.
 
 - NodeJS Express server:
    ``node index.js``
@@ -23,6 +23,10 @@ The client is able to be hosted as either a Node.js Express, PHP or Python Flask
    ``python main.py`` 
    - <https://repl.it/@umineko/arras-flask>
    - <https://github.com/seaguli/arras-flask>
+- Go HTTP server:
+   ``go build`` 
+   - <https://repl.it/@umineko/arras-go>
+   - <https://github.com/seaguli/arras-go>
    
 Additonal code is availbile on my Github project's page, <https://github.com/seaguli/arras-mayhem>
 # Remixing
