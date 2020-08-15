@@ -224,14 +224,14 @@ a.menuTab {
 }
 a.menuTab.discord {
    padding: 6px 10px 7px 28px;
-  background: #7289DA url("http://arras.io/img/discord.svg") 4px 3px/21px no-repeat;
+  background: #7289DA url("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/svg0.svg") 4px 3px/21px no-repeat;
 }
   a.menuTab.catto {
-      background: #f00 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAKUlEQVQoU2NkQAP/////DxJiZGRkRJZC4YAkcCpEl6C9QrgNhKweSgoBUcBf8wTAguMAAAAASUVORK5CYII=) 10px 8px no-repeat;
+      background: #f00 url("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/coder.png") 8px 6px no-repeat;
   padding: 6px 10px 7px 28px;
 }
 a.menuTab.stat {
-  background: #1E8449  url("https://cdn.glitch.com/fca666a2-8235-47b6-a711-c9926dc2248f%2Fplay.png?v=1597471804419") 3px 2px/23px no-repeat;
+  background: #1E8449  url("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/play.png") 3px 2px/23px no-repeat;
   padding: 6px 10px 7px 28px;
 }
 a.menuTab:link:hover, a.menuTab:visited:hover {
