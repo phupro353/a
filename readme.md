@@ -47,9 +47,9 @@ The client currently uses arrasio5 as a server, but you can edit it!
                  -  at: p.glitch ("YOUR-ARRAS-SERVER")
                  
 - p.glitch is the name of your Arras.io server hosted on Glitch.com. For example, ("arrasio5")
-- It also accepts 
-- type is the gamemode of your server. For example, "4TDM" for 4 Team Deathmatch, "FFA" for Free For All.
-- code isn't important
+- It also works with servers hosted on Heroku, simply change `p.glitch` to `p.heroku` and fill in your server normally.
+- Type is the gamemode of your server. For example, "4TDM" for 4 Team Deathmatch, "FFA" for Free For All.
+- Code isn't important
 
 # Credits
 - Original Client by ProKameron
