@@ -879,6 +879,8 @@ function PlaySound210() {
                                 return "Body Damage;Max Health;Placement Speed;Trap Health;Trap Penetration;Trap Damage;Reload;Movement Speed;Shield Regeneration;Shield Capacity".split(";");
                             case 6:
                                 return "Body Damage;Max Health;Weapon Speed;Weapon Health;Weapon Penetration;Weapon Damage;Reload;Movement Speed;Shield Regeneration;Shield Capacity".split(";");
+                            case 7:
+                                return "Body Damage;Max Health;Bullet Speed;Bullet Health;Bullet Penetration;Healing Intensity;Reload;Movement Speed;Shield Regeneration;Shield Capacity".split(";");
                             default:
                                 return "Body Damage;Max Health;Bullet Speed;Bullet Health;Bullet Penetration;Bullet Damage;Reload;Movement Speed;Shield Regeneration;Shield Capacity".split(";")
                         }
