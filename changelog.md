@@ -1,4 +1,7 @@
 # Update
+- Added Celestials to the Testbed branch
+- Twister and Hive's missile reload speed nerfed
+# Update
 - Added more themes
 - Added 1 new boss to the Testbed branch
 # Update
