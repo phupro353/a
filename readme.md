@@ -1,6 +1,6 @@
 # Arras Mayhem
 The offical client for the Arrasio5 server.
-
+Image of Yaktocat](https://media.discordapp.net/attachments/738824642441117716/744373628942024714/w7S7hI5.png)
 # Features
 - Sound effects!
 - Music!
@@ -37,6 +37,9 @@ Additonal code is available on my Github project's page, <https://github.com/sea
 # Remixing
 Feel free to remix this project and modify it to your own liking!
 
+<sub><sup>
+    ask me if you want any aspect of the server's code
+</sub></sup>
 # Setting it up
 The client currently uses arrasio5 as a server, but you can edit it!
 - Go to line ~3241 in bundle.js and edit the code. It should look like this:
