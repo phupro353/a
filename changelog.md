@@ -1,4 +1,8 @@
 # Update
+- Nerfed a lot of tanks
+- Some tanks will have a MAX_CHILDREN: cap to prevent lag.
+- The main server is now hosted on Heroku.com
+# Update
 - Added Celestials to the Testbed branch
 - Twister and Hive's missile reload speed nerfed
 # Update
