@@ -1,6 +1,8 @@
 # Update
+- Added join and leave messages to the server
+# Update
 - Nerfed a lot of tanks
-- Some tanks will have a MAX_CHILDREN: cap to prevent lag.
+- Some tanks will have a MAX_CHILDREN: value to prevent lag.
 - The main server is now hosted on Heroku.com
 # Update
 - Added Celestials to the Testbed branch
