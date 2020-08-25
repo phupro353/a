@@ -1,4 +1,6 @@
 # Update
+- The bots ate spinach and became op 
+# Update
 - Added join and leave messages to the server
 # Update
 - Nerfed a lot of tanks
