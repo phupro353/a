@@ -207,7 +207,7 @@
                     case 35:
                         return "#ffd300";
                    case 36:
-            return Date.now() % 550 < 300 ? l.red : l.orange : l.yellow;    
+            return '#' + Math.floor(Math.random() * 16777215).toString(16); 
                     default:
                         return "#ff0000"
                 }
