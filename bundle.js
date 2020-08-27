@@ -207,7 +207,7 @@
                     case 35:
                         return "#ffd300";
                    case 36:
-            return math.floor(["#ff1000", "#ff9000", "#ffd300", "#00e00b", "#226ef6", "#a913cf"][Math.floor(Date.now() / 200 % 6)], ["#ff9000", "#ffd300", "#00e00b", "#226ef6", "#a913cf", "#ff1000"][Math.floor(Date.now() / 200 % 6)], Date.now() / 200 % 1);
+            return Date.now() % 550 < 300 ? l.red : l.orange : l.yellow;    
                     default:
                         return "#ff0000"
                 }
