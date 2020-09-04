@@ -1,6 +1,6 @@
 # Arras Mayhem
 The offical client for the Arrasio5 server.
-![Purple Arras.io logo](https://cdn.glitch.com/fca666a2-8235-47b6-a711-c9926dc2248f%2FLogo.png?v=1595837913869)
+![Purple Arras.io logo](https://cdn.glitch.com/fca666a2-8235-47b6-a711-c9926dc2248f%2FLogo.png?v=1595837913869) 
 # Features
 - Sound effects!
 - Music!
@@ -75,3 +75,5 @@ The client can be found at the following links:
 <https://glitch.com/~imp-template2>
 - Seaguli
 - Various StackOverflow contributors (For webserver code)
+[![button](https://arras.neocities.org/neocities.png)](https://neocities.org)
+[![Official Discord server](https://discordapp.com/api/guilds/427668515357458443/embed.png)](https://discord.gg/yTZdDPA)
