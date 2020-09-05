@@ -1,41 +1,3 @@
-// NOTE: PLEASE DONT CHANGE ANYTTHING. IF YOU WANNA, REMIX IT.
-var unselected = "#525252" // unselected colour
-var selected = "#99e339" // selected colour
-var serverid = "a" // make sure this is same as server1
-var serverat = "arras-mayhem.herokuapp.com" // make sure this is same as server1
-var servertype ="4tdm" // make sure this is same as server1
-var servercode="diras.io4" // make sure this is same as server1
-var glitch=".glitch.me"
-var heroku=".herokuapp.com"
-function unselect() {
-  document.getElementById("s1").style.color = unselected;
-  document.getElementById("s2").style.color = unselected;
-  
-}
-// servers
-function server1select() {
-  unselect()
-  document.getElementById("s1").style.color = "#99e339";
-servertype="4tdm"
-  serverat = "arras-mayhem.herokuapp.com" //server 
-serverid = "arras"
-}
-function server2select() {
-  unselect()
-  document.getElementById("s2").style.color = "#99e339";
-
-serverat = "arrasio5.glitch.me" //server
-servertype = "domination"
-serverid = "b2";
-}
-function server3select() {
-  unselect()
-  document.getElementById("s3").style.color = "#99e339";
-
-serverat = "long-cobalt-bone.glitch.me" //server
-servertype = "base defense"
-serverid = "c3";
-}
 ~ function() {
     'use strict';
     var I = I || {};
@@ -3275,10 +3237,10 @@ function PlaySound210() {
                     code: "arras-mayhem-heroku",
                     at: p.heroku ("arras-mayhem"),
                 }, {
-                    id: "arras",
+                    id: "a",
                     type: "4TDM",
-                     code: "server-1-4",
-                     at: serverat,
+                    code: "arras-mayhem",
+                    at: p.heroku ("arras-mayhem")
                 },].map((a, e) => ({
                     data: a,
                     i: e
