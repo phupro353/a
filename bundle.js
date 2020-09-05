@@ -713,7 +713,7 @@ function PlaySound210() {
                 })();
                 return {
                     stat: b(10),
-                    upgrade: b(15),
+                    upgrade: b(20),
                     hover: b(1),
                     skipUpgrades: b(1)
                 }
@@ -2788,16 +2788,16 @@ function PlaySound210() {
                                         !b.mobile && m ? (aa[q - 1].draw(t.name, c + 45, d + 100 - 6, 9.5, l.guiwhite, "center"), ea[q - 1].draw("[" + m + "]", c + 100 - 4, d + 100 - 6, 9.5, l.guiwhite, "right")) : aa[q - 1].draw(t.name, c + 50, d + 100 - 6, 9.5, l.guiwhite, "center");
                                         g.strokeStyle = l.black;
                                         g.globalAlpha = 1;
-                                        g.lineWidth = 3;
+                                        g.lineWidth = 0.01;
                                         G(c, d, 100, 100, !0);
                                         0 !== ++x % 5 || b.mobile ? c += 114 * a : (c = f, d += 114)
                                     });
                                     let m = ta("Don't Upgrade", 11) + 10,
-                                        t = (h + 100 + 14 + f - 15) / 2,
-                                        v = k + 100 + 14;
-                                    K(t - m / 2, t + m / 2, v + 7, 14 + B.graphical.barChunk,
+                                        t = (h + 100 + 19 + f - 20) / 2,
+                                        v = k + 100 + 19;
+                                    K(t - m / 2, t + m / 2, v + 7, 19 + B.graphical.barChunk,
                                         l.black);
-                                    K(t - m / 2, t + m / 2, v + 7, 14, l.white);
+                                    K(t - m / 2, t + m / 2, v + 7, 19, l.white);
                                     fa.draw("Don't Upgrade", t, v + 7, 12, l.guiwhite, "center", !0);
                                     b.clickables.skipUpgrades.place(0, (t - m / 2) * n, v * n, m * n, 14 * n)
                                 } else b.clickables.upgrade.hide(), b.clickables.skipUpgrades.hide()
