@@ -2595,7 +2595,7 @@ function PlaySound210() {
                             b.mobile && L(1.4); {
                                 let c = b.screenWidth / 2,
                                     d = 20;
-                                b.mobile && (d += (b.canSkill ? (200 / 3 + 20) / 1.4 * a.get() : 0) + (b.canUpgrade ? 120 / 1.4 * k.get() : 0));
+                                     b.mobile && (d += (b.canSkill ? 200 / 3 / 1.4 * a.get() : 0) + (b.canUpgrade && 40 + 114 * A.upgrades.length > 1.4 * c ? 100 / 1.4 * k.get() : 0));
                                 for (let b = Y.length - 1; 0 <= b; b--) {
                                     let a = Y[b],
                                         f = a.text;
@@ -2788,7 +2788,7 @@ function PlaySound210() {
                                         ba(c + 50 - v * m.middle.x * Math.cos(la), d + 50 - v * m.middle.x *
                                             Math.sin(la), t, 1, 1, v / t.size, la, !0);
                                         m = (b.help[`KEY_CHOOSE_${x+1}`] || "").toLowerCase().trim();
-                                        !b.mobile && m ? (aa[q - 1].draw(t.name, c + 45, d + 100 - 6, 9.5, l.guiwhite, "center"), ea[q - 1].draw("[" + m + "]", c + 100 - 4, d + 100 - 6, 9.5, l.guiwhite, "right")) : aa[q - 1].draw(t.name, c + 50, d + 100 - 6, 9.5, l.guiwhite, "center");
+                                      !b.mobile && m ? (aa[q - 1].draw(t.name, c + 45, d + 100 - 6, 9.5, l.guiwhite, "center"), ea[q - 1].draw("[" + m + "]", c + 100 - 4, d + 100 - 6, 9.5, l.guiwhite, "right")) : aa[q - 1].draw(t.name, c + 50, d + 100 - 6, 9.5, l.guiwhite, "center");
                                         g.strokeStyle = l.black;
                                         g.globalAlpha = 1;
                                         g.lineWidth = 0.01;
