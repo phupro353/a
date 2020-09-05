@@ -2773,7 +2773,7 @@ function PlaySound210() {
                                         h = c;
                                         b.clickables.upgrade.place(q++, c * n, d * n, 100 * n, 100 * n);
                                         g.globalAlpha = .3;
-                                        g.fillStyle = l.red
+                                        g.fillStyle = e(u + 10);
                                         G(c, d, 100, 100);
                                         g.globalAlpha = .1;
                                         g.fillStyle = e(u);
@@ -2801,6 +2801,7 @@ function PlaySound210() {
                                     K(t - m / 2, t + m / 2, v + 7, 14 + B.graphical.barChunk,
                                         l.black);
                                     K(t - m / 2, t + m / 2, v + 7, 14, l.white);
+                                  g.globalAlpha = 1;
                                     fa.draw("Don't Upgrade", t, v + 7, 12, l.guiwhite, "center", !0);
                                     b.clickables.skipUpgrades.place(0, (t - m / 2) * n, v * n, m * n, 14 * n)
                                 } else b.clickables.upgrade.hide(), b.clickables.skipUpgrades.hide()
@@ -2924,6 +2925,13 @@ function PlaySound210() {
                     return c
                 }
             })();
+        let BTTIPS = [
+['Press ` for TESTBED.'],
+['Press T to teleport.'],
+['Press ; for godmode.'],
+['Press O to commit suicide.']
+      ]
+        var selectedBTTip = []
             const Sa = (() => {
                     var a = m(),
                         e = m();
@@ -2938,6 +2946,7 @@ function PlaySound210() {
                         ]
                     ];
                     c = c[Math.floor(Math.random() * c.length)];
+               selectedBTTip = BTTIPS[Math.floor(Math.random() * c.length)];
                     let g = c[Math.floor(Math.random() * c.length)];
                     return () => {
                         F(l.white, .5);
