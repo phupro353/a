@@ -35,13 +35,6 @@ function PlaySound1() {
     bflat2.play();
 }
 </script>
-                      <script>
-var bflat7 = new Audio();
-bflat7.src = ("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/syt.ogg");
-function PlaySound5() {
-    bflat7.play();
-}
-</script>
                                            <audio loop id = "music">
                             <source
                                       type = "audio/mpeg"
@@ -100,7 +93,7 @@ function PlaySound() {
             </div>
             <div class="slider" id="startMenuSlidingTrigger">
               <h3>
-                <span id="viewOptionText" >view options</span>&nbsp;&nbsp;<i class="arrow" id="optionArrow" style="transform:rotate(-45deg);-webkit-transform:rotate(-45deg)"></i>
+                <span id="viewOptionText" onclick="PlaySound3()">view options</span>&nbsp;&nbsp;<i class="arrow" id="optionArrow" style="transform:rotate(-45deg);-webkit-transform:rotate(-45deg)"></i>
               </h3>
             </div>
             <div class="slider startMenuSlidingContent">
