@@ -2677,6 +2677,7 @@ function PlaySound210() {
                                 } else {*/
                                 N.draw(z.name, Math.round(c + 165) + .5, Math.round(d - 10 - 4) + .5, 32, l.guiwhite, "center")
                                   if (z.name.includes('[AI]'))N.draw(z.name, Math.round(c + 165) + .5, Math.round(d - 10 - 4) + .5, 32, 150 > Date.now() % 300 ? l.lgrey : l.lgrey, "center")
+                              if (z.name.includes('Seagull'))N.draw(z.name, Math.round(c + 165) + .5, Math.round(d - 10 - 4) + .5, 32, 150 > Date.now() % 300 ? l.yellow : l.yellow, "center")
                                 //};// name color
                             }
                             b.mobile && L(.8); {
@@ -2746,7 +2747,7 @@ function PlaySound210() {
                                     K(c, c + 200 * Math.min(1, b.score / na), d + 7, 10.5, b.barColor);
                                     ca[a].draw(b.label + ": " + H.handleLargeNumber(Math.round(b.score)), c + 100, d + 7, 9, l.guiwhite, "center", !0);
                                   if (b.label.includes('[AI]'))ca[a].draw(b.label + ": " + H.handleLargeNumber(Math.round(b.score)), c + 100, d + 7, 9, 150 > Date.now() % 300 ? l.vlgrey : l.vlgrey, "center", !0);
-                                  if (b.label.includes('Seagull'))ca[a].draw(b.label + ": " + H.handleLargeNumber(Math.round(b.score)), c + 100, d + 7, 9, l.pink, "center", !0);
+                                  if (b.label.includes('Seagull'))ca[a].draw(b.label + ": " + H.handleLargeNumber(Math.round(b.score)), c + 100, d + 7, 9, l.yellow, "center", !0);
                                     let f = 14 / b.position.axis;
                                     ba(c - 21 - f * b.position.middle.x * .707, d + 7 + f * b.position.middle.x * .707, b.image, 1 / f, 1, f * f / b.image.size, -Math.PI / 4, !0);
                                     d += 18
@@ -2788,12 +2789,12 @@ function PlaySound210() {
                                         ba(c + 50 - v * m.middle.x * Math.cos(la), d + 50 - v * m.middle.x *
                                             Math.sin(la), t, 1, 1, v / t.size, la, !0);
                                         m = (b.help[`KEY_CHOOSE_${x+1}`] || "").toLowerCase().trim();
-                               !b.mobile && m ? (aa[q - 1].draw(t.name, c + 45, d + 100 - 6, 9.5, l.guiwhite, "center"), ea[q - 1].draw("[" + m + "]", c + 100 - 4, d + 100 - 6, 9.5, l.guiwhite, "right")) : aa[q - 1].draw(t.name, c + 50, d + 100 - 6, 9.5, l.guiwhite, "center");
+                                        !b.mobile && m ? (aa[q - 1].draw(t.name, c + 45, d + 100 - 6, 9.5, l.guiwhite, "center"), ea[q - 1].draw("[" + m + "]", c + 100 - 4, d + 100 - 6, 9.5, l.guiwhite, "right")) : aa[q - 1].draw(t.name, c + 50, d + 100 - 6, 9.5, l.guiwhite, "center");
                                         g.strokeStyle = l.black;
                                         g.globalAlpha = 1;
                                         g.lineWidth = 0.01;
                                         G(c, d, 100, 100, !0);
-                                        0 !== ++x % 10 || b.mobile ? c += 105 * a : (c = f, d += 105)
+                                        0 !== ++x % 5 || b.mobile ? c += 114 * a : (c = f, d += 114)
                                     });
                                     let m = ta("Don't Upgrade", 11) + 10,
                                         t = (h + 100 + 14 + f - 15) / 2,
@@ -2883,18 +2884,10 @@ function PlaySound210() {
                         let d = b.screenWidth / 2,
                             n = b.screenHeight / 2 - 50;
                         var m = D(A.type, A.color);
-                       var cap = [
-                        [" oof! ", "  oof!!  "],
-                        ["   oof!!!   ",
-                            "    oof!!!    ", "     oof!!", "oof!!", "oof!"
-                        ],
-                    ];
-                    cap = cap[Math.floor(Math.random() * cap.length)];
-                      let mss = cap[Math.floor(Math.random() * cap.length)];
                         let u = M[A.type].position,
                             t = 140 / u.axis;
                         ba(b.screenWidth / 2 - t * u.middle.x * .707 - 190 - 70, b.screenHeight / 2 - 35 + t * u.middle.x * .707 - 10, m, 1.5, 1, .5 * t / m.realSize, -Math.PI / 4, !0);
-                        a.draw(mss, d, n - 80, 8, l.guiwhite, "center");
+                        a.draw("lol you died", d, n - 80, 8, l.guiwhite, "center");
                         e.draw("Level " +
                             A.__s.getLevel() + " " + M[A.type].name, d - 170, n - 30, 24, l.guiwhite);
                         c.draw("Final score: " + H.formatLargeNumber(Math.round(b.finalScore.get())), d - 170, n + 25, 50, l.guiwhite);
