@@ -1,4 +1,7 @@
 # Update
+- Beautified client
+- Added 2 new tanks to the Destroyer branch
+# Update
 - Added a Dominator to the centre of the map
 - Map is slightly bigger
 # Update
