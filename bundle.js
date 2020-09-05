@@ -442,14 +442,14 @@ function PlaySound210() {
 }
       
             var smallaudio2 = new Audio();
-smallaudio2.src = ("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/sysse_ok.ogg");
+smallaudio2.src = ("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/cancel.wav");
 function PlaySound220() {
     smallaudio2.play();
 }
       
-          var result = document.getElementById('viewOptionText')
+var result = document.querySelector('button')
 var step = 0
-document.getElementById('viewOptionText')('click', function (event) {
+document.querySelector('viewOptionText').addEventListener('click', function (event) {
   // `0` is false-y in JS, so if `step === 0`, then it'll be set to 3
   // otherwise, it'll be set to 0 (`3` is truth-y)
   step = step ? 0 : 3
