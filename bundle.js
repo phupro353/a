@@ -1055,7 +1055,7 @@ function PlaySound210() {
                 aa = null,
                 ab = null,
                 ea;
-            for (let a of b.servers) {/*
+            for (let a of b.servers) {
                 if ((null ==
                         a.visible || a.visible > Ha) && b.server !== a) continue;
                 let [d, c, h] = a.code.split("-"), u = document.createElement("tr");
@@ -1066,9 +1066,9 @@ function PlaySound210() {
                 u.onclick = () => {
                     ea.classList.remove("selected");
                     ea = u;
-                    ea.classList.add("selected");*/
+                    ea.classList.add("selected");
                     b.server = a;
-                    /*b.partyLink = 0;
+                    b.partyLink = 0;
                     N.gameMode = a.id;
                     location.hash = "#" +
                         a.id;
@@ -1077,7 +1077,7 @@ function PlaySound210() {
                 ab.appendChild(u);
                 b.server === a && (ea = u, ea.classList.add("selected"), setTimeout(() => {
                     aa.scrollTop = u.offsetTop - 30;
-                }))*/
+                }))
             }
             let bb = (() => {
                     let b = !1,
