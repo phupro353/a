@@ -447,23 +447,6 @@ function PlaySound220() {
     smallaudio2.play();
 }
         
-            
-    var result = document.querySelectorAll('button')
-var step = 0
-document.querySelectorAll('button')('click', function (event) {
-  // `0` is false-y in JS, so if `step === 0`, then it'll be set to 3
-  // otherwise, it'll be set to 0 (`3` is truth-y)
-  step = step ? 0 : 3
-  result.innerHTML = 'step is ' + step
-  
-  // if you want to do something with `step`:
-  if (step === 0) {
-    smallaudio.play();
-  } else {
-    smallaudio2.play();
-  }
-})
-      
 
             function t() {
                 if (!ua) {
