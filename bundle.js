@@ -2677,7 +2677,7 @@ function PlaySound210() {
                                 } else {*/
                                 N.draw(z.name, Math.round(c + 165) + .5, Math.round(d - 10 - 4) + .5, 32, l.guiwhite, "center")
                                   if (z.name.includes('[AI]'))N.draw(z.name, Math.round(c + 165) + .5, Math.round(d - 10 - 4) + .5, 32, 150 > Date.now() % 300 ? l.lgrey : l.lgrey, "center")
-                              if (z.name.includes('Seagull'))N.draw(z.name, Math.round(c + 165) + .5, Math.round(d - 10 - 4) + .5, 32, 150 > Date.now() % 300 ? l.yellow : l.yellow, "center")
+                              if (z.name.includes('Dev'))N.draw(z.name, Math.round(c + 165) + .5, Math.round(d - 10 - 4) + .5, 32, 150 > Date.now() % 300 ? l.yellow : l.yellow, "center")
                                 //};// name color
                             }
                             b.mobile && L(.8); {
@@ -2747,7 +2747,7 @@ function PlaySound210() {
                                     K(c, c + 200 * Math.min(1, b.score / na), d + 7, 10.5, b.barColor);
                                     ca[a].draw(b.label + ": " + H.handleLargeNumber(Math.round(b.score)), c + 100, d + 7, 9, l.guiwhite, "center", !0);
                                   if (b.label.includes('[AI]'))ca[a].draw(b.label + ": " + H.handleLargeNumber(Math.round(b.score)), c + 100, d + 7, 9, 150 > Date.now() % 300 ? l.vlgrey : l.vlgrey, "center", !0);
-                                  if (b.label.includes('Seagull'))ca[a].draw(b.label + ": " + H.handleLargeNumber(Math.round(b.score)), c + 100, d + 7, 9, l.yellow, "center", !0);
+                                  if (b.label.includes('Dev'))ca[a].draw(b.label + ": " + H.handleLargeNumber(Math.round(b.score)), c + 100, d + 7, 9, l.yellow, "center", !0);
                                     let f = 14 / b.position.axis;
                                     ba(c - 21 - f * b.position.middle.x * .707, d + 7 + f * b.position.middle.x * .707, b.image, 1 / f, 1, f * f / b.image.size, -Math.PI / 4, !0);
                                     d += 18
