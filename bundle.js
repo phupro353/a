@@ -2769,7 +2769,7 @@ function PlaySound210() {
                                         d > k && (k = d);
                                         h = c;
                                         b.clickables.upgrade.place(q++, c * n, d * n, 100 * n, 100 * n);
-                                        g.globalAlpha = .5;
+                                        g.globalAlpha = .3;
                                         g.fillStyle = e(u + 10);
                                         G(c, d, 100, 100);
                                         g.globalAlpha = .1;
@@ -2793,11 +2793,11 @@ function PlaySound210() {
                                         0 !== ++x % 5 || b.mobile ? c += 114 * a : (c = f, d += 114)
                                     });
                                     let m = ta("Don't Upgrade", 11) + 10,
-                                        t = (h + 100 + 19 + f - 20) / 2,
-                                        v = k + 100 + 19;
-                                    K(t - m / 2, t + m / 2, v + 7, 19 + B.graphical.barChunk,
+                                        t = (h + 100 + 14 + f - 15) / 2,
+                                        v = k + 100 + 14;
+                                    K(t - m / 2, t + m / 2, v + 7, 14 + B.graphical.barChunk,
                                         l.black);
-                                    K(t - m / 2, t + m / 2, v + 7, 19, l.white);
+                                    K(t - m / 2, t + m / 2, v + 7, 14, l.white);
                                     fa.draw("Don't Upgrade", t, v + 7, 12, l.guiwhite, "center", !0);
                                     b.clickables.skipUpgrades.place(0, (t - m / 2) * n, v * n, m * n, 14 * n)
                                 } else b.clickables.upgrade.hide(), b.clickables.skipUpgrades.hide()
