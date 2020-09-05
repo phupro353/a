@@ -1,7 +1,7 @@
 // NOTE: PLEASE DONT CHANGE ANYTTHING. IF YOU WANNA, REMIX IT.
 var unselected = "#525252" // unselected colour
 var selected = "#99e339" // selected colour
-var serverid = "a1" // make sure this is same as server1
+var serverid = "a" // make sure this is same as server1
 var serverat = "arras-mayhem.herokuapp.com" // make sure this is same as server1
 var servertype ="4tdm" // make sure this is same as server1
 var servercode="diras.io4" // make sure this is same as server1
@@ -18,7 +18,7 @@ function server1select() {
   document.getElementById("s1").style.color = "#99e339";
 servertype="4tdm"
   serverat = "arras-mayhem.herokuapp.com" //server 
-serverid = "4tdm"
+serverid = "arras"
 }
 function server2select() {
   unselect()
@@ -3275,9 +3275,9 @@ function PlaySound210() {
                     code: "arras-mayhem-heroku",
                     at: p.heroku ("arras-mayhem"),
                 }, {
-                    id: "a",
+                    id: "arras",
                     type: "4TDM",
-                    code: "arras-mayhem",
+                     code: "server-1-4",
                      at: serverat,
                 },].map((a, e) => ({
                     data: a,
