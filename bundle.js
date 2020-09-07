@@ -2792,9 +2792,9 @@ function PlaySound210() {
                                         !b.mobile && m ? (aa[q - 1].draw(t.name, c + 45, d + 100 - 6, 9.5, l.guiwhite, "center"), ea[q - 1].draw("[" + m + "]", c + 100 - 4, d + 100 - 6, 9.5, l.guiwhite, "right")) : aa[q - 1].draw(t.name, c + 50, d + 100 - 6, 9.5, l.guiwhite, "center");
                                         g.strokeStyle = l.black;
                                         g.globalAlpha = 1;
-                                        g.lineWidth = 0.01;
+                                        g.lineWidth = 3;
                                         G(c, d, 100, 100, !0);
-                                        0 !== ++x % 5 || b.mobile ? c += 114 * a : (c = f, d += 114)
+                                        0 !== ++x % 5 || b.mobile ? c += 105 * a : (c = f, d += 105)
                                     });
                                     let m = ta("Don't Upgrade", 11) + 10,
                                         t = (h + 100 + 14 + f - 15) / 2,
