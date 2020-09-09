@@ -1,4 +1,7 @@
 # Update
+- Radar branch is now testbed only for being too out of place
+- Re-added Speeder to Tri-angle branch
+# Update
 - Beautified client
 - Added 2 new tanks to the Destroyer branch
 # Update
