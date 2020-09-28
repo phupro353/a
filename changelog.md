@@ -1,4 +1,8 @@
 # Update
+- Hivemind branches off from Basic (Page 2) at Lvl 30 rather than from Inceptioner
+- Added Minishot - Branches off Basic at Lvl 15
+- Reworked Twin Spawner
+# Update
 - Added 10 New Tanks
 - Colony - Branches off Underseer and Hexa Tank
 - Tri-Mega Trapper - Branches off Mega Trapper and Tri-Trapper
