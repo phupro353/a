@@ -1,12 +1,15 @@
 # Update
-- Added working Healer tank and respective branch
-- Tanks will now colide with each other
-- Added 5 New Tanks
+- Added 10 New Tanks
 - Colony - Branches off Underseer and Hexa Tank
 - Tri-Mega Trapper - Branches off Mega Trapper and Tri-Trapper
 - Sharpshooter - Branches off Assassin and Creeper
 - Bent Heavy - Branches off Heavy Twin and Triple Shot
 - Courser - Branches off Pummeller 
+- Trappory - Branches off Trap Guard and Spawner
+- Healer - Branches off Basic (Page 2) at Level 30
+- Ambulance - Branches off Tri-Angle (Page 2) and Healer
+- Mini Sanctuary - Branches off Tri-Trapper and Healer
+- Splitter - Branches off Hivemind and Spawner
 # Update
 - Made bases invincible and unable to be targeted by bots
 - Smasher branch tanks now have a skill boost to make up for their lack of cannons
