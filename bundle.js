@@ -214,6 +214,8 @@
             }
 
             function E(b) {
+                if (B.graphical.noBorders)
+            return l;
                 let d = B.graphical.neon ? l.white : l.black;
                 return B.graphical.darkBorders ? d : T(b, d, l.border)
             }
@@ -478,14 +480,14 @@ function PlaySound210() {
                             break;
                         case "dark":
                           B.graphical.darkBorders = 1,
-            B.graphical.noBorders = T.graphical.neon = 0;
+            B.graphical.noBorders = B.graphical.neon = 0;
                             break;
                         case "glass":
                             B.graphical.darkBorders = !1;
                             B.graphical.neon = !0;
                             break;
                         case "borderless":
-            B.graphical.darkBorders = T.graphical.neon = 0,
+            B.graphical.darkBorders = B.graphical.neon = 0,
             B.graphical.noBorders = 1;
             break;
                         case "neon":
