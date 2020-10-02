@@ -214,8 +214,6 @@
             }
 
             function E(b) {
-                if (B.graphical.noBorders)
-            return l;
                 let d = B.graphical.neon ? l.white : l.black;
                 return B.graphical.darkBorders ? d : T(b, d, l.border)
             }
@@ -476,23 +474,19 @@ function PlaySound210() {
                     b.mobile && H.submitToLocalStorage("optMobile");
                     switch (document.getElementById("optBorders").value) {
                         case "normal":
-           B.graphical.darkBorders = B.graphical.neon = B.graphical.noBorders = 0;
+                            B.graphical.darkBorders =
+                                B.graphical.neon = !1;
                             break;
                         case "dark":
-                          B.graphical.darkBorders = 1,
-            B.graphical.noBorders = B.graphical.neon = 0;
+                            B.graphical.darkBorders = !0;
+                            B.graphical.neon = !1;
                             break;
                         case "glass":
                             B.graphical.darkBorders = !1;
                             B.graphical.neon = !0;
                             break;
-                        case "borderless":
-            B.graphical.darkBorders = B.graphical.neon = 0,
-            B.graphical.noBorders = 1;
-            break;
                         case "neon":
                             B.graphical.darkBorders = B.graphical.neon = !0
-                         B.graphical.noBorders = 0;
                     }
                     H.submitToLocalStorage("optColors");
                     d = document.getElementById("optColors").value;
@@ -2938,7 +2932,7 @@ function PlaySound210() {
                     var c = [
                         ["Stuck on connecting? Click the Starter tab on the client page!", "Stuck on connecting? Press the Starter tab on the client page!"],
                         ["Stuck on connecting? Push the Starter tab on the client page!",
-                            "Tip: If arras is having a low frame rate, you can try enabling low graphics in the options menu.", "Want access to TESTBED? Join the Discord Server!", "Be mindful when others are playing!", "All tanks have up to 10x reload!"
+                            "Tip: If arras is having a low frame rate, you can try enabling low graphics in the options menu.", "Want access to TESTBED? Join the Discord Server!", "The server resets every 10 minutes to clear lag, be wary of this!", "All tanks have up to 10x reload!"
                         ],
                         ["Avoid upgrading the reload stat if you wish for a smooth game", "Have Fun!",
                             "Good Luck!"
