@@ -1,4 +1,7 @@
 # Update
+- Discord bot has been updated
+- The server will kick players without a name now
+# Update
 - Added 6 tanks
 - Antibody - Branches off Underseer and Pathogen
 - Twin Sniper - Branches off Sniper and Twin
