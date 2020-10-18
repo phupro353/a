@@ -3218,17 +3218,17 @@ function PlaySound210() {
           {
             visible: 0,
             id: "3",
-            type: "dev",
+            type: "game",
             code: "glitch-virginia-4",
-            at: p.heroku('arrasmayhem'),
+            at: p.glitch('arrasio5'),
            // featured: 1, // For Featured Status.
           },
                  {
                              visible: 0,
             id: "2",
-            type: "main",
+            type: "game",
             code: "heroku-virginia-4",
-            at: p.heroku('arrasmayhem'),
+            at: p.heroku('arras-mayhem'),
            // featured: 1, // For Featured Status.
           },
           
