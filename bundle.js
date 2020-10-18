@@ -2896,7 +2896,19 @@ function PlaySound210() {
                         let u = M[A.type].position,
                             t = 140 / u.axis;
                         ba(b.screenWidth / 2 - t * u.middle.x * .707 - 190 - 70, b.screenHeight / 2 - 35 + t * u.middle.x * .707 - 10, m, 1.5, 1, .5 * t / m.realSize, -Math.PI / 4, !0);
-                        a.draw("lol you died", d, n - 80, 8, l.guiwhite, "center");
+                                          const BTTIPS = [
+['lol you died'],
+['what happened?'],
+['oof!'],
+          [document.getElementById("playerNameInput") + ' was not the impostor'],
+          ["try another tank, maybe it'll work out."],
+          ['go take a break from arras-mayhem!'],
+          ['You are dead, not big surprise.'],
+          ['this message is a lie.'],
+['press F to pay respects']
+      ]
+        var selectedBTTip = BTTIPS[Math.floor(Math.random() * c.length)];
+                        a.draw(BTTIPS[BTTIPS], d, n - 80, 8, l.guiwhite, "center");
                         e.draw("Level " +
                             A.__s.getLevel() + " " + M[A.type].name, d - 170, n - 30, 24, l.guiwhite);
                         c.draw("Final score: " + H.formatLargeNumber(Math.round(b.finalScore.get())), d - 170, n + 25, 50, l.guiwhite);
@@ -2927,13 +2939,7 @@ function PlaySound210() {
                     return c
                 }
             })();
-        let BTTIPS = [
-['Press ` for TESTBED.'],
-['Press T to teleport.'],
-['Press ; for godmode.'],
-['Press O to commit suicide.']
-      ]
-        var selectedBTTip = []
+      
             const Sa = (() => {
                     var a = m(),
                         e = m();
@@ -2948,7 +2954,6 @@ function PlaySound210() {
                         ]
                     ];
                     c = c[Math.floor(Math.random() * c.length)];
-               selectedBTTip = BTTIPS[Math.floor(Math.random() * c.length)];
                     let g = c[Math.floor(Math.random() * c.length)];
                     return () => {
                         F(l.white, .5);
