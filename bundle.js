@@ -2941,7 +2941,7 @@ function PlaySound210() {
                     var c = [
                         ["Stuck on connecting? Click the Starter tab on the client page!", "Stuck on connecting? Press the Starter tab on the client page!"],
                         ["Stuck on connecting? Push the Starter tab on the client page!",
-                            "Tip: If arras is having a low frame rate, you can try enabling low graphics in the options menu.", "Want access to TESTBED? Join the Discord Server!", "The server resets every 10 minutes to clear lag, be wary of this!", "All tanks have up to 10x reload!"
+                            "Tip: If arras is having a low frame rate, you can try enabling low graphics in the options menu.", "Want access to TESTBED? Join the Discord Server!", "Have you tried Diep.io yet?", "All tanks have up to 10x reload!"
                         ],
                         ["Avoid upgrading the reload stat if you wish for a smooth game", "Have Fun!",
                             "Good Luck!"
