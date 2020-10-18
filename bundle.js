@@ -3160,9 +3160,10 @@ function PlaySound210() {
             z: "Private",
             local: "Local",
             dvi: "DVI",
-            glitch: "Glitch",
+        
             os: "OpenShift",
             heroku: "Heroku",
+                glitch: "Glitch",
             linode: "Linode",
             vultr: "Vultr",
             buyvm: "BuyVM",
@@ -3208,44 +3209,29 @@ function PlaySound210() {
           {
             visible: 0,
             id: "1",
-            type: "game",
-            code: "glitch-worldwide-f",
-            at: p.glitch('arrasio5'),
-            prefer: !0,
-           // featured: 1, // For Featured Status.
-          },
-          {
-            visible: 0,
-            id: "2",
-            type: "game",
-            code: "glitch-worldwide-f",
+            type: "beta",
+            code: "heroku-frankfurt-4",
             at: p.heroku('arrasdotio'),
-           // featured: 1, // For Featured Status.
+            prefer: !0,
+            featured: 1, // For Featured Status.
           },
           {
             visible: 0,
-            id: "2",
-            type: "game",
-            code: "glitch-worldwide-f",
-            at: p.glitch('your-server'),
+            id: "3",
+            type: "dev",
+            code: "glitch-virginia-4",
+            at: p.heroku('arrasmayhem'),
            // featured: 1, // For Featured Status.
           },
-          {
-            visible: 0,
+                 {
+                             visible: 0,
             id: "2",
-            type: "game",
-            code: "glitch-worldwide-f",
-            at: p.glitch('your-server'),
+            type: "main",
+            code: "heroku-virginia-4",
+            at: p.heroku('arrasmayhem'),
            // featured: 1, // For Featured Status.
           },
-          {
-            visible: 0,
-            id: "2",
-            type: "game",
-            code: "glitch-worldwide-f",
-            at: p.glitch('your-server'),
-           // featured: 1, // For Featured Status.
-          },
+          
         ]
           .map((a, e) => ({ data: a, i: e }))
           .sort((a, e) =>
