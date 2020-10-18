@@ -2896,7 +2896,7 @@ function PlaySound210() {
                         let u = M[A.type].position,
                             t = 140 / u.axis;
                         ba(b.screenWidth / 2 - t * u.middle.x * .707 - 190 - 70, b.screenHeight / 2 - 35 + t * u.middle.x * .707 - 10, m, 1.5, 1, .5 * t / m.realSize, -Math.PI / 4, !0);
-                     let deathtips = [
+                                           let deathtips = [
 ['lol you died'],
 ['what happened?'],
 ['oof!'],
@@ -2907,9 +2907,9 @@ function PlaySound210() {
           ['this message is a lie.'],
 ['press F to pay respects']
       ]
-                      deathtipChoice: 0,
-          deathtips = Math.floor(Math.random() * deathtips.length),
-                        a.draw(deathtips[deathtipChoice], d, n - 80, 8, l.guiwhite, "center");
+ let dmes = deathtips[Math.floor(Math.random() * deathtips.length)];
+                       dmeschoice = Math.floor(Math.random() * E.deathSplash.length),
+                        a.draw(dmes[dmeschoice], d, n - 80, 8, l.guiwhite, "center");
                         e.draw("Level " +
                             A.__s.getLevel() + " " + M[A.type].name, d - 170, n - 30, 24, l.guiwhite);
                         c.draw("Final score: " + H.formatLargeNumber(Math.round(b.finalScore.get())), d - 170, n + 25, 50, l.guiwhite);
