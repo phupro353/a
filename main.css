@@ -224,18 +224,22 @@ a.menuTab {
 }
 a.menuTab.discord {
    padding: 6px 10px 7px 28px;
+      animation:pfpDefault 800ms linear both;
   background: #7289DA url("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/svg0.svg") 4px 3px/21px no-repeat;
 }
   a.menuTab.catto {
       background: #f00 url("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/coder.png") 8px 6px no-repeat;
   padding: 6px 10px 7px 28px;
+        animation:pfpDefault 800ms linear both;
 }
 a.menuTab.stat {
   background: #1E8449  url("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/play.png") 3px 2px/23px no-repeat;
   padding: 6px 10px 7px 28px;
+      animation:pfpDefault 800ms linear both;
 }
 a.menuTab:link:hover, a.menuTab:visited:hover {
   text-decoration: underline;
+      animation:pfpHoverOn 800ms linear both;
 }
 
 .changelogSelectorContainer {
@@ -515,6 +519,7 @@ body.mobile .icon {
   height: 40px;
   box-sizing: border-box;
   color: white;
+    animation:pfpDefault 800ms linear both;
   text-align: center;
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.2);
   background: #A9D86D;
@@ -528,6 +533,7 @@ body.mobile .icon {
 #startButton:hover {
   margin-top: 1px;
   height: 39px;
+    animation: pfpHoverOn 1s linear both;
   border-bottom: 1px solid #8ABC3F;
 }
 
