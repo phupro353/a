@@ -3074,7 +3074,7 @@ function PlaySound210() {
             const p = {
                 openshift: (a, e) => `n-${a}-${e}.7e14.starter-us-west-2.openshiftapps.com`,
                 glitch: a => `${a}.glitch.me`,
-                replit: (a, e) => `${e}.${a}.repl.co`,
+                replit: a => `${a}.repl.co`,
                 heroku: a => `${a}.herokuapp.com`,
                 arras: (a, e = 5E3) => `ip-${a}.arras.io:${e}`,
                 arrasUnknown: (a, e = 5E3) => `ipu-${a}.arras.io:${e}`
@@ -3158,6 +3158,7 @@ function PlaySound210() {
         
             os: "OpenShift",
             heroku: "Heroku",
+               replit: "Repl.it",
                 glitch: "Glitch",
             linode: "Linode",
             vultr: "Vultr",
@@ -3211,6 +3212,15 @@ function PlaySound210() {
             featured: 1, // For Featured Status.
           },
           {
+              visible: 0,
+            id: "Heroku-FFA",
+            type: "ffa",
+            code: "heroku-frankfurt-f",
+            at: p.heroku('arras-moe'),
+            prefer: !0,
+            featured: 1, // For Featured Status.
+          },
+          {
             visible: 0,
             id: "Glitch-Developer",
             type: "dev",
@@ -3224,6 +3234,14 @@ function PlaySound210() {
             type: "main",
             code: "heroku-virginia-4",
             at: p.heroku('arras-mayhem'),
+           // featured: 1, // For Featured Status.
+          },
+     {     
+                              visible: 0,
+            id: "Repl.it-Legacy",
+            type: "legacy",
+            code: "replit-virginia-2",
+            at: p.replit('arras-mayhem-legacy.seaguli'),
            // featured: 1, // For Featured Status.
           },
           
