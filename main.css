@@ -433,7 +433,7 @@ body.mobile .startMenuSlidingContent {
 .icon {
   display: block;
   width: 96px;
-  padding-top: 3.75px;
+  padding-top: 4px;
   height: 96px;
   border-radius: 50%;
    animation:pfpDefault 800ms linear both;
@@ -442,6 +442,11 @@ body.mobile .startMenuSlidingContent {
 .icon:hover {
      animation:pfpHoverOn 800ms linear both;
 }
+
+.icon:active {
+     animation:pfpDefault 400ms linear both;
+}
+
 
 body.mobile .icon {
   width: 55px;
