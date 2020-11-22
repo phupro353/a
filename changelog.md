@@ -1,4 +1,9 @@
 # Update
+- Perfomed some fixes on death screen messages
+- Added 2 New Tanks
+- Katana - Branches off Akafuji
+- Cutlass - Branches off Akafuji
+# Update
 - Reworked Exploder branch mechanics -
 Bullets will create an explosion upon death, rather than after a delay
 - Added Fragmenter - Branches off Mega-Trapper and Exploder
