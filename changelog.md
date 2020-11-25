@@ -1,4 +1,7 @@
 # Update
+- Made some minor client updates
+- Pssst, try clicking on the icon!
+# Update
 - Perfomed some fixes on death screen messages
 - Added 2 New Tanks
 - Katana - Branches off Akafuji
