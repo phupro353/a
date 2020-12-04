@@ -2832,7 +2832,6 @@ function PlaySound210() {
                                     K(t - m / 2, t + m / 2, v + 7, 14, l.white);
                                   g.globalAlpha = 1;
                                     fa.draw("Don't Upgrade", t, v + 7, 12, l.guiwhite, "center", !0);
-                                                                                                      fa.onclick = PlaySound210;
                                     b.clickables.skipUpgrades.place(0, (t - m / 2) * n, v * n, m * n, 14 * n)
                                 } else b.clickables.upgrade.hide(), b.clickables.skipUpgrades.hide()
                             }
