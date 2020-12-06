@@ -3801,6 +3801,12 @@ function PlaySound210() {
                                         });
                                     break;
                                 case a.KEY_SCREENSHOT:
+                                                         a.messages.push({
+                                                    text: "Saving screenshot...",
+                                                    status: 2,
+                                                    alpha: 0,
+                                                    time: Date.now()
+                                                });
                                     var x = this.cv.toDataURL();
                                     k = atob(x.split(",")[1]);
                                     x = x.split(",")[0].split(":")[1].split(";")[0];
@@ -3810,9 +3816,10 @@ function PlaySound210() {
                                     let q = URL.createObjectURL(new Blob([p], {
                                             type: x
                                         })),
+                
                                         w = document.createElement("a");
                                     w.style.display = "none";
-                                    w.setAttribute("download", "screenshot.png");
+                                    w.setAttribute("download", "arras.png");
                                     w.setAttribute("href", q);
                                     document.body.appendChild(w);
                                     setTimeout(() => {
