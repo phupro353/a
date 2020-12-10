@@ -1,4 +1,17 @@
 # Update
+- Added 8 new tanks
+- Stiletto - Branches off Lancer and Minishot
+- Bent Sniper - Branches off Twin Sniper and Triple Shot
+- Governor - Branches off Overseer
+- Coroner - Branches off Underseer and Smasher
+- Thrasher - Branches off Smasher
+- Silencer - Branches off Cloaker and Rifle
+- Recon - Branches off Gunner and Cloaker
+- Shadow Tank - Branches off Cloaker
+- Fixed bug with Akafuji
+- Buffed Shrapnel's secondary bullets 
+- Updated Beta Client's font
+# Update
 - Made some minor client updates
 - Pssst, try clicking on the icon!
 # Update
