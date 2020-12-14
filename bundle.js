@@ -461,7 +461,7 @@ function PlaySound210() {
 }
       
          var smallaudio2 = new Audio();
-smallaudio2.src = ("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/snd_glo_crackfail.wav");
+smallaudio2.src = ("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/snd_glo_crackfail.ogg");
 function PlaySound211() { 
   smallaudio2.play();
 }
