@@ -462,8 +462,8 @@ function PlaySound210() {
       
          var smallaudio2 = new Audio();
 smallaudio2.src = ("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/snd_glo_crackfail.wav");
-function PlaySound211() {
-    smallaudio2.play();
+function PlaySound211() { 
+  smallaudio2.play();
 }
 
             function t() {
@@ -1495,7 +1495,7 @@ function PlaySound211() {
             document.getElementById("startButton").onclick = () => {
                                         PlaySound210()
                   var inputVal = document.getElementById("playerNameInput").value;
-               if (inputVal === "") return PlaySound211() & setTimeout(alert("Please enter a name!"), 30000)
+               if (inputVal === "") return PlaySound211(), setTimeout(alert("Please enter a name!"), 30000)
                 t()
             };
             let La = WebSocket.prototype.close;
