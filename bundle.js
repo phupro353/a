@@ -1922,7 +1922,9 @@ function PlaySound210() {
                                     P = Math.round(c.reduce((b, a) => b + a, 0) / c.length);
                                     b.gameStart = !0;
                                     b.message = "";
-                                
+                                    ia && !b.mobile && aiptag.cmd.display.push(function() {
+                                        aipDisplayTag.clear("arras-io_336x280")
+                                    })
                                 }
                                 break;
                             case "m":
@@ -1971,6 +1973,9 @@ function PlaySound210() {
                             for (d = 0; d < c[5]; d++) b.finalKillers.push(c[6 + d]);
                             b.died = !0;
                             b.respawnOn = Date.now() + (ia ? 5E3 : 3E3);
+                            ia ? clearInterval(qa) : !b.mobile && (aiptag.cmd.display.push(function() {
+                                aipDisplayTag.display("arras-io_728x90")
+                            }), d = document.getElementById("respawn-banner")) && (d.style.display = "block");
                         case "K":
                             b.isInGame = !1;
                             c[0] && (b.message = c[0]);
