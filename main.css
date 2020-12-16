@@ -551,7 +551,6 @@ body.mobile .icon {
 #startButton:hover {
   margin-top: 1px;
   height: 39px;
-    animation: pfpHoverOn 1s linear both;
   border-bottom: 1px solid #8ABC3F;
 }
 
