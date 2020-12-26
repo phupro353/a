@@ -834,9 +834,10 @@ i {
   transition: transform 500ms;
 }
 i.arrow {
-
+  border: solid #484848;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
   padding: 3px;
-  background: #7289DA url("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/svg0.svg") 4px 3px/21px no-repeat;
 }
 i.reset {
   display: inline-block;
