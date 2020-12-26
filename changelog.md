@@ -1,4 +1,8 @@
 # Update
+- Music is now randomized
+- Overhauled the Discord controller
+- Added Fallen Booster as a Testbed and Boss tank
+# Update
 - Added 8 new tanks
 - Stiletto - Branches off Lancer and Minishot
 - Bent Sniper - Branches off Twin Sniper and Triple Shot
