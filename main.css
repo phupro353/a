@@ -415,8 +415,10 @@ body.mobile #optMobile, body.mobile #optBorders {
   top: 0px;
   opacity: 1;
   width: 100%;
-  transition: top 500ms, opacity 500ms;
+    transition: top 600ms, opacity 500ms;
+  animation:pfpDefault 800ms linear both;
 }
+
 .slided .slider {
   top: -275px;
 }
