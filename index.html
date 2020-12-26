@@ -34,20 +34,29 @@ function PlaySound1() {
     bflat2.play();
 }
 </script>
-                                           <audio loop id = "music">
-                            <source
-                                      type = "audio/mpeg"
-                                      src = "https://vgmsite.com/soundtracks/nekopara-op-ed-singles/haqatbuskv/03%20Taiyou%20Paradise%20%28inst%20ver.%29.mp3"/>
-                                 Your browser doesn't support music, but can it support arras?
-                               </audio>
-                    
+                            <script>
+var music2 = new Audio();
+                                  const months = ["https://vgmsite.com/soundtracks/nekopara-vol.-1/gtljryuc/02.%20Cat%20Work.mp3", "https://vgmsite.com/soundtracks/nekopara-vol.-1/suriwhlo/06.%20Neko%20To%20Sanpo.mp3", "https://vgmsite.com/soundtracks/nekopara-vol.-1/ojrqfrid/08.%20Nya%20Soleil.mp3"];
+
+var rand = months[~~(Math.random() * months.length)];
+music2.src = (rand);
+function PlayMusic() {
+  music2.load();   
+    music2.play();
+}
+</script>
+
                           <script>
                             
                           function switchAudio() {
                               if (document.getElementById("optSound").checked === true) {
-                                  document.getElementById("music").play()
+                                   music2.play()
+                                  music2.addEventListener('ended', function() {
+    this.currentTime = 0;
+    this.play();
+}, false);
                               } else if (document.getElementById("optSound").checked === false) {
-                                   document.getElementById("music").pause()
+                                   music2.pause()
                               }
                               return;
                           }
