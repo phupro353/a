@@ -751,7 +751,7 @@ select {
   padding: 2px 28px 2px 8px;
   height: 21px;
   margin-left: 3px;
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAICAYAAAD0g6+qAAAAwklEQVQoU42QMQrCQBBFZxeGgJ7BI1jYa2GzTTY3sRUECy1yA0svEQhhEHIHLdRrqF2a5EuCkbgmmin/zLz5f5QxZsTMK2ZeR1F0p5ay1i7zPD+LiLT1S01Za7dEtCGiY5Zl8zRNH81h3/d3SqkFgFOSJJNOUBAEAwAHIpq6sAbkprWexXF86QSVjTaY53nhy8lfSBWtvuDAKhlAL8gHyHUGAFrr8a84zZhvR7VojBkyc1gUxV5Erl0/cfUvUN9Fd+4JA1JkCdbmVf8AAAAASUVORK5CYII=) 100% no-repeat #eee;
+background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAICAYAAAD0g6+qAAAAwklEQVQoU42QMQrCQBBFZxeGgJ7BI1jYa2GzTTY3sRUECy1yA0svEQhhEHIHLdRrqF2a5EuCkbgmmin/zLz5f5QxZsTMK2ZeR1F0p5ay1i7zPD+LiLT1S01Za7dEtCGiY5Zl8zRNH81h3/d3SqkFgFOSJJNOUBAEAwAHIpq6sAbkprWexXF86QSVjTaY53nhy8lfSBWtvuDAKhlAL8gHyHUGAFrr8a84zZhvR7VojBkyc1gUxV5Erl0/cfUvUN9Fd+4JA1JkCdbmVf8AAAAASUVORK5CYII=) 100% no-repeat #eee;
   /*
   let canvas = document.body.appendChild(document.createElement('canvas'))
   canvas.width = Math.ceil(8 * Math.sqrt(2)) + 6
