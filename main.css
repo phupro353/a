@@ -72,18 +72,14 @@ h3 {
   width: 100%;
   height: 20px;
   box-sizing: border-box;
-    animation:pfpDefault 800ms linear both;
   background: #b1d5fc;
     border-bottom: 2px solid #70b5ff;
   box-shadow: inset 0 -2px #70b5ff;
   border: 0;
 }
-h3:hover { 
-   margin-top: 1px;
-  height: 19px;
-  border-bottom: 1px solid #70b5ff;}
 #startMenuSlidingTrigger:hover > h3 {
   color: #323232;
+  background-color: blue;
 }
 
 #startMenuSlidingTrigger:hover > h3 > i.arrow {
