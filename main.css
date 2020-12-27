@@ -79,7 +79,10 @@ h3 {
 }
 #startMenuSlidingTrigger:hover > h3 {
   color: #323232;
-  background-color: blue;
+}
+#startMenuSlidingTrigger:active > h3 {
+  color: #323232;
+     animation:pfpDefault 800ms linear both;
 }
 
 #startMenuSlidingTrigger:hover > h3 > i.arrow {
