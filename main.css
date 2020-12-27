@@ -68,6 +68,14 @@ h3 {
   text-align: center;
   padding: 0;
   margin: 4px 0;
+  width: 70%;
+  height: 20px;
+  box-sizing: border-box;
+    animation:pfpDefault 800ms linear both;
+  text-align: center;
+  background: #add8e6;
+  border: 0;
+  border-radius: 5px;
 }
 #startMenuSlidingTrigger:hover > h3 {
   color: #323232;
@@ -793,6 +801,7 @@ select:active {
   color: #fff;
   margin: 0 4px;
 }
+
 .tooltip::before {
   content: '?';
 }
