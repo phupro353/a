@@ -459,7 +459,26 @@ smallaudio.src = ("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/sysse
 function PlaySound210() {
     smallaudio.play();
 }
-      
+    var clicked = false;
+
+    function doSomething()
+   {
+      if(clicked)
+     {
+    var bflat25 = new Audio();
+bflat25.src = ("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/sysse_cancel.ogg");
+  bflat25.load();   
+    bflat25.play();
+     }
+    else
+    {
+var bflat33 = new Audio();
+bflat33.src = ("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/sysse_ok.ogg");
+        bflat33.load();   
+    bflat33.play();
+    }
+   clicked = !clicked;
+}
          var smallaudio2 = new Audio();
 smallaudio2.src = ("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/snd_glo_crackfail.ogg");
 function PlaySound211() { 
@@ -1122,7 +1141,7 @@ function PlaySound211() {
                             c.style.transform =
                                 c.style.webkitTransform = b ? "translate(2px, -2px) rotate(45deg)" : "rotate(-45deg)";
                             h.innerText = b ? "close options" : "view options";
-                          PlaySound210();
+                          doSomething()
                             b ? u.classList.add("slided") : u.classList.remove("slided");
                             y[0].style.opacity = b ? 0 : 1;
                             y[2].style.opacity = b ? 1 : 0
