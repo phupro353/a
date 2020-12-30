@@ -480,7 +480,7 @@ bflat33.src = ("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/sysse_ok
    clicked = !clicked;
 }
          var smallaudio2 = new Audio();
-smallaudio2.src = ("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/snd_glo_crackfail.ogg");
+smallaudio2.src = ("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/error.ogg");
 function PlaySound211() { 
   smallaudio2.play();
 }
