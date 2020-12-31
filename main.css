@@ -50,6 +50,9 @@ h1 {
   text-align: center;
   font: bold 40px/1.1 Ubuntu;
 }
+body.mobile h1 {
+  font-size: 32px;
+}
 h4 {
   text-align: center;
   padding: 0;
