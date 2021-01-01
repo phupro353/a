@@ -106,13 +106,13 @@ function PlaySound() {
               <input type="text" autofocus tabindex="1" title="Your name"  spellcheck="false" placeholder="Start the mayhem as" id="playerNameInput" maxlength="28">
               <input type="password" tabindex="1"  title="Use this field if you have a Token for Testbed access" placeholder="Token" id="playerKeyInput" maxlength="48">
             </div>
-            <div class="slider" id="startMenuSlidingTrigger" onmouseover="PlaySound1()">
+            <div class="slider" id="startMenuSlidingTrigger" onmouseover="PlaySound1()" title="Options, controls and more links">
               <h3>
                 <span id="viewOptionText" >view options</span>&nbsp;&nbsp;<i class="arrow" id="optionArrow" style="transform:rotate(-45deg);-webkit-transform:rotate(-45deg)"></i>
               </h3>
             </div>
             <div class="slider startMenuSlidingContent">
-              <div class="controlTable optionsHeader" onclick="PlaySound3()" >Advanced Controls <i id="resetControls" class="reset resetControls" title="Reset controls"></i><i id="moreControls" class="moreControls cross" title="More controls"></i></div>
+              <div class="controlTable optionsHeader" title="More Controls" onclick="PlaySound3()" >Advanced Controls <i id="resetControls" class="reset resetControls" title="Reset controls"></i><i id="moreControls" class="moreControls cross" title="More controls"></i></div>
               <table class="controlTable" id="controlTable">
                 <tbody>
                   <tr>
