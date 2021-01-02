@@ -3240,7 +3240,7 @@ function PlaySound211() {
               { id: "4", to: "4 Team", end: "4TDM" }
             ],
             [
-              { id: "d", to: "Domination" },
+              { id: "d", to: "4DOM" },
               { id: "m", to: "Mothership", remove: "2" },
               { id: "a", to: "Assault", remove: "2" }
             ]
@@ -3272,6 +3272,14 @@ function PlaySound211() {
             type: "dev",
             code: "glitch-virginia-f",
             at: p.glitch('arrasio5'),
+           // featured: 1, // For Featured Status.
+          },
+                        {
+            visible: 0,
+            id: "Glitch-Domination",
+            type: "dominaton",
+            code: "glitch-virginia-d",
+            at: p.glitch('arras-mayhem-webserver'),
            // featured: 1, // For Featured Status.
           },
                  {
