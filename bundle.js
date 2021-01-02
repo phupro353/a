@@ -2943,7 +2943,7 @@ function PlaySound211() {
                             t = 140 / u.axis;
                         ba(b.screenWidth / 2 - t * u.middle.x * .707 - 190 - 70, b.screenHeight / 2 - 35 + t * u.middle.x * .707 - 10, m, 1.5, 1, .5 * t / m.realSize, -Math.PI / 4, !0);
        var inputVal = document.getElementById("playerNameInput").value;
-                        a.draw(inputVal + " was not The Impostor", d, n - 80, 8, l.guiwhite, "center");
+                        a.draw("lol you died", d, n - 80, 8, l.guiwhite, "center");
                         e.draw("Level " +
                             A.__s.getLevel() + " " + M[A.type].name, d - 170, n - 30, 24, l.guiwhite);
                         c.draw("Final score: " + H.formatLargeNumber(Math.round(b.finalScore.get())), d - 170, n + 25, 50, l.guiwhite);
