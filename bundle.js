@@ -1949,7 +1949,7 @@ function PlaySound211() {
                                     b.gameStart = !0;
                                     b.message = "";
                                  
-                                    }
+                                  
                                 }
                                 break;
                             case "m":
@@ -1998,7 +1998,7 @@ function PlaySound211() {
                             for (d = 0; d < c[5]; d++) b.finalKillers.push(c[6 + d]);
                             b.died = !0;
                             b.respawnOn = Date.now() + (ia ? 5E3 : 3E3);
-                        ), d = document.getElementById("respawn-banner")) && (d.style.display = "block");
+            
                         case "K":
                             b.isInGame = !1;
                             c[0] && (b.message = c[0]);
@@ -3669,7 +3669,7 @@ function PlaySound211() {
                         case a.KEY_SPAWN:
                             if (a.died && (a.respawnOn <= Date.now() || e.shiftKey) && (this.spawn(a.playerName), a.died = !1, !a.mobile)) {
                           
-                                });
+                                
                                 var k = document.getElementById("respawn-banner");
                                 k && (k.style.display = "none")
                             }
