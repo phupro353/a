@@ -1948,9 +1948,8 @@ function PlaySound211() {
                                     P = Math.round(c.reduce((b, a) => b + a, 0) / c.length);
                                     b.gameStart = !0;
                                     b.message = "";
-                                    ia && !b.mobile && aiptag.cmd.display.push(function() {
-                                        aipDisplayTag.clear("arras-io_336x280")
-                                    })
+                                 
+                                    }
                                 }
                                 break;
                             case "m":
@@ -1999,9 +1998,7 @@ function PlaySound211() {
                             for (d = 0; d < c[5]; d++) b.finalKillers.push(c[6 + d]);
                             b.died = !0;
                             b.respawnOn = Date.now() + (ia ? 5E3 : 3E3);
-                            ia ? clearInterval(qa) : !b.mobile && (aiptag.cmd.display.push(function() {
-                                aipDisplayTag.display("arras-io_728x90")
-                            }), d = document.getElementById("respawn-banner")) && (d.style.display = "block");
+                        ), d = document.getElementById("respawn-banner")) && (d.style.display = "block");
                         case "K":
                             b.isInGame = !1;
                             c[0] && (b.message = c[0]);
@@ -3671,8 +3668,7 @@ function PlaySound211() {
                     switch (e.keyCode) {
                         case a.KEY_SPAWN:
                             if (a.died && (a.respawnOn <= Date.now() || e.shiftKey) && (this.spawn(a.playerName), a.died = !1, !a.mobile)) {
-                                window.aiptag.cmd.display.push(function() {
-                                    window.aipDisplayTag.clear("arras-io_728x90")
+                          
                                 });
                                 var k = document.getElementById("respawn-banner");
                                 k && (k.style.display = "none")
