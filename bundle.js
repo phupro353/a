@@ -662,9 +662,9 @@ function PlaySound211() {
             a("config", "UA-120544149-1");
             let ia = !1,
                 qa = null;
-            Va.on(!0, () => {
+            Va.on(!1, () => {
                 //document.getElementById("referral-fallback").style.display = "block";
-                ia = !0;
+                ia = !1;
                 a("event", "yes_adblock", {
                     event_category: "adblock_detection",
                     non_interaction: !0
