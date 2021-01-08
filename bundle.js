@@ -660,11 +660,11 @@ function PlaySound211() {
             window.dataLayer = window.dataLayer || [];
             a("js", new Date);
             a("config", "UA-120544149-1");
-            let ia = !1,
+            let ia = !0,
                 qa = null;
-            Va.on(!1, () => {
+            Va.on(!0, () => {
                 //document.getElementById("referral-fallback").style.display = "block";
-                ia = !1;
+                ia = !0;
                 a("event", "yes_adblock", {
                     event_category: "adblock_detection",
                     non_interaction: !0
@@ -1916,13 +1916,13 @@ function PlaySound211() {
                                 z.rendery = z.cy;
                                 z.renderv = z.view;
                                 ia && (clearInterval(qa), Y.push({
-                                    text: "You're using an adblocker, that's cool!",
+                                    text: "Thank you for playing arras-mayhem!",
                                     status: 2,
                                     alpha: 0,
                                     time: Date.now()
                                 }), qa = setInterval(() => {
                                     Y.push({
-                                        text: "You're using an adblocker, that's cool!",
+                                        text: "Thank you for playing arras-mayhem!",
                                         status: 2,
                                         alpha: 0,
                                         time: Date.now()
