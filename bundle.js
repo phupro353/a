@@ -2948,7 +2948,7 @@ function PlaySound211() {
                         g.draw(x(), d - 170, n + 77, 16, l.guiwhite);
                         k.draw(q(), d - 170, n + 99, 16, l.guiwhite);
                         m = Math.ceil((b.respawnOn - Date.now()) / 1E3);
-                        f.draw(0 < m ? `You may respawn in ${m} second${1===m?"":"s"}` : "joysticks" === U.control ? "Tap to respawn!" : "Press enter to respawn!",
+                        f.draw(0 < m ? `⌛ You may respawn in ${m} second${1===m?"":"s"}` : "joysticks" === U.control ? "Tap to respawn!" : "Press enter to respawn!",
                             d, n + 125, 16, l.guiwhite, "center")
                     }
                 })();
