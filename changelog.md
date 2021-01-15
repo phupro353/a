@@ -1,5 +1,9 @@
 # Update
 - Eggs, Squares and Triangles will now spawn naturally and will no longer despawn.
+- And with that brings 3 new tanks, all branching off Underseer:
+- Pentaseer 
+- Triseer
+- Eggseer
 # Update
 - Added 5 New Tanks
 - Twin Trapper - Branches off Twin and Trapper
