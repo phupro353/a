@@ -1,4 +1,6 @@
 # Update
+- Eggs, Squares and Triangles will now spawn naturally and will no longer despawn.
+# Update
 - Added 5 New Tanks
 - Twin Trapper - Branches off Twin and Trapper
 - Bent Trapper - Branches off Twin Trapper and Triple Shot
