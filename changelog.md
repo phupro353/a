@@ -1,4 +1,12 @@
 # Update
+- Added 5 New Tanks
+- Twin Trapper - Branches off Twin and Trapper
+- Bent Trapper - Branches off Twin Trapper and Triple Shot
+- Twin Mega-Trapper - Branches off Twin Trapper and Mega Trapper
+- Blowtorch - Branches off Pummeller and Minigun
+- Tracer - Branches off Shotgun and Creeper
+
+# Update
 - Nerfed the entire Hivemind branch
 - Buffed the entire Smasher branch
 - Nerfed Sidewinder 
