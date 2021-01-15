@@ -3272,7 +3272,7 @@ function PlaySound211() {
            // featured: 1, // For Featured Status.
           },
                         {
-            visible: 0,
+            visible: 1,
             id: "Glitch-Domination",
             type: "dominaton",
             code: "glitch-virginia-d",
