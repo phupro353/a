@@ -5,7 +5,7 @@
 - Twin Mega-Trapper - Branches off Twin Trapper and Mega Trapper
 - Blowtorch - Branches off Pummeller and Minigun
 - Tracer - Branches off Shotgun and Creeper
-
+- Selected Discord Users can now place the server into lockdown - No players can spawn during a lockdown, and any trying to spawn will be kicked. Abusers beware!
 # Update
 - Nerfed the entire Hivemind branch
 - Buffed the entire Smasher branch
