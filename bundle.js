@@ -2978,11 +2978,11 @@ function PlaySound211() {
                         e = m();
                     m();
                     var c = [
-                        ["Stuck on connecting? Click the Starter tab on the client page!", "Stuck on connecting? Press the Starter tab on the client page!"],
-                        ["Stuck on connecting? Push the Starter tab on the client page!",
+                        ["Be mindful of others! Refrain from using laggy tanks or god mode while others are present!", "Stuck on connecting? Refresh the page, or try another server."],
+                        ["Press the '\' key to chat!",
                             "Tip: If arras is having a low frame rate, you can try enabling low graphics in the options menu.", "Want access to TESTBED? Join the Discord Server!", "Have you tried Diep.io yet?", "All tanks have up to 10x reload!"
                         ],
-                        ["Avoid upgrading the reload stat if you wish for a smooth game", "Have Fun!",
+                        ["Avoid upgrading the reload stat if you wish for a smooth game!", "Have Fun!",
                             "Good Luck!"
                         ]
                     ];
@@ -3712,7 +3712,7 @@ function PlaySound211() {
                 if (a.isChatMode === false)                         
                 {
                     // Chat input textbox.
-                    let chatInput = document.createElement('input');
+                    let chatInput = document.createElement('chatinput');
                     chatInput.id = 'chatInput';
                     chatInput.tabindex = 4;
                     chatInput.style.font = 'bold 18px Ubuntu';
@@ -3789,7 +3789,7 @@ function PlaySound211() {
                 }
                 else 
                 {   // Already in chat mode, focus the chat input textbox.
-                    let existingChatInput = document.getElementById('chatInput');
+                    let existingChatInput = document.getElementById('chattyInput');
                     if (existingChatInput)
                     {
                         // Remove 'h' from the input.
