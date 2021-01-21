@@ -1,4 +1,9 @@
 # Update
+- Added a profanity fiter to the chat and player names
+# Update :D
+- Added a long awaited in-game chat function
+- Press '\' to access it
+# Update
 - Reworked Testbed Menu's layout
 - Changed Pelleter's look
 - Added 8 New Tanks
