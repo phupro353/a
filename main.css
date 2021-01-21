@@ -121,9 +121,7 @@ h3 {
   color: #8ABC3F;
   cursor: default;
 }
-chattyinput {
-opacity: 0.5;
-}
+
 .shadowScroll {
   overflow-y: scroll;
   background:

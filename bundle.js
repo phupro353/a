@@ -3712,7 +3712,7 @@ function PlaySound211() {
                 if (a.isChatMode === false)                         
                 {
                     // Chat input textbox.
-                    let chatInput = document.createElement('chatInput');
+                    let chatInput = document.createElement('input');
                     chatInput.id = 'chatInput';
                     chatInput.tabindex = 4;
                     chatInput.style.font = 'bold 18px Ubuntu';
