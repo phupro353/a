@@ -3722,7 +3722,8 @@ function PlaySound211() {
                     // Chat input wrapper div.
                     let chatInputWrapper = document.createElement('div');                        
                     chatInputWrapper.style.position = 'absolute';                            
-                    chatInputWrapper.style.width = '720px';                        
+                    chatInputWrapper.style.width = '720px';     
+                      chatInputWrapper.style.opacity = '0.8';  
                     chatInputWrapper.style.left = '50%';
                     chatInputWrapper.style.bottom = '100px';
                     chatInputWrapper.style.transform = 'translate(-50%, -50%)';
