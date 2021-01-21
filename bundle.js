@@ -3789,7 +3789,7 @@ function PlaySound211() {
                 }
                 else 
                 {   // Already in chat mode, focus the chat input textbox.
-                    let existingChatInput = document.getElementById('Input');
+                    let existingChatInput = document.getElementById('chatInput');
                     if (existingChatInput)
                     {
                         // Remove 'h' from the input.
