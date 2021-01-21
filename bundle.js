@@ -3674,9 +3674,104 @@ function PlaySound211() {
                                 k && (k.style.display = "none")
                             }
                             break;
-               
-            break;
                         case a.KEY_UP_ARROW:
+                                    case a.KEY_UP_ARROW:
+              case 72:
+            if (!a.died)
+            {               
+                if (a.isChatMode === false)                         
+                {
+                    // Chat input textbox.
+                    let chatInput = document.createElement('input');
+                    chatInput.id = 'chatInput';
+                    chatInput.tabindex = 4;
+                    chatInput.style.font = 'bold 18px Consolas';
+                    chatInput.maxlength = '100';
+                    chatInput.placeholder = 'Enter to send.Esc to cancel.';
+                  
+                    // Chat input wrapper div.
+                    let chatInputWrapper = document.createElement('div');                        
+                    chatInputWrapper.style.position = 'absolute';                            
+                    chatInputWrapper.style.width = '720px';                        
+                    chatInputWrapper.style.left = '50%';
+                    chatInputWrapper.style.bottom = '100px';
+                    chatInputWrapper.style.transform = 'translate(-50%, -50%)';
+                    chatInputWrapper.style.margin = '0 auto';
+                    chatInputWrapper.style.visibility = 'hidden';
+                 
+                    chatInputWrapper.appendChild(chatInput);  
+                    document.body.appendChild(chatInputWrapper);  
+                  
+                  
+                    // Sending chat.
+                    chatInput.addEventListener('keydown', function(event) 
+                    {
+                        if (event.key === 'Enter' || event.keyCode === 13) 
+                        {   
+                            // ============================================================                             
+                            // Check again if the player died, otherwise, it hangs the client.
+                            // There will be an error saying that "color is undefined" in app.js file.
+                            // ============================================================
+
+                        let Y = chatInput.value;
+                                if (Y)
+                                {
+                                    let maxLen = 100; 
+                                    let trimmedMessage = Y.length > maxLen ? Y.substring(0, maxLen - 3) + "..." : Y.substring(0, maxLen); 
+                                    
+                                    a.socket.talk('h', trimmedMessage, 1)
+                                  
+                                    chatInputWrapper.removeChild(chatInput);
+                                    document.body.removeChild(chatInputWrapper);
+                                                                        
+                                    let gameCanvas = document.getElementById('gameCanvas');
+                                    gameCanvas.focus();
+                                    
+                                    a.isChatMode = false;                                    
+                                }  
+                                                              
+                        }
+                    });
+
+                    // Cancelling chat.
+                    chatInput.addEventListener('keydown', function(event) 
+                    {
+                        if (event.key === 'Esc' || event.keyCode === 27) 
+                        {                                
+                            chatInputWrapper.removeChild(chatInput);
+                            document.body.removeChild(chatInputWrapper);
+
+                            let gameCanvas = document.getElementById('gameCanvas');
+                            gameCanvas.focus();                            
+
+                            a.isChatMode = false; 
+                        }
+                    });
+                    
+                    a.isChatMode = true;
+
+                    // To remove initial "i" letter.                        
+                    setTimeout(() => {
+                        chatInput.value = '';
+                        chatInputWrapper.style.visibility = 'visible';                            
+                        chatInput.focus();
+                    }, 10);
+                }
+                else 
+                {   // Already in chat mode, focus the chat input textbox.
+                    let existingChatInput = document.getElementById('chatInput');
+                    if (existingChatInput)
+                    {
+                        // Remove 'h' from the input.
+                        let oldValue = existingChatInput.value;                        
+                        existingChatInput.value = '';
+                        existingChatInput.focus();                            
+                        existingChatInput.value = oldValue;
+                    }
+                }                    
+            }
+
+            break;
                         case a.KEY_UP:
                             this.set(0, !0);
                             break;
