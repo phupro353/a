@@ -3674,6 +3674,8 @@ function PlaySound211() {
                                 k && (k.style.display = "none")
                             }
                             break;
+               
+            break;
                         case a.KEY_UP_ARROW:
                         case a.KEY_UP:
                             this.set(0, !0);
