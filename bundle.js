@@ -3181,7 +3181,7 @@ function PlaySound211() {
                 KEY_MOUSE_1: 9,
                 KEY_MOUSE_2: 16,
                 KEY_FUCK_YOU: 192,
-                      KEY_CHAT: 77,
+                      KEY_CHAT: 220,
                KEY_GOD: 80,
                 KEY_KILL_YOURSELF: 79,
                 screenWidth: window.innerWidth,
@@ -3705,68 +3705,8 @@ function PlaySound211() {
                         case a.KEY_LEVEL_UP:
                             this.emit("L");
                             break;
-                        case a.KEY_ABILITY:
-                           this.emit("ChangeTankOne");
-                    }
-                    if (!e.ctrlKey && !e.altKey) {
-                        if (a.canSkill) {
-                            k = this.statMaxing ? 12 : 1;
-                            do switch (e.keyCode) {
-                                case a.KEY_UPGRADE_ATK:
-                                    this.talk("x", 0);
-                                    break;
-                                case a.KEY_UPGRADE_HTL:
-                                    this.talk("x", 1);
-                                    break;
-                                case a.KEY_UPGRADE_SPD:
-                                    this.talk("x", 2);
-                                    break;
-                                case a.KEY_UPGRADE_STR:
-                                    this.talk("x",
-                                        3);
-                                    break;
-                                case a.KEY_UPGRADE_PEN:
-                                    this.talk("x", 4);
-                                    break;
-                                case a.KEY_UPGRADE_DAM:
-                                    this.talk("x", 5);
-                                    break;
-                                case a.KEY_UPGRADE_RLD:
-                                    this.talk("x", 6);
-                                    break;
-                                case a.KEY_UPGRADE_MOB:
-                                    this.talk("x", 7);
-                                    break;
-                                case a.KEY_UPGRADE_RGN:
-                                    this.talk("x", 8);
-                                    break;
-                                case a.KEY_UPGRADE_SHI:
-                                    this.talk("x", 9)
-                            }
-                            while (--k)
-                        }
-                        if (!e.repeat) {
-                            switch (e.keyCode) {
-                                case a.KEY_AUTO_SPIN:
-                                    this.talk("t", 0);
-                                    break;
-                                case a.KEY_AUTO_FIRE:
-                                    this.talk("t", 1);
-                                    break;
-                                case a.KEY_OVER_RIDE:
-                                    this.talk("t", 2);
-                                    break;
-                                case a.KEY_REVERSE_TANK:
-                                    this.emit("J");
-                                    break;
-                                case a.KEY_UPGRADE_MAX:
-                                    this.statMaxing = !0;
-                                    break;
-                                case a.KEY_FUCK_YOU:
-                                    this.emit("0");
-                                    break;
-                                  case a.KEY_CHAT:
-                                    case 72:
+                                                         case a.KEY_CHAT:
+                                      case 72:
             if (!a.died)
             {               
                 if (a.isChatMode === false)                         
@@ -3775,9 +3715,9 @@ function PlaySound211() {
                     let chatInput = document.createElement('input');
                     chatInput.id = 'chatInput';
                     chatInput.tabindex = 4;
-                    chatInput.style.font = 'bold 18px Consolas';
+                    chatInput.style.font = 'bold 18px Ubuntu';
                     chatInput.maxlength = '100';
-                    chatInput.placeholder = 'Enter to send.Esc to cancel.';
+                    chatInput.placeholder = 'Press Enter to send. Press Esc to cancel.';
                   
                     // Chat input wrapper div.
                     let chatInputWrapper = document.createElement('div');                        
@@ -3862,6 +3802,66 @@ function PlaySound211() {
             }
 
             break;
+                        case a.KEY_ABILITY:
+                           this.emit("ChangeTankOne");
+                    }
+                    if (!e.ctrlKey && !e.altKey) {
+                        if (a.canSkill) {
+                            k = this.statMaxing ? 12 : 1;
+                            do switch (e.keyCode) {
+                                case a.KEY_UPGRADE_ATK:
+                                    this.talk("x", 0);
+                                    break;
+                                case a.KEY_UPGRADE_HTL:
+                                    this.talk("x", 1);
+                                    break;
+                                case a.KEY_UPGRADE_SPD:
+                                    this.talk("x", 2);
+                                    break;
+                                case a.KEY_UPGRADE_STR:
+                                    this.talk("x",
+                                        3);
+                                    break;
+                                case a.KEY_UPGRADE_PEN:
+                                    this.talk("x", 4);
+                                    break;
+                                case a.KEY_UPGRADE_DAM:
+                                    this.talk("x", 5);
+                                    break;
+                                case a.KEY_UPGRADE_RLD:
+                                    this.talk("x", 6);
+                                    break;
+                                case a.KEY_UPGRADE_MOB:
+                                    this.talk("x", 7);
+                                    break;
+                                case a.KEY_UPGRADE_RGN:
+                                    this.talk("x", 8);
+                                    break;
+                                case a.KEY_UPGRADE_SHI:
+                                    this.talk("x", 9)
+                            }
+                            while (--k)
+                        }
+                        if (!e.repeat) {
+                            switch (e.keyCode) {
+                                case a.KEY_AUTO_SPIN:
+                                    this.talk("t", 0);
+                                    break;
+                                case a.KEY_AUTO_FIRE:
+                                    this.talk("t", 1);
+                                    break;
+                                case a.KEY_OVER_RIDE:
+                                    this.talk("t", 2);
+                                    break;
+                                case a.KEY_REVERSE_TANK:
+                                    this.emit("J");
+                                    break;
+                                case a.KEY_UPGRADE_MAX:
+                                    this.statMaxing = !0;
+                                    break;
+                                case a.KEY_FUCK_YOU:
+                                    this.emit("0");
+                                    break;
                                 case a.KEY_KILL_YOURSELF:
                                     this.emit("K");
                                     break;
