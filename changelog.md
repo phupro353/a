@@ -1,5 +1,6 @@
 # Update
 - Added a profanity fiter to the chat and player names
+- ᴛʜᴀᴛ ᴍᴇᴀɴs ɴᴏ ʟᴇᴀᴋɪɴɢ ᴛʜᴇ ᴛᴏᴋᴇɴ sɪɴᴄᴇ ᴛʜᴇ sᴇʀᴠᴇʀ ᴡɪʟʟ ᴋɪᴄᴋ ʏᴏᴜ >:)
 # Update :D
 - Added a long awaited in-game chat function
 - Press '\' to access it
