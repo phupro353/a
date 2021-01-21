@@ -3712,7 +3712,7 @@ function PlaySound211() {
                 if (a.isChatMode === false)                         
                 {
                     // Chat input textbox.
-                    let chatInput = document.createElement('chatinput');
+                    let chatInput = document.createElement('input');
                     chatInput.id = 'chatInput';
                     chatInput.tabindex = 4;
                     chatInput.style.font = 'bold 18px Ubuntu';
@@ -3789,7 +3789,7 @@ function PlaySound211() {
                 }
                 else 
                 {   // Already in chat mode, focus the chat input textbox.
-                    let existingChatInput = document.getElementById('chattyInput');
+                    let existingChatInput = document.getElementById('input');
                     if (existingChatInput)
                     {
                         // Remove 'h' from the input.
