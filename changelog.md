@@ -3,6 +3,7 @@
 - Regular users will receive Testbed A (Does not have access to God Mode)
 - Known users will receive Testbed B
 - Developers will receive Testbed C
+- Bots will no longer spawn in FFA servers
 # Update
 - Added a profanity fiter to the chat and player names
 - ᴛʜᴀᴛ ᴍᴇᴀɴs ɴᴏ ʟᴇᴀᴋɪɴɢ ᴛʜᴇ ᴛᴏᴋᴇɴ sɪɴᴄᴇ ᴛʜᴇ sᴇʀᴠᴇʀ ᴡɪʟʟ ᴋɪᴄᴋ ʏᴏᴜ >:)
