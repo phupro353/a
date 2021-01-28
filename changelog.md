@@ -1,4 +1,8 @@
 # Update
+- Split Testbed into 2 branches
+- Regular users will receive Testbed A 
+- Users who have requested access on the Discord will receive Testbed B
+# Update
 - Added a profanity fiter to the chat and player names
 - ᴛʜᴀᴛ ᴍᴇᴀɴs ɴᴏ ʟᴇᴀᴋɪɴɢ ᴛʜᴇ ᴛᴏᴋᴇɴ sɪɴᴄᴇ ᴛʜᴇ sᴇʀᴠᴇʀ ᴡɪʟʟ ᴋɪᴄᴋ ʏᴏᴜ >:)
 # Update :D
