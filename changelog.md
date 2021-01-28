@@ -1,4 +1,6 @@
 # Update
+- Players on god m
+# Update
 - Split Testbed into 3 branches
 - Regular users will receive Testbed A (Does not have access to God Mode)
 - Known users will receive Testbed B
