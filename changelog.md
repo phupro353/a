@@ -1,5 +1,5 @@
 # Update
-- Players on god m
+- Players with god mode enabled will no longer leave a ghost when entering an enemy base and when disconnecting
 # Update
 - Split Testbed into 3 branches
 - Regular users will receive Testbed A (Does not have access to God Mode)
