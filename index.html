@@ -47,7 +47,7 @@ function PlaySound1() {
 
                             <script>
 var music2 = new Audio();
-                                  const months = ["https://cdn.glitch.com/fca666a2-8235-47b6-a711-c9926dc2248f%2Fbgm_14.ogg?v=1608943257454", "https://cdn.glitch.com/fca666a2-8235-47b6-a711-c9926dc2248f%2Fbgm_01.ogg?v=1608943264101", "https://cdn.glitch.com/fca666a2-8235-47b6-a711-c9926dc2248f%2Fbgm_02.ogg?v=1608943270065", "https://cdn.glitch.com/fca666a2-8235-47b6-a711-c9926dc2248f%2Fbgm_10.ogg?v=1608943280133", "https://cdn.glitch.com/fca666a2-8235-47b6-a711-c9926dc2248f%2Fbgm_13.ogg?v=1610089512424"];
+                                  const months = ["https://cdn.glitch.com/fca666a2-8235-47b6-a711-c9926dc2248f%2Fbgm_14.ogg?v=1608943257454", "https://cdn.glitch.com/fca666a2-8235-47b6-a711-c9926dc2248f%2Fbgm_01.ogg?v=1608943264101", "https://cdn.glitch.com/fca666a2-8235-47b6-a711-c9926dc2248f%2Fbgm_02.ogg?v=1608943270065", "https://cdn.glitch.com/fca666a2-8235-47b6-a711-c9926dc2248f%2Fbgm_10.ogg?v=1608943280133", "https://vgmsite.com/soundtracks/watashi-ga-suki-nara-suki-tte-itte-ost/hyhwuyecbs/04.%E3%81%8A%E8%8C%B6%E3%81%AB%E3%81%97%E3%81%BE%E3%81%9B%E3%82%93%E3%81%8B-.mp3"];
 
 var rand = months[~~(Math.random() * months.length)];
 music2.src = (rand);
@@ -146,7 +146,7 @@ function PlaySound() {
                     <td><div><b data-key="KEY_LEFT">A</b><span> - </span>move left</div></td>
                     <td><div><b data-key="KEY_DOWN">S</b><span> - </span>move down</div></td>
                     <td><div><b data-key="KEY_RIGHT">D</b><span> - </span>move right</div></td>
-                  </tr>
+                               </tr>
                   <tr class="hidden">
                     <td><div><b data-key="KEY_CHOOSE_1" data-help="KEY_CHOOSE_1">Y</b><span> - </span>upgrade 1</div></td>
                     <td><div><b data-key="KEY_CHOOSE_2" data-help="KEY_CHOOSE_2">U</b><span> - </span>upgrade 2</div></td>
@@ -161,6 +161,16 @@ function PlaySound() {
                     <td><div><b data-key="KEY_CHOOSE_7" data-help="KEY_CHOOSE_7"></b><span> - </span>upgrade 7</div></td>
                     <td><div><b data-key="KEY_CHOOSE_8" data-help="KEY_CHOOSE_8"></b><span> - </span>upgrade 8</div></td>
                     <td><div><b data-key="KEY_CHOOSE_9" data-help="KEY_CHOOSE_9"></b><span> - </span>upgrade 9</div></td>
+                  </tr>
+                     <tr class="hidden">
+                    <td><div><b data-key="KEY_CHAT" data-help="KEY_CHAT"></b><span> - </span>chat</div></td>
+                    <td><div><b data-key="KEY_ABILITY" data-help="KEY_ABILITY"></b><span> - </span>ability</div></td>
+                    <td><div><b data-key="KEY_REVERSE_TANK" data-help="KEY_REVERSE_TANK"></b><span> - </span>vanish</div></td>
+                  </tr>
+                       <tr class="hidden">
+                    <td><div><b data-key="KEY_CHUNGUS" data-help="KEY_CHUNGUS"></b><span> - </span>grow</div></td>
+                    <td><div><b data-key="KEY_BABY" data-help="KEY_BABY"></b><span> - </span>shrink</div></td>
+                    <td><div><b data-key="KEY_REVERSE_TANK" data-help="KEY_REVERSE_TANK"></b><span> - </span>vanish</div></td>
                   </tr>
                 </tbody>
               </table>
