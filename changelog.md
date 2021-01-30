@@ -1,4 +1,6 @@
 # Update
+- Added custom keybind support for various functions, including chat.
+# Update
 - Players with god mode enabled will no longer leave a ghost when entering an enemy base and when disconnecting
 - Dominators are properly aligned and spin when idle
 - Heroku-USEast-4TDM is now an event server! Everyone will spawn as an invincible Testbed B!

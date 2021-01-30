@@ -4529,7 +4529,7 @@
           KEY_CHOOSE_3: "I",
           KEY_CHOOSE_4: "H",
           KEY_CHOOSE_5: "J",
-          KEY_CHOOSE_6: "K"
+          KEY_CHOOSE_6: "K",
         },
         KEY_AUTO_FIRE: 69,
         KEY_AUTO_SPIN: 67,
