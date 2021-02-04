@@ -466,7 +466,7 @@ body.mobile .startMenuSlidingContent {
   width: 96px;
   padding-top: 4px;
   height: 96px;
-  padding-bottom: -50px;
+  padding-bottom: -3px;
   border-radius: 50%;
    animation:pfpDefault 800ms linear both;
 }
@@ -478,11 +478,6 @@ body.mobile .startMenuSlidingContent {
 .icon:active {
      animation:pfpDefault 400ms linear both;
 }
-  .title {
-        display: block;
-        animation: pfpDefault 800ms linear both;
-        padding-top: -50px;
-      }
 
 
 body.mobile .icon {
