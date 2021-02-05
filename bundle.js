@@ -201,7 +201,7 @@
       function a() {
         window.dataLayer.push(arguments);
       }
-
+//here are the color codes
       function e(b) {
         switch (b) {
           case 0:
@@ -296,7 +296,7 @@
         let d = B.graphical.neon ? l.white : l.black;
         return B.graphical.darkBorders ? d : T(b, d, l.border);
       }
-
+//here are the map colors
       function x(b) {
         switch (b) {
           case "bas1":
@@ -556,7 +556,7 @@
         }
         return btoa(b).replace(/=+/, "");
       }
-
+//just some code to make the sound work 
       var smallaudio = new Audio();
       smallaudio.src =
         "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/sysse_ok.ogg";
@@ -853,9 +853,7 @@
           non_interaction: !0
         });
       });
-      /*(window.localStorage && window.localStorage.adForce ? "aip" === window.localStorage.adForce : .1 <= Math.random()) ? (aiptag.cmd.display.push(function() {
-                aipDisplayTag.display("arras-io_336x280")
-            }), window.adServiceMode = "aip") : ((adsbygoogle = window.adsbygoogle || []).push({}), window.adServiceMode = "google");*/
+
       var B = {
         graphical: {
           screenshotMode: !1,
