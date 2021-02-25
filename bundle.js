@@ -587,7 +587,13 @@
       function PlaySound211() {
         smallaudio2.play();
       }
+     var smallaudio3 = new Audio("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/socket.wav");
 
+      smallaudio3.loop = false;
+      function PlaySound212() {
+          smallaudio3.loop = false;
+        smallaudio3.play();
+      }
       function t() {
         if (!ua) {
           ua = !0;
@@ -2455,6 +2461,7 @@
               b.died ||
                 b.message ||
                 (b.message = "Socket closed. Refresh to continue playing!"));
+            PlaySound212()
             console.warn("WebSocket closed: ", a);
           };
           g.onerror = function(a) {
