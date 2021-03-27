@@ -1,4 +1,6 @@
-
+# Update
+- Revamped the Discord Controller
+- Testers using the invisibility keybind will no longer be permanently invisible
 # Update
 - Nerfed Sparkler
 - Buffed Bosses
