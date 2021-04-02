@@ -1,5 +1,6 @@
 # Update
 - Added a status page
+- Added an IP blacklisting function, so no lag-botting please~
 # Update
 - Nerfed Twin-3
 - Removed Blaster, as it was too unique compared to other tanks of it's class
