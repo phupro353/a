@@ -1,4 +1,6 @@
 # Update
+- Added a status page
+# Update
 - Nerfed Twin-3
 - Removed Blaster, as it was too unique compared to other tanks of it's class
 - The Trapper Dominator will no longer spawn
