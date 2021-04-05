@@ -1,6 +1,10 @@
 # Update
+- Changed Minigun and Streamliner's looks
+- Added 2 new tanks
+- Firestarter - Branches off Minigun and Cruiser
+- Sprinkler - Branches off Machine Gun at Lvl 45
+# Update
 - Added a status page
-- Added an IP blacklisting function, so no lag-botting please~
 - Buffed all Smashers
 # Update
 - Nerfed Twin-3
