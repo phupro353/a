@@ -2,6 +2,8 @@
 - Removed all healing tanks due to them being very buggy
 - The Shotgun Dominator will no longer spawn
 - Added a MAX_CHILDREN: cap for certain laggy tanks
+- Added a new tank:
+- Rimfire - Branches off Gunner
 # Update
 - Changed Minigun and Streamliner's looks
 - Added 2 new tanks
