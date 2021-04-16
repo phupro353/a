@@ -1,4 +1,9 @@
 # Update
+- Fixed a bug where sentries and crashers would not spawn
+- Nerfed Penetrator, all shotgun-branch tanks
+- Added a new tank:
+- Swivel-3 - Branches off Auto-3
+# Update
 - Removed all healing tanks due to them being very buggy
 - The Shotgun Dominator will no longer spawn
 - Added a MAX_CHILDREN: cap for certain laggy tanks
