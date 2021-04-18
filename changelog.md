@@ -1,8 +1,10 @@
 # Update
-- Added 3 new tanks
+- Added 5 new tanks
 - Bodyguard - Branches off Pounder and Flank Guard
 - Bouncer - Branches off Destroyer and Bodyguard
 - Auto-Bodyguard - Branches off Bodyguard and Auto-Basic at Lvl45
+- Trailblazer - Branches off Tri-Angle and Lancer at Lvl45
+- Bastion - Branches off Bayonet and Gunner
 # Update
 - Fixed a bug where sentries and crashers would not spawn on FFA
 - Nerfed Penetrator, all shotgun-branch tanks
