@@ -17,6 +17,30 @@
       );
     return r + "";
   };
+                var smallaudio5 = new Audio();
+      smallaudio5.src =
+        "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/poka.wav";
+      function PlaySound214() {
+        smallaudio5.play();
+      }
+      var smallaudio6 = new Audio();
+      smallaudio6.src =
+        "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/finish.wav";
+      function PlaySound215() {
+        smallaudio6.play();
+      }
+                        var smallaudio4 = new Audio();
+      smallaudio4.src =
+        "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/camera.wav";
+      function PlaySound213() {
+        smallaudio4.play();
+      }
+      var smallaudio = new Audio();
+      smallaudio.src =
+        "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/start.wav";
+      function PlaySound218() {
+        smallaudio.play();
+      }
   I.ASSUME_ES5 = !1;
   I.ASSUME_NO_NATIVE_MAP = !1;
   I.ASSUME_NO_NATIVE_SET = !1;
@@ -1851,12 +1875,12 @@
         };
       }
       document.getElementById("startButton").onclick = () => {
-        PlaySound210();
         var inputVal = document.getElementById("playerNameInput").value;
         if (inputVal === "")
           return (
             PlaySound211(), setTimeout(alert("Please enter a name!"), 30000)
           );
+             PlaySound218();
         t();
       };
       let La = WebSocket.prototype.close;
@@ -5442,6 +5466,7 @@
                     if (this.videoRecorder)
                       switch (this.videoRecorder.state) {
                         case "inactive":
+                          PlaySound214() 
                           a.messages.push({
                             text: "Recorder started!",
                             status: 2,
@@ -5451,6 +5476,7 @@
                           this.videoRecorder.start();
                           break;
                         case "recording":
+                          PlaySound215()
                           a.messages.push({
                             text: "Recorder stopped! Saving file...",
                             status: 2,
@@ -5482,6 +5508,7 @@
                         }, 100);
                         q.click();
                       };
+                      PlaySound214()
                       a.messages.push({
                         text: "Recorder initiated and started!",
                         status: 2,
@@ -5499,6 +5526,7 @@
                     });
                   break;
                 case a.KEY_SCREENSHOT:
+                  PlaySound213()
                   a.messages.push({
                     text: "Saving screenshot...",
                     status: 2,
