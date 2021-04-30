@@ -35,12 +35,7 @@
       function PlaySound213() {
         smallaudio4.play();
       }
-      var smallaudio = new Audio();
-      smallaudio.src =
-        "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/start.wav";
-      function PlaySound218() {
-        smallaudio.play();
-      }
+
   I.ASSUME_ES5 = !1;
   I.ASSUME_NO_NATIVE_MAP = !1;
   I.ASSUME_NO_NATIVE_SET = !1;
@@ -1880,7 +1875,7 @@
           return (
             PlaySound211(), setTimeout(alert("Please enter a name!"), 30000)
           );
-             PlaySound218();
+             PlaySound210();
         t();
       };
       let La = WebSocket.prototype.close;
