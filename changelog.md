@@ -1,4 +1,13 @@
 # Update
+- Added 7 new tanks
+- Bumper - Branches off Launcher and Destroyer
+- Contractor - Branches off Builder, Bruiser and Twin Trapper
+- Whirlwind - Branches off Hexa Tank
+- Spinner - Branches off Hexa Tank
+- Fort - Branches off Contagion and Builder
+- Amoeba - Branches off Spawner and Pathogen
+- Assasinator - Branches off Drone Guard and Assassin
+# Update
 - Added 5 new tanks
 - Bodyguard - Branches off Pounder and Flank Guard
 - Bouncer - Branches off Destroyer and Bodyguard
