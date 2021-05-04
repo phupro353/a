@@ -1,5 +1,5 @@
 # Update
-- Added 2 new tanks
+- Added 3 new tanks
 - Moth - Branches off Hexa Tank and Pelleter at lvl45
 - Gatling Gun - Branches off Sniper and Machine Gun
 - Chain Gun - Branches off Gatling Gun
