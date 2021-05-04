@@ -1,4 +1,10 @@
 # Update
+- Added a new tank
+- Moth - Branches off Hexa Tank and Pelleter at lvl45
+- Nerfed Wasp
+- Buffed Bosses
+- Buffed Stiletto-branch animated tanks
+# Update
 - Added 7 new tanks
 - Bumper - Branches off Launcher and Destroyer
 - Contractor - Branches off Builder, Bruiser and Twin Trapper
