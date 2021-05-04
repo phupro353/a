@@ -1,6 +1,8 @@
 # Update
-- Added a new tank
+- Added 2 new tanks
 - Moth - Branches off Hexa Tank and Pelleter at lvl45
+- Gatling Gun - Branches off Sniper and Machine Gun
+- Chain Gun - Branches off Gatling Gun
 - Nerfed Wasp
 - Buffed Bosses
 - Buffed Stiletto-branch animated tanks
