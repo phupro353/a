@@ -1,9 +1,10 @@
 # Update
-- Added 4 new tanks
+- Added 5 new tanks
 - Storm - Branches off Flank Guard and Pelleter
 - Auto-Storm - Branches off Auto-Basic and Storm
 - Arbalest - Branches off Launcher and Artillery
 - Trojan - Branches off Overseer and Pathogen
+- Fog - Branches off Storm and Cloaker
 - Nerfed Backer
 # Update
 - Added 3 new tanks
