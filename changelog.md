@@ -1,4 +1,11 @@
 # Update
+- Added 4 new tanks
+- Storm - Branches off Flank Guard and Pelleter
+- Auto-Storm - Branches off Auto-Basic and Storm
+- Arbalest - Branches off Launcher and Artillery
+- Trojan - Branches off Overseer and Pathogen
+- Nerfed Backer
+# Update
 - Added 3 new tanks
 - Moth - Branches off Hexa Tank and Pelleter at lvl45
 - Gatling Gun - Branches off Sniper and Machine Gun
