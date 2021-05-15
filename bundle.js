@@ -4661,6 +4661,7 @@
             ],
             [
               { id: "d", to: "4DOM" },
+              { id: "x", to: "Event" },
               { id: "m", to: "Mothership", remove: "2" },
               { id: "a", to: "Assault", remove: "2" }
             ]
@@ -4704,9 +4705,9 @@
           },
           {
             visible: 0,
-            id: "Heroku-Main",
+            id: "Heroku-Event",
             type: "main",
-            code: "heroku-virginia-4",
+            code: "heroku-virginia-x",
             at: p.heroku("arras-mayhem")
             // featured: 1, // For Featured Status.
           },
