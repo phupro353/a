@@ -645,10 +645,6 @@
           B.graphical.screenshotMode = document.getElementById(
             "optScreenshotMode"
           ).checked;
-                    H.submitToLocalStorage("optNoMessage");
-          B.graphical.disableMessages = document.getElementById(
-            "optNoMessage"
-          ).checked;
           H.submitToLocalStorage("optFancy");
           B.graphical.pointy = !document.getElementById("optNoPointy").checked;
           H.submitToLocalStorage("optNoPointy");
@@ -892,7 +888,6 @@
           compensationScale: 1.114,
           inversedRender: !0,
           darkBorders: !1,
-          disableMessages: 0,
           fancyAnimations: !0,
           colors: "normal",
           pointy: !0,
@@ -1709,7 +1704,6 @@
       H.retrieveFromLocalStorage("optShield");
       H.retrieveFromLocalStorage("optFancy");
       H.retrieveFromLocalStorage("optColors");
-      H.retrieveFromLocalStorage("optNoMessage"),
       H.retrieveFromLocalStorage("optNoPointy");
       H.retrieveFromLocalStorage("optBorders");
       H.retrieveFromLocalStorage("optAutoLevel", b.mobile);
@@ -3466,10 +3460,6 @@
                     (b.canUpgrade && 40 + 114 * A.upgrades.length > 1.4 * c
                       ? (100 / 1.4) * k.get()
                       : 0));
-                      if (!b.disableMessages) {
-              let c = b.screenWidth / 2,
-                d = 20,
-                        D;
                 for (let b = Y.length - 1; 0 <= b; b--) {
                   let a = Y[b],
                     f = a.text;
@@ -3490,7 +3480,6 @@
                       0 >= a.alpha && Y.shift());
                 }
                 g.globalAlpha = 1;
-                      }
               }
               b.mobile && L(1 / 1.4);
               if (!b.mobile) {
