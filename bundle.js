@@ -3467,9 +3467,9 @@
                       ? (100 / 1.4) * k.get()
                       : 0));
                       if (!b.disableMessages) {
-              let e = b.screenWidth / 2,
+              let c = b.screenWidth / 2,
                 a = 20,
-                A;
+                Y;
                 for (let b = Y.length - 1; 0 <= b; b--) {
                   let a = Y[b],
                     f = a.text;
