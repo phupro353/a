@@ -1,4 +1,6 @@
 # Update
+- To combat multiboxing/bots and subsequent server lag, there will be a player limit of 1 per IP address. VPNs are still unblocked.
+# Update
 - Added 5 new tanks
 - Storm - Branches off Flank Guard and Pelleter
 - Auto-Storm - Branches off Auto-Basic and Storm
