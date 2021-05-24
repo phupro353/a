@@ -1,5 +1,6 @@
 # Update
 - To combat multiboxing/bots and subsequent server lag, there will be a player limit of 1 per IP address. VPNs are still unblocked.
+- Removed Dominator from the testbed menu due to their tendency to leave ghosts and cause lag 
 # Update
 - Added 5 new tanks
 - Storm - Branches off Flank Guard and Pelleter
