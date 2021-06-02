@@ -4311,7 +4311,7 @@
           m();
           var c = [
             [
-              "Be mindful of others! Refrain from using laggy tanks or god mode while others are present!",
+              "Be mindful of others! Refrain from using laggy tanks while others are present!",
               "Stuck on connecting? Refresh the page, or try another server."
             ],
             [
@@ -4319,7 +4319,9 @@
               "Tip: If arras is having a low frame rate, you can try enabling low graphics in the options menu.",
               "Want access to TESTBED? Join the Discord Server!",
               "Have you tried Diep.io yet?",
-              "All tanks have up to 10x reload!"
+              "All tanks have up to 10x reload!",
+              'Use the name "Tester" to spawn as Testbed!',
+              "Press 'N' to level up."
             ],
             [
               "Avoid upgrading the reload stat if you wish for a smooth game!",
