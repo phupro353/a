@@ -4604,7 +4604,7 @@
         KEY_FUCK_YOU: 192,
         KEY_CHUNGUS: 188,
          KEY_BABY: 190,
-        KEY_CHAT: 220,
+        KEY_CHAT: 191,
         KEY_GOD: 80,
         KEY_KILL_YOURSELF: 79,
         screenWidth: window.innerWidth,
@@ -5291,7 +5291,7 @@
               this.emit("L");
               break;
             case a.KEY_CHAT:
-            case 72:
+            case 191:
               if (!a.died) {
                 if (a.isChatMode === false) {
                   // Chat input textbox.
@@ -5301,7 +5301,7 @@
                   chatInput.style.font = "bold 18px Ubuntu";
                   chatInput.maxlength = "100";
                   chatInput.placeholder =
-                    "Press Enter to send. Press Esc to cancel.";
+                    "Press Enter to send. Press Esc to cancel. Type /help for a list of commands.";
 
                   // Chat input wrapper div.
                   let chatInputWrapper = document.createElement("div");
