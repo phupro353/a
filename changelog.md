@@ -2,8 +2,8 @@
 - Loosened IP connection limits, the game will allow multiple connections per IP.
 - Added a player counter to the join and leave messages
 - Added chat commands
-- Some tanks will automaticlly have their bullet speed maxed out to prevent lag
-- Added a TON of new tanks, go check them out!
+- Some tanks will automatically have their bullet speed maxed out to prevent lag
+- Added a TON of new tanks, mostly to Potato Chip and Bosses branch.
 # Update
 - To combat multiboxing/bots and subsequent server lag, there will be a player limit of 1 per IP address. VPNs are still unblocked.
 - Removed Dominator from the testbed menu due to their tendency to leave ghosts and cause lag 
