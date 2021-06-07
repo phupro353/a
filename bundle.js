@@ -2461,7 +2461,7 @@
                 b.finalKillers = [];
                 for (d = 0; d < c[5]; d++) b.finalKillers.push(c[6 + d]);
                 b.died = !0;
-                b.respawnOn = Date.now() + (ia ? 5e3 : 3e3);
+                b.respawnOn = Date.now() + (ia ? 3e3 : 2e3);
 
               case "K":
                 b.isInGame = !1;
