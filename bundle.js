@@ -4320,7 +4320,7 @@
               "Want access to TESTBED? Join the Discord Server!",
               "Have you tried Diep.io yet?",
               "All tanks have up to 10x reload!",
-              'Use the name "Tester" to spawn as Testbed!',
+              'If you have a valid token, use the name "Tester" to spawn as Testbed!',
               "Press 'N' to level up."
             ],
             [
