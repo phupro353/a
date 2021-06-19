@@ -1,4 +1,11 @@
 # Update
+- Nerfed some BT Tanks
+- Added 4 new tanks
+- Apiary - Branches off Smasher, Cruiser and Turret-2
+- Redistributor - Branches off Destroyer and Cannon
+- Mauser - Branches off Gatling Gun and Destroyer 
+- Duplet - Branches off Shotgun and Bruiser
+# Update
 - Loosened IP connection limits, the game will allow multiple connections per IP.
 - Added a player counter to the join and leave messages
 - Added chat commands
