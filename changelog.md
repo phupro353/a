@@ -1,4 +1,8 @@
 # Update
+- Added some chat commands
+- /define: Defines you into the select tank (Testbed B and up)
+- /color: Changes your tank's color (Testbed A and up)
+# Update
 - Nerfed some BT Tanks
 - Added 4 new tanks
 - Apiary - Branches off Smasher, Cruiser and Turret-2
