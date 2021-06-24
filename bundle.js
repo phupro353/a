@@ -305,6 +305,9 @@
               ][Math.floor((Date.now() / 200) % 6)],
               (Date.now() / 200) % 1
             );
+             case 37:
+         return '#' + Math.floor(Math.random() * 16777215).toString(16);
+    
           //["#ff1600","#ff2b00","#ff4100","#ff5700","#ff6c00","#ff8200","#ff9700","#ffad00","#ffc300","#ffd800"]
           default:
             return "#ff0000";
