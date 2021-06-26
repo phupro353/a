@@ -4698,11 +4698,11 @@
             // featured: 1, // For Featured Status.
           },
           {
-            visible: 0,
+            visible: 1,
             id: "Glitch-Domination",
             type: "dominaton",
             code: "glitch-virginia-d",
-            at: p.glitch("fragrant-colossal-crane")
+            at: p.glitch("jagged-petal-parenthesis")
             // featured: 1, // For Featured Status.
           },
           {
