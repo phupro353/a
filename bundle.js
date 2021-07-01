@@ -17,24 +17,24 @@
       );
     return r + "";
   };
-                var smallaudio5 = new Audio();
-      smallaudio5.src =
-        "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/poka.wav";
-      function PlaySound214() {
-        smallaudio5.play();
-      }
-      var smallaudio6 = new Audio();
-      smallaudio6.src =
-        "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/finish.wav";
-      function PlaySound215() {
-        smallaudio6.play();
-      }
-                        var smallaudio4 = new Audio();
-      smallaudio4.src =
-        "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/camera.wav";
-      function PlaySound213() {
-        smallaudio4.play();
-      }
+  var smallaudio5 = new Audio();
+  smallaudio5.src =
+    "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/poka.wav";
+  function PlaySound214() {
+    smallaudio5.play();
+  }
+  var smallaudio6 = new Audio();
+  smallaudio6.src =
+    "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/finish.wav";
+  function PlaySound215() {
+    smallaudio6.play();
+  }
+  var smallaudio4 = new Audio();
+  smallaudio4.src =
+    "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/camera.wav";
+  function PlaySound213() {
+    smallaudio4.play();
+  }
 
   I.ASSUME_ES5 = !1;
   I.ASSUME_NO_NATIVE_MAP = !1;
@@ -220,7 +220,7 @@
       function a() {
         window.dataLayer.push(arguments);
       }
-//here are the color codes
+      //here are the color codes
       function e(b) {
         switch (b) {
           case 0:
@@ -315,7 +315,7 @@
         let d = B.graphical.neon ? l.white : l.black;
         return B.graphical.darkBorders ? d : T(b, d, l.border);
       }
-//here are the map colors
+      //here are the map colors
       function x(b) {
         switch (b) {
           case "bas1":
@@ -575,7 +575,7 @@
         }
         return btoa(b).replace(/=+/, "");
       }
-//just some code to make the sound work 
+      //just some code to make the sound work
       var smallaudio = new Audio();
       smallaudio.src =
         "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/sysse_ok.ogg";
@@ -606,11 +606,13 @@
       function PlaySound211() {
         smallaudio2.play();
       }
-     var smallaudio3 = new Audio("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/socket.wav");
+      var smallaudio3 = new Audio(
+        "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/socket.wav"
+      );
 
       smallaudio3.loop = false;
       function PlaySound212() {
-          smallaudio3.loop = false;
+        smallaudio3.loop = false;
         smallaudio3.play();
       }
       function t() {
@@ -1157,7 +1159,7 @@
                 return "Body Damage;Max Health;Bullet Speed;Bullet Health;Bullet Penetration;Healing Intensity;Reload;Movement Speed;Shield Regeneration;Shield Capacity".split(
                   ";"
                 );
-                       case 8:
+              case 8:
                 return "Body Damage;Max Health;Lance Range;Lance Longevity;Lance Sharpness;Lance Damage;Lance Density;Movement Speed;Shield Regeneration;Shield Capacity".split(
                   ";"
                 );
@@ -1879,7 +1881,7 @@
           return (
             PlaySound211(), setTimeout(alert("Please enter a name!"), 30000)
           );
-             PlaySound210();
+        PlaySound210();
         t();
       };
       let La = WebSocket.prototype.close;
@@ -2484,7 +2486,7 @@
               b.died ||
                 b.message ||
                 (b.message = "Socket closed. Refresh to continue playing!"));
-            PlaySound212()
+            PlaySound212();
             console.warn("WebSocket closed: ", a);
           };
           g.onerror = function(a) {
@@ -4559,7 +4561,7 @@
           KEY_CHOOSE_3: "I",
           KEY_CHOOSE_4: "H",
           KEY_CHOOSE_5: "J",
-          KEY_CHOOSE_6: "K",
+          KEY_CHOOSE_6: "K"
         },
         KEY_AUTO_FIRE: 69,
         KEY_AUTO_SPIN: 67,
@@ -4607,7 +4609,7 @@
         KEY_MOUSE_2: 16,
         KEY_FUCK_YOU: 192,
         KEY_CHUNGUS: 188,
-         KEY_BABY: 190,
+        KEY_BABY: 190,
         KEY_CHAT: 191,
         KEY_GOD: 80,
         KEY_KILL_YOURSELF: 79,
@@ -5445,10 +5447,10 @@
                 case a.KEY_FUCK_YOU:
                   this.emit("0");
                   break;
-                 case a.KEY_CHUNGUS:
+                case a.KEY_CHUNGUS:
                   this.emit("P");
                   break;
-                   case a.KEY_BABY:
+                case a.KEY_BABY:
                   this.emit("I");
                   break;
                 case a.KEY_KILL_YOURSELF:
@@ -5468,7 +5470,7 @@
                     if (this.videoRecorder)
                       switch (this.videoRecorder.state) {
                         case "inactive":
-                          PlaySound214() 
+                          PlaySound214();
                           a.messages.push({
                             text: "Recorder started!",
                             status: 2,
@@ -5478,7 +5480,7 @@
                           this.videoRecorder.start();
                           break;
                         case "recording":
-                          PlaySound215()
+                          PlaySound215();
                           a.messages.push({
                             text: "Recorder stopped! Saving file...",
                             status: 2,
@@ -5510,7 +5512,7 @@
                         }, 100);
                         q.click();
                       };
-                      PlaySound214()
+                      PlaySound214();
                       a.messages.push({
                         text: "Recorder initiated and started!",
                         status: 2,
@@ -5528,7 +5530,7 @@
                     });
                   break;
                 case a.KEY_SCREENSHOT:
-                  PlaySound213()
+                  PlaySound213();
                   a.messages.push({
                     text: "Saving screenshot...",
                     status: 2,
@@ -6362,53 +6364,53 @@
           paletteSize: 10,
           border: 0.3
         },
-                  bubblegum: {
-      teal: "#83ffd7",
-      lgreen: "#faa3ff",
-      orange: "#e7896d",
-      yellow: "#ff00e7",
-      lavender: "#5a00ff",
-      pink: "#ef99c3",
-      vlgrey: "#ffc0f5",
-      lgrey: "#aa9f9e",
-      guiwhite: "#00ff00",
-      black: "#484848",
-      blue: "#0000ff",
-      green: "#00ff00",
-      red: "#ff0000",
-      gold: "#ffd700",
-      purple: "#8d6adf",
-      magenta: "#ff00c0",
-      grey: "#a7a7af",
-      dgrey: "#b300ff",
-      white: "#ff81d9",
-      guiblack: "#000000",
-      paletteSize: 10,
-      border: 1
+        bubblegum: {
+          teal: "#83ffd7",
+          lgreen: "#faa3ff",
+          orange: "#e7896d",
+          yellow: "#ff00e7",
+          lavender: "#5a00ff",
+          pink: "#ef99c3",
+          vlgrey: "#ffc0f5",
+          lgrey: "#aa9f9e",
+          guiwhite: "#00ff00",
+          black: "#484848",
+          blue: "#0000ff",
+          green: "#00ff00",
+          red: "#ff0000",
+          gold: "#ffd700",
+          purple: "#8d6adf",
+          magenta: "#ff00c0",
+          grey: "#a7a7af",
+          dgrey: "#b300ff",
+          white: "#ff81d9",
+          guiblack: "#000000",
+          paletteSize: 10,
+          border: 1
         },
-              nightmare: {
- teal: "#00ffae",
-      lgreen: "#8eff00",
-      orange: "#8a2000",
-      yellow: "#ffeb00",
-      lavender: "#2b007a",
-      pink: "#930048",
-      vlgrey: "#969696",
-      lgrey: "#2a2a2a",
-      guiwhite: "#aa0000",
-      black: "#ffffff",
-      blue: "#005372",
-      green: "#406a00",
-      red: "#840002",
-      gold: "#846400",
-      purple: "#270083",
-      magenta: "#b3015f",
-      grey: "#6f6f6f",
-      dgrey: "#ffffff",
-      white: "#000000",
-      guiblack: "#ffffff",
-      paletteSize: 10,
-      border: 1
+        nightmare: {
+          teal: "#00ffae",
+          lgreen: "#8eff00",
+          orange: "#8a2000",
+          yellow: "#ffeb00",
+          lavender: "#2b007a",
+          pink: "#930048",
+          vlgrey: "#969696",
+          lgrey: "#2a2a2a",
+          guiwhite: "#aa0000",
+          black: "#ffffff",
+          blue: "#005372",
+          green: "#406a00",
+          red: "#840002",
+          gold: "#846400",
+          purple: "#270083",
+          magenta: "#b3015f",
+          grey: "#6f6f6f",
+          dgrey: "#ffffff",
+          white: "#000000",
+          guiblack: "#ffffff",
+          paletteSize: 10,
+          border: 1
         },
         candy: {
           teal: "#7ADBBC",
