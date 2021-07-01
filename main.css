@@ -51,6 +51,15 @@ h1 {
   text-align: center;
   font: bold 40px/1.1 Ubuntu;
 }
+h1:hover {
+     animation:pfpHoverOn 800ms linear both;
+}
+
+h1:active {
+     animation:pfpDefault 400ms linear both;
+}
+
+
 body.mobile h1 {
   font-size: 32px;
 }
