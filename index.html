@@ -44,7 +44,15 @@ function PlaySound1() {
     bflat2.play();
 }
 </script>
-  
+                          <script>
+var bflat5 = new Audio();
+bflat5.src = ("https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/arras-mayhem.wav");
+function PlaySound5() {
+  bflat5.load();   
+    bflat5.play();
+}
+</script>
+    
 
                             <script>
 var music2 = new Audio();
@@ -106,7 +114,7 @@ function PlaySound() {
           <div class="sliderHolder">
             <div class="slider startMenuSlidingContent">
               <center><img src="https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/arras.png" onmouseover="PlaySound1()" onclick="PlaySound()" title="arras.io" class="icon" alt="arras icon"></center>
-               <h1>arras.io</h1>
+               <h1 onclick="PlaySound5()">arras.io</h1>
     
                                                       <noscript>
     <h4>Please enable JavaScript to play!</h4>
