@@ -1,5 +1,8 @@
 # Update
 - Made turrets smoother
+- Buffed some Hivemind-branch tanks
+- Nerfed Heavy Hunter
+- Added some MAX_CHILDREN: caps to bosses to prevent lag
 - You can now see your tank's color if it has changed in any way (Previously only others could see the color change)
 # Update
 - Added a color command
