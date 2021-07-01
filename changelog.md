@@ -1,6 +1,8 @@
 # Update
-- Added some chat commands
-- /define: Defines you into the select tank (Testbed B and up)
+- Made turrets smoother
+- You can now see your tank's color if it has changed in any way (Previously only others could see the color change)
+# Update
+- Added a color command
 - /color: Changes your tank's color (Testbed A and up)
 # Update
 - Nerfed some BT Tanks
