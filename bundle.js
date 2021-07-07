@@ -264,13 +264,13 @@
           case 19:
             return l.guiblack;
           case 20:
-            return "#008080";
+            return "#307A76";
           case 21:
-            return "#8FFF00";
+            return "#47F51E";
           case 22:
-            return "#FEFCAA";
+            return "#9264EF";
           case 23:
-            return "#d21fff";
+            return "#1D00FF";
           case 24:
             return "#226ef6";
           case 30:
@@ -285,7 +285,7 @@
             return "#00e00b";
           case 35:
             return "#ffd300";
-          case 36:
+          case 36: //rainbow baby yeah
             return T(
               [
                 "#ff1000",
@@ -2352,22 +2352,7 @@
                 z.renderx = z.cx;
                 z.rendery = z.cy;
                 z.renderv = z.view;
-                ia &&
-                  (clearInterval(qa),
-                  Y.push({
-                    text: "Thank you for playing arras-mayhem!",
-                    status: 2,
-                    alpha: 0,
-                    time: Date.now()
-                  }),
-                  (qa = setInterval(() => {
-                    Y.push({
-                      text: "Thank you for playing arras-mayhem!",
-                      status: 2,
-                      alpha: 0,
-                      time: Date.now()
-                    });
-                  }, 6e5)));
+     
                 break;
               case "S":
                 var d = c[0];
