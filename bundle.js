@@ -340,6 +340,22 @@
             return "#A277FB";
             case 43:
             return "#FF7F00";
+            case 44:
+            return T(
+              [
+                "#b493d3",
+                "#ffe6f4",
+              ][Math.floor((Date.now() / 400) % 2)],
+              [
+                "#ffe6f4",
+                "#b493d3"
+              ][Math.floor((Date.now() / 400) % 2)],
+              (Date.now() / 400) % 1
+            );
+              case 45:
+            return "#b493d3";
+              case 46:
+            return "#ffe6f4";
           default:
             return "#ff0000";
         }
