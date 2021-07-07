@@ -272,7 +272,11 @@
           case 23:
             return "#1D00FF";
           case 24:
-            return "#226ef6";
+            return "#B35ED8";
+          case 25:
+            return "#0531CB";
+          case 26:
+            return "#FDA54D";
           case 30:
             return 150 > Date.now() % 300 ? l.red : l.blue;
           case 31:
