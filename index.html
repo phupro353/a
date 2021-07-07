@@ -18,8 +18,7 @@
   <link rel="apple-touch-icon" href="https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/app.png" />
   <link rel="apple-touch-startup-image" href="https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/splash.png">
   <meta name="apple-mobile-web-app-capable" content="yes">
-
-  <link rel="apple-touch-startup-image" media="(device-width: 768px)" href="https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/splashtablet.png">
+<link rel="apple-touch-startup-image" media="(device-width: 768px)" href="https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/splashtablet.png">
    <link rel="apple-touch-startup-image" media="(device-width: 1536px)" href="https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/splashtablet.png">
  <link href="https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/splash.png" media="(device-width: 375px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
     <!-- Windows App Pin -->
@@ -281,7 +280,7 @@ function PlaySound() {
   window.onerror = function(message, source, lineno, colno, error) {
     window.onerror = null
     if (error) error = error.toString()
-    console.warn('The game crashed :(, refreshing page to recover from error')
+    console.warn('The game crashed, refreshing page to recover from the error')
     if (error == null && lineno == 0 && colno == 0) return
     var e = JSON.stringify({
       message: message,
