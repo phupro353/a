@@ -319,7 +319,27 @@
           case 37:
             return "#FFFF00";
           case 38:
-            return "#FFFF00";
+             return T(
+              [
+                "#ffffff",
+                "#000000",
+              ][Math.floor((Date.now() / 400) % 2)],
+              [
+                "#000000",
+                "#ffffff"
+              ][Math.floor((Date.now() / 400) % 2)],
+              (Date.now() / 400) % 1
+            );
+          case 39:
+            return "#A177FC";
+          case 40:
+            return "#56E012";
+            case 41:
+            return "#15CD2D";
+            case 42:
+            return "#A277FB";
+            case 43:
+            return "#FF7F00";
           default:
             return "#ff0000";
         }
