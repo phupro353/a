@@ -264,19 +264,25 @@
           case 19:
             return l.guiblack;
           case 20:
-            return "#307A76";
+            return "#008080";
           case 21:
-            return "#47F51E";
+            return "#8FFF00";
           case 22:
-            return "#9264EF";
+            return "#FEFCAA";
           case 23:
-            return "#1D00FF";
+            return "#d21fff";
           case 24:
             return "#B35ED8";
           case 25:
             return "#0531CB";
           case 26:
-            return "#FDA54D";
+            return "#226ef6";
+          case 27:
+            return "#3761D1";
+          case 28:
+            return "#AB1515";
+          case 29:
+            return "#44AA34";
           case 30:
             return 150 > Date.now() % 300 ? l.red : l.blue;
           case 31:
@@ -310,6 +316,10 @@
               (Date.now() / 200) % 1
             );
           //["#ff1600","#ff2b00","#ff4100","#ff5700","#ff6c00","#ff8200","#ff9700","#ffad00","#ffc300","#ffd800"]
+          case 37:
+            return "#FFFF00";
+          case 38:
+            return "#FFFF00";
           default:
             return "#ff0000";
         }
