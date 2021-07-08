@@ -1,6 +1,7 @@
 # Update
 - Re-added Sentries to Testbed A
 - FFA map size is bigger
+- Added a new type of Dominator and Base Protector
 # Update
 - Made turrets smoother
 - Buffed some Hivemind-branch tanks
