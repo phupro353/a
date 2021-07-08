@@ -1,4 +1,7 @@
 # Update
+- Re-added Sentries to Testbed A
+- FFA map size is bigger
+# Update
 - Made turrets smoother
 - Buffed some Hivemind-branch tanks
 - Nerfed Heavy Hunter
