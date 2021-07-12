@@ -1769,10 +1769,16 @@
                 f.offsetWidth / 2 -
                 a.offsetWidth / 2;
             }
-          };
-        }
+          };        (i.onclick = function() {
+            (document.getElementById("patchNotes").src =
+              "changelog.html?a=" + r),
+              e(h, "deselect"),
+              e(i, "select")
+          });
+        }        
         return e;
       })();
+  
       H.retrieveFromLocalStorage("playerNameInput");
       H.retrieveFromLocalStorage("playerKeyInput");
       H.retrieveFromLocalStorage("optScreenshotMode");
