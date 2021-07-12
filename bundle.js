@@ -1748,7 +1748,10 @@
           a = b.parentNode,
           c = b.firstElementChild,
           h = document.getElementById("patchNotes"),
+            i = document.getElementById("rules");
+
           e = {};
+  
         for (let d = 0; d < b.children.length; d++) {
           let f = b.children[d],
             y = f.dataset.type;
