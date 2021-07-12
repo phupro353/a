@@ -1727,6 +1727,22 @@
                 : (a[a.length - 1] += " " + c.trim()));
           Ka(a, !1);
         });
+            fetch("domains.md", {
+        cache: "no-cache"
+      })
+        .then(b => b.text())
+        .then(b => {
+          let a = [];
+          for (let c of b.split("\n"))
+            0 !== c.length &&
+              ((b = c.charAt(0)),
+              "#" === b
+                ? (Ka(a, !0), (a = [c.slice(1).trim()]))
+                : "-" === b
+                ? a.push(c.slice(1).trim())
+                : (a[a.length - 1] += " " + c.trim()));
+          Ka(a, !1);
+        });
       let Ja = (() => {
         let b = document.getElementById("changelogSelector"),
           a = b.parentNode,
