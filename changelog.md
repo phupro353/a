@@ -1,4 +1,10 @@
 # Update
+- Reworked Railgun, Exploder and Bombardier's looks
+- Added 3 new tanks
+- Culverin - Branches off Exploder and Cannon
+- Twin Assassin - Branches off Assassin and Twin Sniper
+- Bazooka - Branches off Launcher and Exploder
+# Update
 - Replaced the grow and shrink keybinds with a /size command
 - The /size command allows you to change your tank's size, anywhere from 6-20.
 # Update
