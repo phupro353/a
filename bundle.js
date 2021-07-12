@@ -1711,49 +1711,33 @@
             sa.appendChild(d);
           }
         };
-      fetch("changelog.md", {
-        cache: "no-cache"
-      })
-        .then(b => b.text())
-        .then(b => {
-          let a = [];
-          for (let c of b.split("\n"))
-            0 !== c.length &&
-              ((b = c.charAt(0)),
-              "#" === b
-                ? (Ka(a, !0), (a = [c.slice(1).trim()]))
-                : "-" === b
-                ? a.push(c.slice(1).trim())
-                : (a[a.length - 1] += " " + c.trim()));
-          Ka(a, !1);
-        });
-      let Ja = (() => {
-        let b = document.getElementById("changelogSelector"),
-          a = b.parentNode,
-          c = b.firstElementChild,
-          h = document.getElementById("patchNotes"),
-          e = {};
-        for (let d = 0; d < b.children.length; d++) {
-          let f = b.children[d],
-            y = f.dataset.type;
-          e[y] = f.onclick = () => {
-            if (f !== c) {
-              var d = c.dataset.type;
-              c.classList.remove("active");
-              f.classList.add("active");
-              h.classList.remove(d);
-              h.classList.add(y);
-              c = f;
-              a.scrollLeft =
-                f.offsetLeft -
-                b.offsetLeft +
-                f.offsetWidth / 2 -
-                a.offsetWidth / 2;
-            }
-          };
-        }
-        return e;
-      })();
+  o = document.getElementById("rules"),
+          s = document.getElementById("changelogs"),
+          i = document.getElementById("announcements");
+        e(o, "deselect"),
+          e(s, "select"),
+          e(i, "deselect"),
+          (o.onclick = function() {
+            (document.getElementById("patchNotesIFrame").src =
+              "rules.html?a=" + r),
+              e(o, "select"),
+              e(s, "deselect"),
+              e(i, "deselect");
+          }),
+          (s.onclick = function() {
+            (document.getElementById("patchNotesIFrame").src =
+              "changelog.html?a=" + r),
+              e(o, "deselect"),
+              e(s, "select"),
+              e(i, "deselect");
+          }),
+          (i.onclick = function() {
+            (document.getElementById("patchNotesIFrame").src =
+              "announcements.html?a=" + r),
+              e(o, "deselect"),
+              e(s, "deselect"),
+              e(i, "select");
+          }),
       H.retrieveFromLocalStorage("playerNameInput");
       H.retrieveFromLocalStorage("playerKeyInput");
       H.retrieveFromLocalStorage("optScreenshotMode");
