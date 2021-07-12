@@ -1727,31 +1727,12 @@
                 : (a[a.length - 1] += " " + c.trim()));
           Ka(a, !1);
         });
-            fetch("domains.md", {
-        cache: "no-cache"
-      })
-        .then(b => b.text())
-        .then(b => {
-          let a = [];
-          for (let c of b.split("\n"))
-            0 !== c.length &&
-              ((b = c.charAt(0)),
-              "#" === b
-                ? (Ka(a, !0), (a = [c.slice(1).trim()]))
-                : "-" === b
-                ? a.push(c.slice(1).trim())
-                : (a[a.length - 1] += " " + c.trim()));
-          Ka(a, !1);
-        });
       let Ja = (() => {
         let b = document.getElementById("changelogSelector"),
           a = b.parentNode,
           c = b.firstElementChild,
           h = document.getElementById("patchNotes"),
-            i = document.getElementById("rules");
-
           e = {};
-  
         for (let d = 0; d < b.children.length; d++) {
           let f = b.children[d],
             y = f.dataset.type;
@@ -1769,16 +1750,40 @@
                 f.offsetWidth / 2 -
                 a.offsetWidth / 2;
             }
-          };        (i.onclick = function() {
-            (document.getElementById("patchNotes").src =
-              "changelog.html?a=" + r),
-              e(h, "deselect"),
-              e(i, "select")
-          });
-        }        
+          };
+        }
         return e;
       })();
-  
+       fetch("domains.md", {
+            cache: "no-cache"
+        }).then(b => b.text()).then(b => {
+            let a = [];
+            for (let c of b.split("\n")) 0 !== c.length && (b = c.charAt(0), "#" === b ? (Qa(a, !0), a = [c.slice(1).trim()]) : "-" === b ? a.push(c.slice(1).trim()) : a[a.length - 1] += " " + c.trim());
+            Qa(a, !1)
+        });
+        let dad = (() => {
+            let b = document.getElementById("changelogSelector"),
+                a = b.parentNode,
+                c = b.firstElementChild,
+                h = document.getElementById("rules"),
+                t = {};
+            for (let d = 0; d < b.children.length; d++) {
+                let f = b.children[d],
+                    y = f.dataset.type;
+                t[y] = f.onclick = () => {
+                    if (f !== c) {
+                        var d = c.dataset.type;
+                        c.classList.remove("active");
+                        f.classList.add("active");
+                        h.classList.remove(d);
+                        h.classList.add(y);
+                        c = f;
+                        a.scrollLeft = f.offsetLeft - b.offsetLeft + f.offsetWidth / 2 - a.offsetWidth / 2
+                    }
+                }
+            }
+            return t
+        })();
       H.retrieveFromLocalStorage("playerNameInput");
       H.retrieveFromLocalStorage("playerKeyInput");
       H.retrieveFromLocalStorage("optScreenshotMode");
