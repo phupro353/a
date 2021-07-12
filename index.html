@@ -267,10 +267,13 @@ function PlaySound() {
         <div class="startMenuHolder shrinkable">
           <div class="changelogSelectorContainer">
           <div class="changelogSelector" id="changelogSelector">
-              <span data-type="changelog" onmouseover="PlaySound1()" title="More bullets than Touhou">Changelog</span>
+
+             <span data-type="updates" class="active" title="All major updates">Rules</span>
+                       <span data-type="changelog" onmouseover="PlaySound1()" title="More bullets than Touhou">Changelog</span>
             </div>
           </div>
           <div id="patchNotes" class="shadowScroll updates"></div>
+           <div id="rules" class="shadowScroll updates"></div>
         </div>
       </div>
     </div>
