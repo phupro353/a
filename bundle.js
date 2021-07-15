@@ -1425,57 +1425,8 @@
         aa = document.getElementById("serverSelector").parentNode.parentNode,
         ab = document.getElementById("serverSelector"),
         ea;
-      let serverSelector = document.getElementById("serverSelector");
-let selectedServer;
-let plUpdater;
-
-async function getPlayerData(server, element, locInfo) {
-  let isSecure = (server.secure) || (location.protocol === "https:" ? 1 : -1);
-  let url = `${isSecure === 1 ? "https" : "http"}://${server.at}/status.json`;
-
-  let oof = setTimeout(() => {
-    server.name = (server.name) ? server.name : '?'; //  != ''
-    server.players = (server.players) ? server.players : '?/?'; // != '' || server.players
-    if (element && locInfo) element.textContent = `${server.name} | ${locInfo} | ${server.players}`;
-  }, 3000);
-
-function pullJSON(url) {
-  // Set up the request
-  console.log(`Loading JSON from ${url}`);
-  // Return a promise
-  return new Promise((resolve, reject) => {
-    fetch(url).then(response => {
-      if (response.ok) {
-        resolve(response.json());
-        console.log(`JSON load from ${url} completed.`);
-      } else {
-        reject(response.status);
-        console.log(`JSON load from ${url} failed. Error: ${response.status}`);
-
-      }
-    });
-  });
-}
-  await pullJSON(url).then(res => {
-    clearTimeout(oof);
-    server.name = res.name;
-    server.gamemode = res.gamemode;
-    server.players = `${res.players}/${res.max_players}`;
-    if (element && locInfo) element.textContent = `${server.name} | ${locInfo} | ${server.players}`;
-  });
-};
-
-  for (let a of b.servers) {
-        if ((null == a.visible || a.visible > Ha) && b.server !== a) continue;// == null
-
-  let [hostCode, regionCode] = server.code.split("-"),
-    locInfo = `${global.codeTable[0][hostCode]} | ${global.codeTable[1][regionCode][0]}`,
-    tr = document.createElement("tr"),
-    td = document.createElement("td");
-  td.textContent = `Loading... | ${locInfo} | Loading...`;
-
-  //get player and gamemode info from server
-  getPlayerData(server, td, locInfo);
+      for (let a of b.servers) {
+        if ((null == a.visible || a.visible > Ha) && b.server !== a) continue;
 let adr = `${"https:" === location.protocol ? "https" : "http"}://${a.at}/status.json`;
 let req = new XMLHttpRequest();
 req.open('GET', adr, false);
