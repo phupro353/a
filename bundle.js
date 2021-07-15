@@ -1428,27 +1428,19 @@
       for (let a of b.servers) {
         if ((null == a.visible || a.visible > Ha) && b.server !== a) continue;
 let adr = `${"https:" === location.protocol ? "https" : "http"}://${a.at}/status.json`;
+let req = new XMLHttpRequest();
+req.open('GET', adr, true);
 
-fetch(adr)
- .then(
-    function(response) {
-      if (response.status !== 200) {
-        console.log('Looks like there was a problem. Status Code: ' +
-          response.status);
-        return;
-      }
-
-      // Examine the text in the response
-      response.json().then(function(data) {
-        console.log(data);
-      });
-    }
-  )
-  .catch(function(err) {
-    console.log('Fetch Error :-S', err);
-  })
-        //var gm = JSON.parse(req.responseText).gamemode; // use this if your server uses random gamemodes
+try {
+    if (a.at != "private") req.send(); // change "private" to your SERVER FOR CONNNECTING TO PRIVATE ONES's pseudo-adress
+} catch (e) {
+    console.log(`Error while loading server #${a.id} status - ${e}`); 
+}
+        req.onload = function (e) {
+if (req.status === 200) {
+    //var gm = JSON.parse(req.responseText).gamemode; // use this if your server uses random gamemodes
     var pl = JSON.parse(req.responseText).players;
+} 
         let [d, c, h] = a.code.split("-"),
           u = document.createElement("tr");
         u.appendChild(document.createElement("td")).textContent =
@@ -1459,10 +1451,9 @@ fetch(adr)
     u.appendChild(document.createElement("td")).textContent = pl;
 } else {
     u.appendChild(document.createElement("td")).textContent = "Unknown";
-}            
+} 
         u.appendChild(document.createElement("td")).textContent = $a(h);
         a.featured && u.classList.add("featured");
-
         u.onclick = () => {
           ea.classList.remove("selected");
           ea = u;
@@ -1475,15 +1466,15 @@ fetch(adr)
             ? (aa.scrollTop = u.offsetTop - 50)
             : aa.scrollTop > u.offsetTop - 10 &&
               (aa.scrollTop = u.offsetTop - 10);
-        };             
+        };
         ab.appendChild(u);
         b.server === a &&
           ((ea = u),
           ea.classList.add("selected"),
           setTimeout(() => {
             aa.scrollTop = u.offsetTop - 30;
-          })); 
-      }
+          }));
+      }}
       let bb = (() => {
           let b = !1,
             a = document.getElementById("startMenuSlidingTrigger"),
