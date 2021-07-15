@@ -1,8 +1,4 @@
 # Update
-- Nerfed all Spawner-branch tanks's reload
-- If you have a valid token, you can include the word "Tester" (No quotation marks) in your name to spawn as the respective Testbed tank
-- Pssst, have you tried clicking on the title?
-# Update
 - Reworked Railgun, Exploder and Bombardier's looks
 - Added 3 new tanks
 - Culverin - Branches off Exploder and Cannon

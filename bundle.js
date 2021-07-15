@@ -1427,31 +1427,12 @@
         ea;
       for (let a of b.servers) {
         if ((null == a.visible || a.visible > Ha) && b.server !== a) continue;
-let adr = `${"https:" === location.protocol ? "https" : "http"}://${a.at}/status.json`;
-let req = new XMLHttpRequest();
-req.open('GET', adr, true);
-
-try {
-    if (a.at != "private") req.send(); // change "private" to your SERVER FOR CONNNECTING TO PRIVATE ONES's pseudo-adress
-} catch (e) {
-    console.log(`Error while loading server #${a.id} status - ${e}`); 
-}
-        req.onload = function (e) {
-if (req.status === 200) {
-    //var gm = JSON.parse(req.responseText).gamemode; // use this if your server uses random gamemodes
-    var pl = JSON.parse(req.responseText).players;
-} 
         let [d, c, h] = a.code.split("-"),
           u = document.createElement("tr");
         u.appendChild(document.createElement("td")).textContent =
           b.codeTable[0][d];
         u.appendChild(document.createElement("td")).textContent =
           b.codeTable[1][c][0];
-        if (pl) {
-    u.appendChild(document.createElement("td")).textContent = pl;
-} else {
-    u.appendChild(document.createElement("td")).textContent = "Unknown";
-} 
         u.appendChild(document.createElement("td")).textContent = $a(h);
         a.featured && u.classList.add("featured");
         u.onclick = () => {
@@ -1474,7 +1455,7 @@ if (req.status === 200) {
           setTimeout(() => {
             aa.scrollTop = u.offsetTop - 30;
           }));
-      }}
+      }
       let bb = (() => {
           let b = !1,
             a = document.getElementById("startMenuSlidingTrigger"),
@@ -4730,7 +4711,15 @@ if (req.status === 200) {
         timezone: new Date().getTimezoneOffset() / -60,
         servers: [
           {
-
+            visible: 0,
+            id: "Heroku-Beta",
+            type: "beta",
+            code: "heroku-frankfurt-4",
+            at: p.heroku("arrasdotio"),
+            prefer: !0,
+            featured: 1 // For Featured Status.
+          },
+          {
             visible: 0,
             id: "Heroku-FFA",
             type: "ffa",
@@ -4748,7 +4737,14 @@ if (req.status === 200) {
             // featured: 1, // For Featured Status.
           },
           {
-
+            visible: 1,
+            id: "Glitch-Domination",
+            type: "dominaton",
+            code: "glitch-virginia-d",
+            at: p.glitch("jagged-petal-parenthesis")
+            // featured: 1, // For Featured Status.
+          },
+          {
             visible: 0,
             id: "Heroku-Event",
             type: "main",
@@ -4758,22 +4754,12 @@ if (req.status === 200) {
           },
           {
             visible: 0,
-            id: "Heroku-Beta",
-            type: "beta",
-            code: "heroku-frankfurt-4",
-            at: p.heroku("arrasdotio"),
-            prefer: !0,
-            featured: 1 // For Featured Status.
-          },
-          
-        //  {
-        //    visible: 0,
-        //    id: "Repl.it-Legacy",
-        //    type: "legacy",
-        //    code: "replit-virginia-2",
-       //     at: p.replit("arras-mayhem-legacy.seaguli")
+            id: "Repl.it-Legacy",
+            type: "legacy",
+            code: "replit-virginia-2",
+            at: p.replit("arras-mayhem-legacy.seaguli")
             // featured: 1, // For Featured Status.
-      //    } 
+          }
         ]
           .map((a, e) => ({ data: a, i: e }))
           .sort((a, e) =>
