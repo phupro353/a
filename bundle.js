@@ -1465,8 +1465,8 @@ function pullJSON(url) {
   });
 };
 
-for (let server of global.servers) {
-  if (!server.visible && global.server !== server) continue; // == null
+  for (let a of b.servers) {
+        if ((null == a.visible || a.visible > Ha) && b.server !== a) continue;// == null
 
   let [hostCode, regionCode] = server.code.split("-"),
     locInfo = `${global.codeTable[0][hostCode]} | ${global.codeTable[1][regionCode][0]}`,
