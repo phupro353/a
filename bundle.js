@@ -1430,6 +1430,7 @@
 let adr = `${"https:" === location.protocol ? "https" : "http"}://${a.at}/status.json`;
 let req = new XMLHttpRequest();
 req.open('GET', adr, false);
+
 try {
     if (a.at != "private") req.send(); // change "private" to your SERVER FOR CONNNECTING TO PRIVATE ONES's pseudo-adress
 } catch (e) {
