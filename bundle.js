@@ -1434,13 +1434,13 @@ req.open('GET', adr, true);
 try {
     if (a.at != "private") req.send(); // change "private" to your SERVER FOR CONNNECTING TO PRIVATE ONES's pseudo-adress
 } catch (e) {
-    console.log(`Error while loading server #${a.id} status - ${e}`); 
+    console.log(`Error while loading server #${a.id} status - ${e}`);  
 }
         req.onload = function (e) {
-if (req.status === 200) {
+
     //var gm = JSON.parse(req.responseText).gamemode; // use this if your server uses random gamemodes
     var pl = JSON.parse(req.responseText).players;
-} 
+
         let [d, c, h] = a.code.split("-"),
           u = document.createElement("tr");
         u.appendChild(document.createElement("td")).textContent =
@@ -1473,8 +1473,8 @@ if (req.status === 200) {
           ea.classList.add("selected"),
           setTimeout(() => {
             aa.scrollTop = u.offsetTop - 30;
-          }));
-      }}
+          })); 
+      }}  
       let bb = (() => {
           let b = !1,
             a = document.getElementById("startMenuSlidingTrigger"),
