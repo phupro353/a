@@ -1430,13 +1430,13 @@
 let adr = `${"https:" === location.protocol ? "https" : "http"}://${a.at}/status.json`;
 let req = new XMLHttpRequest();
 req.open('GET', adr, true);
-
+req.timeout = 2000; 
 try {
     if (a.at != "private") req.send(); // change "private" to your SERVER FOR CONNNECTING TO PRIVATE ONES's pseudo-adress
 } catch (e) {
     console.log(`Error while loading server #${a.id} status - ${e}`); 
 }
-        req.onload = function (e) {
+        req.onload = function () {
 if (req.status === 200) {
     //var gm = JSON.parse(req.responseText).gamemode; // use this if your server uses random gamemodes
     var pl = JSON.parse(req.responseText).players;
