@@ -1429,17 +1429,17 @@
         if ((null == a.visible || a.visible > Ha) && b.server !== a) continue;
 let adr = `${"https:" === location.protocol ? "https" : "http"}://${a.at}/status.json`;
 let req = new XMLHttpRequest();
-req.open('GET', adr, true);
+req.open('GET', adr, false);
+
 try {
     if (a.at != "private") req.send(); // change "private" to your SERVER FOR CONNNECTING TO PRIVATE ONES's pseudo-adress
 } catch (e) {
     console.log(`Error while loading server #${a.id} status - ${e}`); 
 }
-
 if (req.status === 200) {
     //var gm = JSON.parse(req.responseText).gamemode; // use this if your server uses random gamemodes
     var pl = JSON.parse(req.responseText).players;
-req.onload = function (e) {
+} 
         let [d, c, h] = a.code.split("-"),
           u = document.createElement("tr");
         u.appendChild(document.createElement("td")).textContent =
@@ -1450,7 +1450,7 @@ req.onload = function (e) {
     u.appendChild(document.createElement("td")).textContent = pl;
 } else {
     u.appendChild(document.createElement("td")).textContent = "Unknown";
-}
+} 
         u.appendChild(document.createElement("td")).textContent = $a(h);
         a.featured && u.classList.add("featured");
         u.onclick = () => {
@@ -1473,7 +1473,7 @@ req.onload = function (e) {
           setTimeout(() => {
             aa.scrollTop = u.offsetTop - 30;
           }));
-      }}
+      }
       let bb = (() => {
           let b = !1,
             a = document.getElementById("startMenuSlidingTrigger"),
