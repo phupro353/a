@@ -1430,13 +1430,13 @@
 let adr = `${"https:" === location.protocol ? "https" : "http"}://${a.at}/status.json`;
 let req = new XMLHttpRequest();
 req.open('GET', adr, true);
-req.timeout = 2000; 
+
 try {
     if (a.at != "private") req.send(); // change "private" to your SERVER FOR CONNNECTING TO PRIVATE ONES's pseudo-adress
 } catch (e) {
     console.log(`Error while loading server #${a.id} status - ${e}`); 
 }
-        req.onload = function () {
+        req.onload = function (e) {
 if (req.status === 200) {
     //var gm = JSON.parse(req.responseText).gamemode; // use this if your server uses random gamemodes
     var pl = JSON.parse(req.responseText).players;
@@ -4740,13 +4740,21 @@ if (req.status === 200) {
             featured: 1 // For Featured Status.
           },
           {
+            visible: 0,
+            id: "Glitch-Developer",
+            type: "dev",
+            code: "glitch-virginia-f",
+            at: p.glitch("arrasio5")
+            // featured: 1, // For Featured Status.
+          },
+          {
 
             visible: 0,
             id: "Heroku-Event",
             type: "main",
             code: "heroku-virginia-x",
-            at: p.heroku("arras-mayhem"),
-             featured: 0, // For Featured Status.
+            at: p.heroku("arras-mayhem")
+            // featured: 1, // For Featured Status.
           },
           {
             visible: 0,
@@ -4758,14 +4766,6 @@ if (req.status === 200) {
             featured: 1 // For Featured Status.
           },
           {
-                      visible: 0,
-            id: "Glitch-Developer",
-            type: "dev",
-            code: "glitch-virginia-f",
-            at: p.glitch("arrasio5"),
-            featured: 0, // For Featured Status.
-          }
-
         //  {
         //    visible: 0,
         //    id: "Repl.it-Legacy",
