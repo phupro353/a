@@ -1429,13 +1429,14 @@
         if ((null == a.visible || a.visible > Ha) && b.server !== a) continue;
 let adr = `${"https:" === location.protocol ? "https" : "http"}://${a.at}/status.json`;
 let req = new XMLHttpRequest();
-req.open('GET', adr, false);
+req.open('GET', adr, true);
 
 try {
     if (a.at != "private") req.send(); // change "private" to your SERVER FOR CONNNECTING TO PRIVATE ONES's pseudo-adress
 } catch (e) {
     console.log(`Error while loading server #${a.id} status - ${e}`); 
 }
+        req.onload = function (e) {
 if (req.status === 200) {
     //var gm = JSON.parse(req.responseText).gamemode; // use this if your server uses random gamemodes
     var pl = JSON.parse(req.responseText).players;
@@ -1473,7 +1474,7 @@ if (req.status === 200) {
           setTimeout(() => {
             aa.scrollTop = u.offsetTop - 30;
           }));
-      }
+      }}
       let bb = (() => {
           let b = !1,
             a = document.getElementById("startMenuSlidingTrigger"),
@@ -4729,15 +4730,7 @@ if (req.status === 200) {
         timezone: new Date().getTimezoneOffset() / -60,
         servers: [
           {
-            visible: 0,
-            id: "Heroku-Beta",
-            type: "beta",
-            code: "heroku-frankfurt-4",
-            at: p.heroku("arrasdotio"),
-            prefer: !0,
-            featured: 1 // For Featured Status.
-          },
-          {
+
             visible: 0,
             id: "Heroku-FFA",
             type: "ffa",
@@ -4755,14 +4748,7 @@ if (req.status === 200) {
             // featured: 1, // For Featured Status.
           },
           {
-            visible: 1,
-            id: "Glitch-Domination",
-            type: "dominaton",
-            code: "glitch-virginia-d",
-            at: p.glitch("jagged-petal-parenthesis")
-            // featured: 1, // For Featured Status.
-          },
-          {
+
             visible: 0,
             id: "Heroku-Event",
             type: "main",
@@ -4770,6 +4756,16 @@ if (req.status === 200) {
             at: p.heroku("arras-mayhem")
             // featured: 1, // For Featured Status.
           },
+          {
+            visible: 0,
+            id: "Heroku-Beta",
+            type: "beta",
+            code: "heroku-frankfurt-4",
+            at: p.heroku("arrasdotio"),
+            prefer: !0,
+            featured: 1 // For Featured Status.
+          },
+          {
         //  {
         //    visible: 0,
         //    id: "Repl.it-Legacy",
