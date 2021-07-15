@@ -1429,17 +1429,25 @@
         if ((null == a.visible || a.visible > Ha) && b.server !== a) continue;
 let adr = `${"https:" === location.protocol ? "https" : "http"}://${a.at}/status.json`;
 
+fetch(adr)
+ .then(
+    function(response) {
+      if (response.status !== 200) {
+        console.log('Looks like there was a problem. Status Code: ' +
+          response.status);
+        return;
+      }
 
-let req = new XMLHttpRequest();
-req.open('GET', adr, true);
-
-try {
-    if (a.at != "private") req.send(); // change "private" to your SERVER FOR CONNNECTING TO PRIVATE ONES's pseudo-adress
-} catch (e) {
-    console.log(`Error while loading server #${a.id} status - ${e}`);  
-}
- req.onload = function (e) {
-    //var gm = JSON.parse(req.responseText).gamemode; // use this if your server uses random gamemodes
+      // Examine the text in the response
+      response.json().then(function(data) {
+        console.log(data);
+      });
+    }
+  )
+  .catch(function(err) {
+    console.log('Fetch Error :-S', err);
+  })
+        //var gm = JSON.parse(req.responseText).gamemode; // use this if your server uses random gamemodes
     var pl = JSON.parse(req.responseText).players;
         let [d, c, h] = a.code.split("-"),
           u = document.createElement("tr");
@@ -1475,7 +1483,7 @@ try {
           setTimeout(() => {
             aa.scrollTop = u.offsetTop - 30;
           })); 
-      }}
+      }
       let bb = (() => {
           let b = !1,
             a = document.getElementById("startMenuSlidingTrigger"),
