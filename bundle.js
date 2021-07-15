@@ -1428,6 +1428,8 @@
       for (let a of b.servers) {
         if ((null == a.visible || a.visible > Ha) && b.server !== a) continue;
 let adr = `${"https:" === location.protocol ? "https" : "http"}://${a.at}/status.json`;
+
+
 let req = new XMLHttpRequest();
 req.open('GET', adr, true);
 
@@ -1436,11 +1438,9 @@ try {
 } catch (e) {
     console.log(`Error while loading server #${a.id} status - ${e}`);  
 }
-             req.onload = function (e) {
+ req.onload = function (e) {
     //var gm = JSON.parse(req.responseText).gamemode; // use this if your server uses random gamemodes
     var pl = JSON.parse(req.responseText).players;
-
-
         let [d, c, h] = a.code.split("-"),
           u = document.createElement("tr");
         u.appendChild(document.createElement("td")).textContent =
@@ -1451,9 +1451,10 @@ try {
     u.appendChild(document.createElement("td")).textContent = pl;
 } else {
     u.appendChild(document.createElement("td")).textContent = "Unknown";
-}    
+}            
         u.appendChild(document.createElement("td")).textContent = $a(h);
         a.featured && u.classList.add("featured");
+
         u.onclick = () => {
           ea.classList.remove("selected");
           ea = u;
@@ -1466,7 +1467,7 @@ try {
             ? (aa.scrollTop = u.offsetTop - 50)
             : aa.scrollTop > u.offsetTop - 10 &&
               (aa.scrollTop = u.offsetTop - 10);
-        };
+        };             
         ab.appendChild(u);
         b.server === a &&
           ((ea = u),
