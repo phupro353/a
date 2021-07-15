@@ -1436,10 +1436,10 @@ try {
 } catch (e) {
     console.log(`Error while loading server #${a.id} status - ${e}`);  
 }
-        req.onload = function (e) {
-
+             req.onload = function (e) {
     //var gm = JSON.parse(req.responseText).gamemode; // use this if your server uses random gamemodes
     var pl = JSON.parse(req.responseText).players;
+
 
         let [d, c, h] = a.code.split("-"),
           u = document.createElement("tr");
@@ -1451,7 +1451,7 @@ try {
     u.appendChild(document.createElement("td")).textContent = pl;
 } else {
     u.appendChild(document.createElement("td")).textContent = "Unknown";
-} 
+}    
         u.appendChild(document.createElement("td")).textContent = $a(h);
         a.featured && u.classList.add("featured");
         u.onclick = () => {
@@ -1474,7 +1474,7 @@ try {
           setTimeout(() => {
             aa.scrollTop = u.offsetTop - 30;
           })); 
-      }}  
+      }}
       let bb = (() => {
           let b = !1,
             a = document.getElementById("startMenuSlidingTrigger"),
