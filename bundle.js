@@ -1439,7 +1439,7 @@ async function getPlayerData(server, element, locInfo) {
     if (element && locInfo) element.textContent = `${server.name} | ${locInfo} | ${server.players}`;
   }, 3000);
 
-util.pullJSON = function (url) {
+function pullJSON(url) {
   // Set up the request
   console.log(`Loading JSON from ${url}`);
   // Return a promise
@@ -1455,8 +1455,8 @@ util.pullJSON = function (url) {
       }
     });
   });
-
-  await util.pullJSON(url).then(res => {
+}
+  await pullJSON(url).then(res => {
     clearTimeout(oof);
     server.name = res.name;
     server.gamemode = res.gamemode;
@@ -1467,29 +1467,17 @@ util.pullJSON = function (url) {
 
 for (let server of global.servers) {
   if (!server.visible && global.server !== server) continue; // == null
-let adr = `${"https:" === location.protocol ? "https" : "http"}://${a.at}/status.json`;
-let req = new XMLHttpRequest();
-req.open('GET', adr, false);
-try {
-    if (a.at != "private") req.send(); // change "private" to your SERVER FOR CONNNECTING TO PRIVATE ONES's pseudo-adress
-} catch (e) {
-    console.log(`Error while loading server #${a.id} status - ${e}`); 
-}
-if (req.status === 200) {
-    //var gm = JSON.parse(req.responseText).gamemode; // use this if your server uses random gamemodes
-    var pl = JSON.parse(req.responseText).players;
-} 
-        let [d, c, h] = a.code.split("-"),
-          u = document.createElement("tr");
-        u.appendChild(document.createElement("td")).textContent =
-          b.codeTable[0][d];
-        u.appendChild(document.createElement("td")).textContent =
-          b.codeTable[1][c][0];
-        if (pl) {
-    u.appendChild(document.createElement("td")).textContent = pl;
-} else {
-    u.appendChild(document.createElement("td")).textContent = "Unknown";
-} 
+
+  let [hostCode, regionCode] = server.code.split("-"),
+    locInfo = `${global.codeTable[0][hostCode]} | ${global.codeTable[1][regionCode][0]}`,
+    tr = document.createElement("tr"),
+    td = document.createElement("td");
+  td.textContent = `Loading... | ${locInfo} | Loading...`;
+
+  //get player and gamemode info from server
+  getPlayerData(server, td, locInfo);
+
+  tr.appendChild(td);
         u.appendChild(document.createElement("td")).textContent = $a(h);
         a.featured && u.classList.add("featured");
         u.onclick = () => {
