@@ -4740,21 +4740,13 @@ if (req.status === 200) {
             featured: 1 // For Featured Status.
           },
           {
-            visible: 0,
-            id: "Glitch-Developer",
-            type: "dev",
-            code: "glitch-virginia-f",
-            at: p.glitch("arrasio5")
-            // featured: 1, // For Featured Status.
-          },
-          {
 
             visible: 0,
             id: "Heroku-Event",
             type: "main",
             code: "heroku-virginia-x",
-            at: p.heroku("arras-mayhem")
-            // featured: 1, // For Featured Status.
+            at: p.heroku("arras-mayhem"),
+             featured: 0, // For Featured Status.
           },
           {
             visible: 0,
@@ -4765,7 +4757,15 @@ if (req.status === 200) {
             prefer: !0,
             featured: 1 // For Featured Status.
           },
-          
+          {
+                      visible: 0,
+            id: "Glitch-Developer",
+            type: "dev",
+            code: "glitch-virginia-f",
+            at: p.glitch("arrasio5"),
+            featured: 0, // For Featured Status.
+          }
+
         //  {
         //    visible: 0,
         //    id: "Repl.it-Legacy",
