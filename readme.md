@@ -1,7 +1,10 @@
 
 # Arras Mayhem
 The offical client for the arras-mayhem server.
+
 ![Purple Arras.io logo](https://cdn.glitch.com/fca666a2-8235-47b6-a711-c9926dc2248f%2FLogo.png?v=1595837913869) 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ee4ba925-dbe8-40fd-9faf-83e3dabe4b5b/deploy-status)](https://app.netlify.com/sites/arras-moe/deploys) [![Official Discord server](https://discordapp.com/api/guilds/427668515357458443/embed.png)](https://discord.gg/yTZdDPA)
+
 # Features
 - Sound effects!
 - Music!
@@ -314,5 +317,4 @@ add this below *socket.player = socket.spawn(name);*
 - Powfu [MG] Octo#9071
 - Various StackOverflow contributors (For webserver code)
 - CX and the various developers of arras.io
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ee4ba925-dbe8-40fd-9faf-83e3dabe4b5b/deploy-status)](https://app.netlify.com/sites/arras-moe/deploys)
-[![Official Discord server](https://discordapp.com/api/guilds/427668515357458443/embed.png)](https://discord.gg/yTZdDPA)
+
