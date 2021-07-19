@@ -1,4 +1,10 @@
 # Update
+- Nerfed all spawner-branch tank's reload speed
+- Nerfed Boomer
+- Nerfed Carpenter
+- If you have a valid token, you can now include the word "Tester" (No quotation marks) to spawn as the respective Testbed tank
+- Pssst, have you clicked on the title?
+# Update
 - Reworked Railgun, Exploder and Bombardier's looks
 - Added 3 new tanks
 - Culverin - Branches off Exploder and Cannon
