@@ -4602,6 +4602,7 @@
         KEY_AUTO_SPIN: 67,
         KEY_OVER_RIDE: 82,
         KEY_LEVEL_UP: 78,
+        KEY_TELEPORT: 84,
         KEY_ABILITY: 70,
         KEY_REVERSE_MOUSE: 66,
         KEY_REVERSE_TANK: 86,
@@ -5334,6 +5335,9 @@
             case a.KEY_MOUSE_2:
               this.set(6, !0);
               break;
+              case a.KEY_TELEPORT:
+                  this.emit("F");
+                  break;
             case a.KEY_LEVEL_UP:
               this.emit("L");
               break;
