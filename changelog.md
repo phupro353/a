@@ -2,6 +2,7 @@
 - Nerfed Railgun
 - Added a teleportation keybind for Testbed B and the Event Server, press T to teleport!
 - Fixed a bug with Healer
+- The define command is now available to Testbed B and the event server!
 # Update
 - Nerfed all spawner-branch tank's reload speed
 - Nerfed Boomer
