@@ -1,5 +1,6 @@
 # Update
 - Removed all tanks with freezing effects as they were slowing down the server
+- Added some bosses
 # Update
 - Nerfed Railgun
 - Added a teleportation keybind for Testbed B and the Event Server, press T to teleport!
