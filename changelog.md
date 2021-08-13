@@ -1,6 +1,11 @@
 # Update
 - Buffed Healer
 - Buffed all Underseer branch tanks
+- Changed the look of some Inceptioner-branch tanks
+- Added 3 new tanks
+- Double Gunner - Branches off Gunner and Double Twin
+- Producer - Branches off Trapper and Inceptioner
+- Auto-Hivemind - Branches off Hivemind and Auto-Basic
 # Update
 - Removed all tanks with freezing effects as they were slowing down the server
 - Added some bosses
