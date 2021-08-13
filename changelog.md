@@ -1,4 +1,7 @@
 # Update
+- Buffed Healer
+- Buffed all Underseer branch tanks
+# Update
 - Removed all tanks with freezing effects as they were slowing down the server
 - Added some bosses
 # Update
