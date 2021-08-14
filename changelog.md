@@ -1,4 +1,6 @@
 # Update
+- Fixed a bug with Potato Chip and Spectator A
+# Update
 - Buffed Healer
 - Buffed all Underseer branch tanks
 - Changed the look of some Inceptioner-branch tanks
