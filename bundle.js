@@ -1,3 +1,63 @@
+     //just some code to make the sound work
+      var smallaudio = new Audio();
+      smallaudio.src =
+        "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/sysse_ok.ogg";
+      function PlaySound210() {
+        smallaudio.play();
+      }
+      var clicked = false;
+
+      function doSomething() {
+        if (clicked) {
+          var bflat25 = new Audio();
+          bflat25.src =
+            "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/cancel.wav";
+          bflat25.load();
+          bflat25.play();
+        } else {
+          var bflat33 = new Audio();
+          bflat33.src =
+            "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/sysse_ok.ogg";
+          bflat33.load();
+          bflat33.play();
+        }
+        clicked = !clicked;
+      }
+      var smallaudio2 = new Audio();
+      smallaudio2.src =
+        "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/error.ogg";
+      function PlaySound211() {
+        smallaudio2.play();
+      }
+      var smallaudio3 = new Audio(
+        "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/socket.wav"
+      );
+
+      smallaudio3.loop = false;
+      function PlaySound212() {
+        smallaudio3.loop = false;
+        smallaudio3.play();
+      }
+  var smallaudio5 = new Audio();
+  smallaudio5.src =
+    "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/poka.wav";
+  function PlaySound214() {
+    smallaudio5.play();
+  }
+  var smallaudio6 = new Audio();
+  smallaudio6.src =
+    "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/finish.wav";
+  function PlaySound215() {
+    smallaudio6.play();
+  }
+  var smallaudio4 = new Audio();
+  smallaudio4.src =
+    "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/camera.wav";
+  function PlaySound213() {
+    smallaudio4.play();
+  }
+
+
 ~function() {
   "use strict";
   var I = I || {};
@@ -17,24 +77,6 @@
       );
     return r + "";
   };
-  var smallaudio5 = new Audio();
-  smallaudio5.src =
-    "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/poka.wav";
-  function PlaySound214() {
-    smallaudio5.play();
-  }
-  var smallaudio6 = new Audio();
-  smallaudio6.src =
-    "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/finish.wav";
-  function PlaySound215() {
-    smallaudio6.play();
-  }
-  var smallaudio4 = new Audio();
-  smallaudio4.src =
-    "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/camera.wav";
-  function PlaySound213() {
-    smallaudio4.play();
-  }
 
   I.ASSUME_ES5 = !1;
   I.ASSUME_NO_NATIVE_MAP = !1;
@@ -625,46 +667,7 @@
         }
         return btoa(b).replace(/=+/, "");
       }
-      //just some code to make the sound work
-      var smallaudio = new Audio();
-      smallaudio.src =
-        "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/sysse_ok.ogg";
-      function PlaySound210() {
-        smallaudio.play();
-      }
-      var clicked = false;
-
-      function doSomething() {
-        if (clicked) {
-          var bflat25 = new Audio();
-          bflat25.src =
-            "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/cancel.wav";
-          bflat25.load();
-          bflat25.play();
-        } else {
-          var bflat33 = new Audio();
-          bflat33.src =
-            "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/sysse_ok.ogg";
-          bflat33.load();
-          bflat33.play();
-        }
-        clicked = !clicked;
-      }
-      var smallaudio2 = new Audio();
-      smallaudio2.src =
-        "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/error.ogg";
-      function PlaySound211() {
-        smallaudio2.play();
-      }
-      var smallaudio3 = new Audio(
-        "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/socket.wav"
-      );
-
-      smallaudio3.loop = false;
-      function PlaySound212() {
-        smallaudio3.loop = false;
-        smallaudio3.play();
-      }
+   
       function t() {
         if (!ua) {
           ua = !0;
@@ -3798,7 +3801,7 @@
                   (m -= 40));
                 if (B.graphical.screenshotMode)
                   W[6].draw(
-                    "Arras.io",
+                    "arras.io",
                     h + 200,
                     m - 2,
                     15,
@@ -3808,7 +3811,7 @@
                 else {
                   if (b.showDebug) {
                     W[6].draw(
-                      "Arras.io",
+                      "arras.io",
                       h + 200,
                       m - 84 - 2,
                       15,
@@ -3845,7 +3848,7 @@
                     );
                   } else
                     W[6].draw(
-                      "Arras.io",
+                      "arras.io",
                       h + 200,
                       m - 42 - 2,
                       15,
