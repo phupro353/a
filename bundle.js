@@ -306,17 +306,17 @@
           case 19:
             return l.guiblack;
           case 20:
-            return "#008080";
+            return "#a913cf";
           case 21:
-            return "#8FFF00";
+            return "#226ef6";
           case 22:
-            return "#FEFCAA";
+            return "#ff1000";
           case 23:
-            return "#d21fff";
+            return "#ff9000";
           case 24:
-            return "#B35ED8";
+            return "#00e00b";
           case 25:
-            return "#0531CB";
+            return "#ffd300";
           case 26:
             return "#226ef6";
           case 27:
@@ -398,6 +398,18 @@
             return "#b493d3";
               case 46:
             return "#ffe6f4";
+              case 47:
+            return "#008080";
+          case 48:
+            return "#8FFF00";
+          case 49:
+            return "#FEFCAA";
+          case 50:
+            return "#d21fff";
+          case 51:
+            return "#B35ED8";
+          case 52:
+            return "#0531CB";
           default:
             return "#ff0000";
         }
