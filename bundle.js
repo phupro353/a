@@ -4588,6 +4588,7 @@
           `n-${a}-${e}.7e14.starter-us-west-2.openshiftapps.com`,
         glitch: a => `${a}.glitch.me`,
         replit: a => `${a}.repl.co`,
+        render: a => `${a}.onrender.com`,
         heroku: a => `${a}.herokuapp.com`,
         arras: (a, e = 5e3) => `ip-${a}.arras.io:${e}`,
         arrasUnknown: (a, e = 5e3) => `ipu-${a}.arras.io:${e}`
@@ -4678,6 +4679,7 @@
             glitch: "Glitch",
             linode: "Linode",
             vultr: "Vultr",
+            render: "Render",
             buyvm: "BuyVM",
             extravm: "ExtraVM",
             hetzner: "Hetzner",
@@ -4767,6 +4769,14 @@
             type: "main",
             code: "heroku-virginia-x",
             at: p.heroku("arras-mayhem")
+            // featured: 1, // For Featured Status.
+          },
+          {
+                       visible: 0,
+            id: "Render-Event",
+            type: "main",
+            code: "render-frankfurt-x",
+            at: p.render("arrasmayhemv3")
             // featured: 1, // For Featured Status.
           },
           {
