@@ -4772,14 +4772,7 @@
             // featured: 1, // For Featured Status.
           },
           {
-                       visible: 0,
-            id: "Render-Event",
-            type: "main",
-            code: "render-frankfurt-x",
-            at: p.render("arrasmayhemv3")
-            // featured: 1, // For Featured Status.
-          },
-          {
+
             visible: 0,
             id: "Repl.it-Legacy",
             type: "legacy",
