@@ -1,4 +1,10 @@
 # Update
+- Added 3 new tanks
+- Twin Gatling - Branches off Gatling Gun, Twin Sniper and Twin Machine-gun
+- Auto-Hunter - Branches off Hunter and Auto-Basic
+- Sniper Rifle - Branches off Assassin and Rifle
+- Set the DAMAGE_CONSTANT to 0.7
+# Update
 - Fixed a bug with Potato Chip and Spectator A
 - Added a new chat command: /info
 - Changed the DAMAGE_CONSTANT: config setting to 0.8, all tanks should have more health now
