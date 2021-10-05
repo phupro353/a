@@ -4360,11 +4360,11 @@
           m();
           var c = [
             [
-              "Be mindful of others! Refrain from using laggy tanks while others are present!",
+              "Want a taste of Testbed B without a token? Join the Event server!",
               "Stuck on connecting? Refresh the page, or try another server."
             ],
             [
-              "Press the Backslash key to chat!",
+              "Press the Backslash '/' key to chat!",
               "Tip: If arras is having a low frame rate, you can try enabling low graphics in the options menu.",
               "Want access to TESTBED? Join the Discord Server!",
               "Have you tried Diep.io yet?",

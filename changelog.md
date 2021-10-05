@@ -1,4 +1,7 @@
 # Update
+- Added Crossbow, branches off Rifle and Artillery
+- Added the Ragnarok Celestial to Testbed B
+# Update
 - Added 3 new tanks
 - Twin Gatling - Branches off Gatling Gun, Twin Sniper and Twin Machine-gun
 - Auto-Hunter - Branches off Hunter and Auto-Basic
