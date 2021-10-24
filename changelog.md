@@ -1,4 +1,9 @@
 # Update
+- Added 3 new tanks, thanks to XK#2343 and 3066350#9214 for the code!
+- Mitrailleuse - Branches off Minigun and Twin Gatling
+- Firecracker - Branches off Launcher and Exploder
+- Shocker - Branches off Launcher
+# Update
 - Added Crossbow, branches off Rifle and Artillery
 - Added the Ragnarok Celestial to Testbed B
 # Update
