@@ -1,25 +1,22 @@
      //just some code to make the sound work
-      var smallaudio = new Audio();
-      smallaudio.src =
+      var clicksound = new Audio();
+      clicksound.src =
         "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/sysse_ok.ogg";
       function PlaySound210() {
-        smallaudio.play();
+        clicksound.play();
       }
       var clicked = false;
 
       function doSomething() {
         if (clicked) {
-          var bflat25 = new Audio();
-          bflat25.src =
+          var optionclicksound = new Audio();
+           optionclicksound.src =
             "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/cancel.wav";
-          bflat25.load();
-          bflat25.play();
+          optionclicksound.load();
+           optionclicksound.play();
         } else {
-          var bflat33 = new Audio();
-          bflat33.src =
-            "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/sysse_ok.ogg";
-          bflat33.load();
-          bflat33.play();
+           clicksound.load();
+           clicksound.play();
         }
         clicked = !clicked;
       }
@@ -50,11 +47,11 @@
   function PlaySound215() {
     smallaudio6.play();
   }
-  var smallaudio4 = new Audio();
-  smallaudio4.src =
+  var camerasound = new Audio();
+  camerasound.src =
     "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/camera.wav";
   function PlaySound213() {
-    smallaudio4.play();
+    camerasound.play();
   }
 
 
