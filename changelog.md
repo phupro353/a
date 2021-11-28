@@ -8,6 +8,7 @@
 - Corvette - Branches off Cruiser and Creeper
 - Nerfed Splitter, Borer, Driller
 - Realigned Trojan so that it is easier to aim with it
+- Buffed all Smashers
 # Update
 - Added 4 new tanks, thanks to XK#2343 and 3066350#9214 for the code!
 - Mitrailleuse - Branches off Minigun and Twin Gatling
