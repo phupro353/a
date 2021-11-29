@@ -4725,7 +4725,7 @@
             code: "heroku-frankfurt-4",
             at: p.heroku("arrasdotio"),
             prefer: !0,
-            featured: 1 // For Featured Status.
+            featured: 0 // For Featured Status.
           },
           {
             visible: 0,
@@ -4734,7 +4734,7 @@
             code: "heroku-frankfurt-f",
             at: p.heroku("arras-moe"),
             prefer: !0,
-            featured: 1 // For Featured Status.
+            featured: 0 // For Featured Status.
           },
           {
             visible: 0,
@@ -4765,8 +4765,8 @@
             id: "Heroku-Event",
             type: "main",
             code: "heroku-virginia-x",
-            at: p.heroku("arras-mayhem")
-            // featured: 1, // For Featured Status.
+            at: p.heroku("arras-mayhem"),
+             featured: 1, // For Featured Status.
           },
           {
 
