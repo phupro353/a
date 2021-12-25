@@ -1,12 +1,14 @@
 # Update
-- Added 6 new tanks
+- Added 7 new tanks
 - Basebrid - Branches off Basic
 - Poundbrid - Branches off Pounder and Basebrid
 - Snipebrid - Branches off Sniper and Basebrid
 - Twinbrid - Branches off Twin and Basebrid
 - Flank Pelleter - Branches off Pelleter and Flank Guard
 - Pellet Guard - Branches off Pelleter and Flank Guard
+- Commander - Branches off Overseer, Cruiser and Frigate
 - Nerfed most launcher-branch tanks
+- Frigate is now a tier 2 tank, branches off Director
 # Update
 - Added 6 new tanks
 - Peashooter - Branches off Trap Guard and Cruiser
