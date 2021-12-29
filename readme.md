@@ -317,5 +317,5 @@ add this below *socket.player = socket.spawn(name);*
 - Powfu [MG] Octo#9071
 - Various StackOverflow contributors (For webserver code)
 - CX and the various developers of arras.io
-- Music is from Kemono Musume no Sodatekata/ケモノ娘の育て方 <https://www.youtube.com/playlist?list=PLhaleE7sSnzNgx7y8WTh2CRvIL1KRXflB>
+- Music is from Koi ni, Kanmi o Soete/恋ニ、甘味ヲソエテ <https://www.youtube.com/watch?v=ZHDr-idDhAA&list=PLhaleE7sSnzOfIcxh-AuuSk4OeerTHALG>
 
