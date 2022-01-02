@@ -1,4 +1,8 @@
 # Update
+- Made some minor balance changes
+- Restricted the size command to sizes between 8-18
+- Ragnarok is now a spawnable boss 
+# Update
 - Updated the music 𝅘𝅥𝅮
 # Update
 - Added 7 new tanks
