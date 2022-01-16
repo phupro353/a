@@ -4238,20 +4238,10 @@ function PlaySound213() {
           m();
           var c = [
             [
-              "Want a taste of Testbed B without a token? Join the Event server!",
-              "Stuck on connecting? Refresh the page, or try another server.",
-            ],
-            [
-              "Press the Backslash '/' key to chat!",
               "Tip: If arras is having a low frame rate, you can try enabling low graphics in the options menu.",
-              "Want access to TESTBED? Join the Discord Server!",
-              "Have you tried Diep.io yet?",
-              "All tanks have up to 10x reload!",
-              'If you have a valid token, use the name "Tester" to spawn as Testbed!',
-              "Press 'N' to level up.",
+              "Let's Go!" 
             ],
             [
-              "Avoid upgrading the reload stat if you wish for a smooth game!",
               "Have Fun!",
               "Good Luck!",
             ],
@@ -4601,7 +4591,7 @@ function PlaySound213() {
             visible: 0,
             id: "va",
             type: "ffa",
-            code: "glitch-singapore-f",
+            code: "glitch-worldwide-f",
             at: p.glitch("cdiii"),
             prefer: !0,
             featured: 0, // For Featured Status.
@@ -5907,7 +5897,7 @@ function PlaySound213() {
           dgrey: "#545454",
           white: "#C0C0C0",
           guiblack: "#000000",
-          paletteSize: 10,
+          paletteSize: 15,
           border: 0.5,
         },
         dark: {
