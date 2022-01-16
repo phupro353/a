@@ -2837,46 +2837,69 @@
                 x * B.graphical.borderChunk
               );
               E = F.status.getColor();
+
               w = F.status.getBlend();
+
               E = T(e(d.color), E, w);
+
               d.invuln &&
+
                 100 > (Date.now() - d.invuln) % 200 &&
+
                 ((v = T(v, l.vlgrey, 0.3)), (E = T(E, l.vlgrey, 0.3)));
+
               if (q.guns.length === n.guns.length)
+
                 for (w = q.guns.getPositions(), A = 0; A < n.guns.length; A++) {
+
                   var D = n.guns[A],
+
                     r = 1 === D.aspect ? w[A] / 2 : w[A];
+
                   {
+
                     d = h;
+
                     v =
+
                       y +
+
                       f *
+
                         (D.offset * Math.cos(D.direction + D.angle + m) +
+
                           (D.length / 2 - r) * Math.cos(D.angle + m));
+
                     r =
+
                       R +
+
                       f *
+
                         (D.offset * Math.sin(D.direction + D.angle + m) +
+
                           (D.length / 2 - r) * Math.sin(D.angle + m));
+
                     var C = f * (D.length / 2 - (1 === D.aspect ? w[A] : 0)),
+
                       L = (f * D.width) / 2,
+
+                      COLOR = D.color,
+
                       G = D.aspect;
+
                     D = D.angle + m;
+
                     var X = L;
-                    0 < G ? (X *= G) : 0 > G && (L *= -G);
+                      0 < G ? (X *= G) : 0 > G && (L *= -G);
                     G = Math.atan2(X, C);
                     let b = Math.atan2(L, C);
                     X = Math.sqrt(C * C + X * X);
                     C = Math.sqrt(C * C + L * L);
-                    var lol =
-                      D.color != null
-                        ? T(
-                            e(D.color),
-                            F.status.getColor(),
-                            F.status.getBlend()
-                          )
-                        : T(l.grey, F.status.getColor(), F.status.getBlend());
-                    k(h, lol);
+                    if (COLOR == null) {
+                      COLOR = 16;
+                    }
+                    k(h, e(COLOR));          
                     d.beginPath();
                     d.moveTo(v + X * Math.cos(D + G), r + X * Math.sin(D + G));
                     d.lineTo(

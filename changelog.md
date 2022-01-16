@@ -48,3 +48,90 @@
 
 - renamed CropDusterIII Arras to Terratomereriaz.io
 
+- removed siege mode
+
+- Added Advisor a First Underseer Branch Branches Of Basic at Level 15
+
+# Update 12/31/2021 Happy new year!!!
+
+- the siege is under constructing we will work for it for a while
+
+- Marcusicoi is now here!
+
+# Update 12/29/2021 smol update and rush of the speed 
+
+- added Beta Tanks from TESTBED Branch
+
+- added The Elite Falcon Boss to Beta Tanks
+
+# Update 12/21/2021
+
+- added Automind branches of Hivemind
+
+- now the Hivemind is now in the Spawner branch! 
+
+# Update 12/16/2021 bent and triplet is fusioning their power!
+
+- added Bentlet the powerful combined with triple shot and triplet Branches of Triple Shot and Triplet at Level 60
+
+# Update 12/06/2021 Christmas day is godly bois
+
+- added Greaser a woomy-arras.io tank Branches of Engineer at level 60
+
+# Update 12/06/2021
+
+- Griefer cube is now in here
+
+- added Double Twindrive Branches of Twindrive at level 45
+
+# Update 12/05/2021
+
+- added Cartographer branches of Overlord at level 60
+
+- buff the tank that he has g.over
+
+# Update 12/02/2021
+
+- added a new crasher
+
+# Update 11/29/2021
+
+- added some awesome Music
+
+- added a Music button because you can play this sound with this awesome music!
+
+- also added Twin Railgun branches of Railgun
+
+- more Update's coming soon!...
+
+# Update 11/28/2021 8:27 PM
+
+- added Double Twinceptionist Branches of Twinceptionist
+
+# Update 11/28/2021
+
+- added Barge the First Cruiser brancher Branches of Basic Page 2 
+
+# Update 11/27/2021
+
+- added Warden branches of Ranger
+
+- buffed raingun's FOV
+
+# Update 11/26/2021
+
+- buffed migrator
+
+- the secondary client is now removed!
+
+- tier 5 tanks coming soon!....
+
+# Update 11/24/2021
+
+- added Bentdrive Branches of Twindrive
+
+- created server 
+
+ 
+
+ 
