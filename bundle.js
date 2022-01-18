@@ -4579,6 +4579,7 @@ function PlaySound213() {
             ],
             [
               { id: "d", to: "4DOM" },
+              { id: "s", to: "Siege" },
               { id: "x", to: "Event" },
               { id: "m", to: "Mothership", remove: "2" },
               { id: "a", to: "Assault", remove: "2" },
@@ -4593,6 +4594,15 @@ function PlaySound213() {
             type: "ffa",
             code: "glitch-worldwide-f",
             at: p.glitch("cdiii"),
+            prefer: !0,
+            featured: 0, // For Featured Status.
+          },
+          {
+            visible: 0,
+            id: "wa",
+            type: "siege",
+            code: "glitch-worldwide-s",
+            at: p.glitch("cdiii-siege1"),
             prefer: !0,
             featured: 0, // For Featured Status.
           },
