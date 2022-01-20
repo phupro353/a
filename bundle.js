@@ -4597,7 +4597,7 @@ function PlaySound213() {
             prefer: !0,
             featured: 0, // For Featured Status.
           },
-          /*{
+          {
             visible: 0,
             id: "wa",
             type: "siege",
@@ -4605,7 +4605,7 @@ function PlaySound213() {
             at: p.glitch("cdiii-siege1"),
             prefer: !0,
             featured: 0, // For Featured Status.
-          },*/
+          },
         ]
           .map((a, e) => ({ data: a, i: e }))
           .sort((a, e) =>
