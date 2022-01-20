@@ -1,3 +1,7 @@
+# Update The Oxyrex.io logo be like:
+
+- added Oxyrrhexis Branches of Annihilator at level 60
+
 # Update The Tier 5 Tank is Finnaly Here! 
 
 - added Flank Guardceptionist Branches of Twinceptionist
