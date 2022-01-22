@@ -3482,30 +3482,6 @@ function PlaySound213() {
                   null == a.textobj && (a.textobj = m());
                   null == a.len && (a.len = ta(f, 14));
                   g.globalAlpha = 0.5 * a.alpha;
-                  let notificationBarColor;
-                  switch(a.text.slice(-2)) {
-                    case "\u200b\u200b": 
-                      notificationBarColor = l.blue;
-                      break;
-                    case "\u200b\u200c": 
-                      notificationBarColor = l.green;
-                      break;
-                    case "\u200b\u200d": 
-                      notificationBarColor = l.red;
-                      break;
-                    case "\u200b\u200e": 
-                      notificationBarColor = l.magenta;
-                      break;
-                    case "\u200b\u200f": 
-                      notificationBarColor = "#D68165";
-                      break;
-                    case "\u200c\u200b": 
-                      notificationBarColor = l.yellow;
-                      break;
-                    default:
-                      notificationBarColor = l.black;
-                  }
-                  K(c - a.len / 2, c + a.len / 2, d + 9, 18, notificationBarColor);
                   g.globalAlpha = Math.min(1, a.alpha);
                   a.textobj.draw(e, c, d + 9, 14, l.guiwhite, "center", true);
                   d += 22;
@@ -3774,26 +3750,15 @@ function PlaySound213() {
                       : G(a, c, d, f, !0);
                   };
                 if (b.mobile) {
-                  h -= 200;
-                  let d =
-                    (b.canSkill ? (200 / 3 + 40) * a.get() : 0) +
-                    (b.canUpgrade ? 140 * k.get() : 0);
-                  r(20, 20 + d, 200, c, 4);
-                } else (h -= 200), (n -= c), q(h, n, 200, c, 2);
-                let m = n - 10,
-                  v = J.latency.reduce((b, a) => b + a, 0) / J.latency.length,
-                  y = Math.sqrt(q.vx * q.vx + q.vy * q.vy);
-                b.showDebug &&
-                  (G(h, n - 40, 200, 30),
-                  u.addValue(e),
-                  u.draw(h, u - 40, 200, 30),
-                  t.addValue(E),
-                  t.draw(h, u - 40, 200, 30),
-                  E.addValue(I.rendergap),
-                  E.draw(h, u - 40, 200, 30),
-                  f.addValue(v),
-                  f.draw(h, u - 40, 200, 30),
-                  (m -= 40));
+                                    h -= 200;
+                                    let d = (b.canSkill ?
+                                        (200 / 3 + 40) * a.get() : 0) + (b.canUpgrade ? 140 * k.get() : 0);
+                                    q(20, 20 + d, 200, c, 4)
+                                } else h -= 200, n -= c, q(h, n, 200, c, 2);
+                                let m = n - 10,
+                                    v = J.latency.reduce((b, a) => b + a, 0) / J.latency.length,
+                                    y = Math.sqrt(z.vx * z.vx + z.vy * z.vy);
+                                b.showDebug && (G(h, n - 40, 200, 30), u.addValue(d), u.draw(h, n - 40, 200, 30), t.addValue(y), t.draw(h, n - 40, 200, 30), E.addValue(J.rendergap), E.draw(h, n - 40, 200, 30), f.addValue(v), f.draw(h, n - 40, 200, 30), m -= 40);
                 if (B.graphical.screenshotMode)
                   W[6].draw(
                     "Terratomereriaz.io",
