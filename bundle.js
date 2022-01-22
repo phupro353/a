@@ -4117,39 +4117,39 @@ function PlaySound213() {
                       var m = a.amount,
                         u = l[a.color];
                       a = a.cap;
-                      var q = k[9 - t].split(/\s+/),
-                        v = Math.floor(q.length / 2),
-                        [m, E] =
+                      var q = h[9 - k].split(/\s+/),
+                        t = Math.floor(q.length / 2),
+                        [v, y] =
                           1 === q.length
                             ? [q, null]
-                            : [q.slice(0, v), q.slice(v)];
+                            : [q.slice(0, t), q.slice(t)];
                       g.globalAlpha = 0.5;
-                      g.fillStyle = r;
-                      z(e, 20, 100, (2 * d) / 3);
+                      g.fillStyle = u;
+                      G(f, 20, 100, (2 * d) / 3);
                       g.globalAlpha = 0.1;
                       g.fillStyle = l.black;
-                      z(e, 20 + (((2 * d) / 3) * 2) / 3, 100, (2 * d) / 3 / 3);
+                      G(f, 20 + (((2 * d) / 3) * 2) / 3, 100, (2 * d) / 3 / 3);
                       g.globalAlpha = 1;
                       g.fillStyle = l.guiwhite;
-                      z(e, 20 + (2 * d) / 3, 100, (1 * d) / 3);
-                      g.fillStyle = r;
-                      z(e, 20 + (2 * d) / 3, (100 * n) / u, (1 * d) / 3);
+                      G(f, 20 + (2 * d) / 3, 100, (1 * d) / 3);
+                      g.fillStyle = u;
+                      G(f, 20 + (2 * d) / 3, (100 * m) / x, (1 * d) / 3);
                       g.strokeStyle = l.black;
                       g.lineWidth = 1;
                       for (q = 1; q < a; q++)
-                        (v = e + (q / u) * 100),
-                          ma(v, 20 + (2 * d) / 3, v, 20 + d);
-                      n === a ||
-                        !y.points ||
-                        (u !== a && n === u) ||
+                        (t = f + (q / x) * 100),
+                          ka(t, 20 + (2 * d) / 3, t, 20 + d);
+                      m === a ||
+                        !A.points ||
+                        (x !== a && m === x) ||
                         b.clickables.stat.place(
-                        9 - t,
-                          e * h,
-                          20 * h,
-                          100 * h,
-                          d * h
+                        9 - k,
+                          f * n,
+                          20 * n,
+                          100 * n,
+                          d * n
                         );
-                      E
+                      y
                         ? (D[t].draw(
                             E,
                             e + 50,
