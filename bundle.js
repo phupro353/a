@@ -3787,13 +3787,13 @@ function PlaySound213() {
                   (G(h, n - 40, 200, 30),
                   u.addValue(e),
                   u.draw(h, u - 40, 200, 30),
-                  f.addValue(E),
+                  t.addValue(E),
+                  t.draw(h, u - 40, 200, 30),
+                  E.addValue(I.rendergap),
+                  E.draw(h, u - 40, 200, 30),
+                  f.addValue(v),
                   f.draw(h, u - 40, 200, 30),
-                  x.addValue(I.rendergap),
-                  x.draw(h, u - 40, 200, 30),
-                  p.addValue(v),
-                  p.draw(h, u - 40, 200, 30),
-                  (n -= 40));
+                  (m -= 40));
                 if (B.graphical.screenshotMode)
                   W[6].draw(
                     "Terratomereriaz.io",
@@ -3969,107 +3969,122 @@ function PlaySound213() {
                   d += 18;
                 }
               }
-              b.mobile && L(1 / 1.4); {
-                                b.canUpgrade = 0 < A.upgrades.length &&
-                                    !(b.mobile && b.died);
-                                k.set(+b.canUpgrade);
-                                let a = k.get();
-                                b.clickables.upgrade.hide();
-                                if (b.canUpgrade) {
-                                    let c = 40 * a - 20,
-                                        d = 20,
-                                        f = c,
-                                        h = 0,
-                                        k = d,
-                                        x = 0;
-                                    la += .01;
-                                    let u = 0,
-                                        q = 0;
-                                    A.upgrades.forEach(m => {
-                                        d > k && (k = d);
-                                        h = c;
-                                        b.clickables.upgrade.place(q++, c * n, d * n, 100 * n, 100 * n);
-                                        g.globalAlpha = .5;
-                                        g.fillStyle = e(u + 10);
-                                        G(c, d, 100, 100);
-                                        g.globalAlpha = .1;
-                                        g.fillStyle = e(u);
-                                        u++;
-                                        G(c, d, 100, 60);
-                                        g.fillStyle = l.black;
-                                        G(c, d + 60, 100, 40);
-                                        g.globalAlpha = 1;
-                                        let t = D(m, A.color);
-                                        m = M[m].position;
-                                        let v = 60 / m.axis;
-                                        ba(c + 50 - v * m.middle.x * Math.cos(la), d + 50 - v * m.middle.x *
-                                            Math.sin(la), t, 1, 1, v / t.size, la, !0);
-                                        m = (b.help[`KEY_CHOOSE_${x+1}`] || "").toLowerCase().trim();
-                                        !b.mobile && m ? (aa[q - 1].draw(t.name, c + 45, d + 100 - 6, 9.5, l.guiwhite, "center"), ea[q - 1].draw("[" + m + "]", c + 100 - 4, d + 100 - 6, 9.5, l.guiwhite, "right")) : aa[q - 1].draw(t.name, c + 50, d + 100 - 6, 9.5, l.guiwhite, "center");
-                                        g.strokeStyle = l.black;
-                                        g.globalAlpha = 1;
-                                        g.lineWidth = 3;
-                                        G(c, d, 100, 100, !0);
-                                        0 !== ++x % 5 || b.mobile ? c += 114 * a : (c = f, d += 114)
-                                    });
-                                    let m = ta("Don't Upgrade", 11) + 10,
-                                        t = (h + 100 + 14 + f - 15) / 2,
-                                        v = k + 100 + 14;
-                                    K(t - m / 2, t + m / 2, v + 7, 14 + B.graphical.barChunk,
-                                        l.black);
-                                    K(t - m / 2, t + m / 2, v + 7, 14, l.white);
-                                    fa.draw("Don't Upgrade", t, v + 7, 12, l.guiwhite, "center", !0);
-                                    b.clickables.skipUpgrades.place(0, (t - m / 2) * n, v * n, m * n, 14 * n)
-                                } else b.clickables.upgrade.hide(), b.clickables.skipUpgrades.hide()
-                            }
-                            if (b.mobile) {
-                                b.canSkill = 0 < A.points && A.skills.some(b => b.amount < b.cap) && !b.canUpgrade;
-                                a.set(0 + (b.canSkill || b.died));
-                                let c = a.get();
-                                b.clickables.stat.hide();
-                                let d = 200 / 3,
-                                    f = 40 * c - 20,
-                                    e = 0,
-                                    h = A.getStatNames(M[A.type].statnames || -1);
-                                b.canSkill && (A.skills.forEach((a, k) => {
-                                    let x = a.softcap;
-                                    if (!(0 >=
-                                            x)) {
-                                        var m = a.amount,
-                                            u = l[a.color];
-                                        a = a.cap;
-                                        var q = h[9 - k].split(/\s+/),
-                                            t = Math.floor(q.length / 2),
-                                            [v, y] = 1 === q.length ? [q, null] : [q.slice(0, t), q.slice(t)];
-                                        g.globalAlpha = .5;
-                                        g.fillStyle = u;
-                                        G(f, 20, 100, 2 * d / 3);
-                                        g.globalAlpha = .1;
-                                        g.fillStyle = l.black;
-                                        G(f, 20 + 2 * d / 3 * 2 / 3, 100, 2 * d / 3 / 3);
-                                        g.globalAlpha = 1;
-                                        g.fillStyle = l.guiwhite;
-                                        G(f, 20 + 2 * d / 3, 100, 1 * d / 3);
-                                        g.fillStyle = u;
-                                        G(f, 20 + 2 * d / 3, 100 * m / x, 1 * d / 3);
-                                        g.strokeStyle = l.black;
-                                        g.lineWidth = 1;
-                                        for (q = 1; q < a; q++) t = f + q / x * 100, ka(t, 20 + 2 * d / 3, t, 20 + d);
-                                        m === a || !A.points || x !== a && m === x || b.clickables.stat.place(9 -
-                                            k, f * n, 20 * n, 100 * n, d * n);
-                                        y ? (p[k].draw(y, f + 50, 20 + .55 * d, d / 6, l.guiwhite, "center"), p[k].draw(v, f + 50, 20 + .3 * d, d / 6, l.guiwhite, "center")) : p[k].draw(v, f + 50, 20 + .425 * d, d / 6, l.guiwhite, "center");
-                                        0 < m && R[k].draw(m >= x ? "MAX" : "+" + m, Math.round(f + 50) + .5, 20 + 1.3 * d, d / 4, u, "center");
-                                        g.strokeStyle = l.black;
-                                        g.globalAlpha = 1;
-                                        g.lineWidth = 3;
-                                        ka(f, 20 + 2 * d / 3, f + 100, 20 + 2 * d / 3);
-                                        G(f, 20, 100, d, !0);
-                                        f += 114 * c;
-                                        e++
-                                      }
-                                }), 1 < A.points && r.draw("x" + A.points, Math.round(f) + .5, 40.5, 20, l.guiwhite, "left"))
-                            }
-                            L(1 / n, !0)
+              b.mobile && B(1 / 1.4);
+              {
+                b.canUpgrade = 0 < y.upgrades.length && !(b.mobile && b.died);
+                k.set(+b.canUpgrade);
+                let a = k.get();
+                b.clickables.upgrade.hide();
+                if (b.canUpgrade) {
+                  let c = 40 * a - 20,
+                    e = 20,
+                    f = e,
+                    k = 0,
+                    t = e;
+                  na += 0.01;
+                  let u = 0;
+                  y.upgrades.forEach(n => {
+                    e > t && (t = e);
+                    k = c;
+                    b.clickables.upgrade.place(
+                      u,
+                      c * h,
+                      e * h,
+                      100 * h,
+                      100 * h
+                    );
+                    var r = u % 9,
+                        q = getColorByID(u % 9);
+                    g.globalAlpha = 0.5; // Upgrade Boxes
+                    g.fillStyle = [l.teal, l.lgreen, l.orange, l.gold, l.purple, l.magenta, l.pink, "#FFA268", "#D68165"][r];
+                    z(c, e, 100, 100);
+                    g.globalAlpha = 0.2;
+                    g.fillstyle = l.guiwhite;
+                    z(c, e, 100, 60);
+                    g.globalAlpha = 0.2;
+                    g.fillStyle = l.black;
+                    z(c, e + 60, 100, 40);
+                    g.globalAlpha = 1;
+                    r = E(n, y.color);
+                    n = L[n].position;
+                    q = 60 / n.axis;
+                    ba(
+                      c + 50 - q * n.middle.x * Math.cos(na),
+                      e + 50 - q * n.middle.x * Math.sin(na),
+                      r,
+                      1,
+                      1,
+                      q / r.size,
+                      na,
+                      true
+                    );
+                    n = (b.help[`KEY_CHOOSE_${u + 1}`] || "")
+                      .toLowerCase()
+                      .trim();
+                    !b.mobile && n
+                      ? (aa
+                          .get(u)
+                          .draw(
+                            r.name,
+                            c + 45,
+                            e + 100 - 6,
+                            9.5,
+                            l.guiwhite,
+                            "center"
+                          ),
+                        ja
+                          .get(u)
+                          .draw(
+                            "[" + n + "]",
+                            c + 100 - 4,
+                            e + 100 - 6,
+                      9.5,
+                            l.guiwhite,
+                            "right"
+                          ))
+                      : aa
+                          .get(u)
+                          .draw(
+                            r.name,
+                            c + 50,
+                            e + 100 - 6,
+                            9.5,
+                            l.guiwhite,
+                            "center"
+                          );
+                    g.strokeStyle = l.black;
+                    g.globalAlpha = 1;
+                    g.lineWidth = 2;
+                    z(c, e, 100, 100, true);
+                    u++;
+                    0 !== u % 3
+                      ? (e += 114 * a)
+                      : ((e = f), (c += 114));
+                  });
+                  let n = ta("Ignore", 11) + 10,
+                    r = (k + 100 + 14 + f - 15) / 2,
+                    q = t + 100 + 14;
+                  J(
+                    r - n / 2,
+                    r + n / 2,
+                    q + 7,
+                    14 + C.graphical.barChunk,
+                    l.black
+                  );
+                  J(r - n / 2, r + n / 2, q + 7, 14, l.white);
+                  ka.draw(
+                    "Ignore",
+                    r,
+                    q + 7,
+                    12,
+                    l.guiwhite,
+                    "center",
+                    true
+                  );
+                  b.clickables.skipUpgrades.place(
+                    0,
+                    (r - n / 2) * h,
+                    
                         }
                     }
                 })(),
