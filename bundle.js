@@ -3996,6 +3996,7 @@ function PlaySound213() {
                       100 * n
                     );
                     g.globalAlpha = 0.5; // Upgrade Boxes
+                    //g.fillStyle = [l.teal, l.lgreen, l.orange, l.gold, l.purple, l.magenta, l.pink, "#FFA268", "#D68165"][r];
                     g.fillStyle = e(u + 10);
                     G(c, d, 100, 100);
                     g.globalAlpha = 0.2;
@@ -4019,10 +4020,10 @@ function PlaySound213() {
                       la,
                       true
                     );
-                    n = (b.help[`KEY_CHOOSE_${x + 1}`] || "")
+                    m = (b.help[`KEY_CHOOSE_${x + 1}`] || "")
                       .toLowerCase()
                       .trim();
-                    !b.mobile && n
+                    !b.mobile && m
                       ? (aa
                           .get(q)
                           .draw(
@@ -4066,13 +4067,13 @@ function PlaySound213() {
                     t = (h + 100 + 14 + f - 15) / 2,
                     v = k + 100 + 14;
                   K(
-                    r - n / 2,
-                    r + n / 2,
-                    q + 7,
-                    14 + C.graphical.barChunk,
+                    t - m / 2,
+                    t + m / 2,
+                    v + 7,
+                    14 + B.graphical.barChunk,
                     l.black
                   );
-                  J(r - n / 2, r + n / 2, q + 7, 14, l.white);
+                  K(t - m / 2, t + m / 2, v + 7, 14, l.white);
                   ka.draw(
                     "Ignore",
                     r,
