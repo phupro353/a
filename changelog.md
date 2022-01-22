@@ -1,3 +1,7 @@
+# Update
+
+- added Nothing
+
 # Update The Oxyrex.io logo be like:
 
 - added Oxyrrhexis Branches of Annihilator at level 60
