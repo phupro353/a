@@ -3882,49 +3882,19 @@ function PlaySound213() {
                 }
               }
               b.mobile && L(1.25);
-              b.mobile && L(1.4);
-              if (!B.graphical.screenshotMode) {
-                let c = b.screenWidth - 200 - 20,
-                  d = 48;
-                b.mobile &&
-                  (d +=
-                    (b.canSkill ? (200 / 3 / 1.4) * a.get() : 0) +
-                    (b.canUpgrade && 40 + 114 * A.upgrades.length > 1.4 * c
-                      ? (100 / 1.4) * k.get()
-                      : 0));
-                0 < O.data.length &&
-                  V.draw(
-                    "Leaderboard",
-                    Math.round(c + 100) + 0.5,
-                    Math.round(d - 10) + 0.5,
-                    18,
-                    l.guiwhite,
-                    "center"
-                  );
-                for (
-                  let a = 0;
-                  a < O.data.length && (!b.mobile || 6 > a);
-                  a++
-                ) {
-                  let b = O.data[a];
-                  K(c, c + 200, d + 7, 11 + B.graphical.barChunk, l.black);
-                  K(c, c + 200, d + 7, 11, l.grey);
-                  K(
-                    c,
-                    c + 200 * Math.min(1, b.score / na),
-                    d + 7,
-                    10.5,
-                    b.barColor
-                  );
-                  ca[a].draw(
-                    b.label + ": " + H.handleLargeNumber(Math.round(b.score)),
-                    c + 100,
-                    d + 7,
-                    9,
-                    l.guiwhite,
-                    "center",
-                    !0
-                  );
+                            b.mobile && L(1.4);
+                            if (!B.graphical.screenshotMode) {
+                                let c = b.screenWidth - 200 - 20,
+                                    d = 48;
+                                b.mobile && (d += (b.canSkill ? 200 / 3 / 1.4 * a.get() : 0) + (b.canUpgrade && 40 + 114 * A.upgrades.length > 1.4 * c ? 100 / 1.4 * k.get() : 0));
+                                0 < O.data.length && V.draw("Leaderboard", Math.round(c + 100) + .5, Math.round(d - 10) + .5, 18,
+                                    l.guiwhite, "center");
+                                for (let a = 0; a < O.data.length && (!b.mobile || 6 > a); a++) {
+                                    let b = O.data[a];
+                                    K(c, c + 200, d + 7, 11 + B.graphical.barChunk, l.black);
+                                    K(c, c + 200, d + 7, 11, l.grey);
+                                    K(c, c + 200 * Math.min(1, b.score / na), d + 7, 10.5, b.barColor);
+                                    ca[a].draw(b.label + ": " + H.handleLargeNumber(Math.round(b.score)), c + 100, d + 7, 9, l.guiwhite, "center", !0);
                   if (b.label.includes("[AI]"))
                     ca[a].draw(
                       b.label + ": " + H.handleLargeNumber(Math.round(b.score)),
