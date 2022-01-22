@@ -3479,8 +3479,8 @@ function PlaySound213() {
                 for (let b = Y.length - 1; 0 <= b; b--) {
                   let a = Y[b],
                     e = a.text;
-                  null == a.textobj && (a.textobj = w());
-                  null == a.len && (a.len = ta(e, 14));
+                  null == a.textobj && (a.textobj = m());
+                  null == a.len && (a.len = ta(f, 14));
                   g.globalAlpha = 0.5 * a.alpha;
                   let notificationBarColor;
                   switch(a.text.slice(-2)) {
@@ -3505,7 +3505,7 @@ function PlaySound213() {
                     default:
                       notificationBarColor = l.black;
                   }
-                  J(c - a.len / 2, c + a.len / 2, d + 9, 18, notificationBarColor);
+                  K(c - a.len / 2, c + a.len / 2, d + 9, 18, notificationBarColor);
                   g.globalAlpha = Math.min(1, a.alpha);
                   a.textobj.draw(e, c, d + 9, 14, l.guiwhite, "center", true);
                   d += 22;
@@ -3778,22 +3778,22 @@ function PlaySound213() {
                   let d =
                     (b.canSkill ? (200 / 3 + 40) * a.get() : 0) +
                     (b.canUpgrade ? 140 * k.get() : 0);
-                  q(20, 20 + d, 200, c, 4);
+                  r(20, 20 + d, 200, c, 4);
                 } else (h -= 200), (n -= c), q(h, n, 200, c, 2);
                 let m = n - 10,
                   v = J.latency.reduce((b, a) => b + a, 0) / J.latency.length,
-                  y = Math.sqrt(z.vx * z.vx + z.vy * z.vy);
+                  y = Math.sqrt(q.vx * q.vx + q.vy * q.vy);
                 b.showDebug &&
                   (G(h, n - 40, 200, 30),
-                  u.addValue(d),
-                  u.draw(h, n - 40, 200, 30),
-                  t.addValue(y),
-                  t.draw(h, n - 40, 200, 30),
-                  E.addValue(J.rendergap),
-                  E.draw(h, n - 40, 200, 30),
-                  f.addValue(v),
-                  f.draw(h, n - 40, 200, 30),
-                  (m -= 40));
+                  u.addValue(e),
+                  u.draw(h, u - 40, 200, 30),
+                  f.addValue(E),
+                  f.draw(h, u - 40, 200, 30),
+                  x.addValue(I.rendergap),
+                  x.draw(h, u - 40, 200, 30),
+                  p.addValue(v),
+                  p.draw(h, u - 40, 200, 30),
+                  (n -= 40));
                 if (B.graphical.screenshotMode)
                   W[6].draw(
                     "Terratomereriaz.io",
