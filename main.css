@@ -188,10 +188,10 @@ input.error {
 #startMenu {
   position: relative;
   margin: 0 auto;
-  max-height: 415px;
+  max-height: 315px;
   padding: 10px;
   border-radius: 5px;
-  background-color: #DDE6EB;
+  background-color: ;
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -247,11 +247,11 @@ body.mobile .startMenuHolder.shrinkable {
 
 a.menuTab {
   float: right;
-  height: 13px;
+  height: 10px;
   font: 13px Ubuntu;
   padding: 6px 10px 7px 10px;
   border-radius: 5px 5px 0 0;
-  color: #ffffff !important;
+  color: #FF5733 !important;
   text-decoration: none;
   margin-right: 10px;
 }

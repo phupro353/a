@@ -4187,7 +4187,7 @@ function PlaySound213() {
           c = c[Math.floor(Math.random() * c.length)];
           let g = c[Math.floor(Math.random() * c.length)];
           return () => {
-            F(l.orange,/*"https://cdn.glitch.global/08236520-51ec-48b7-88da-b75e2eb19bca/video_image.jpeg?v=1642874378743",*/ 0.5);
+            F("#FF5733", /*"https://cdn.glitch.global/08236520-51ec-48b7-88da-b75e2eb19bca/video_image.jpeg?v=1642874378743",*/ 0.5);
             a.draw(
               "Connecting...",
               b.screenWidth / 2,
@@ -4209,7 +4209,7 @@ function PlaySound213() {
               b.screenWidth / 2,
               b.screenHeight / 2 + 55,
               15,
-              l.orange,
+              "#FF5733", 
               "center"
             );
           };
