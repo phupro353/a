@@ -3474,19 +3474,40 @@ function PlaySound213() {
                   d = 20;
                 b.mobile &&
                   (d +=
-                    (b.canSkill ? (200 / 3 / 1.4) * a.get() : 0) +
-                    (b.canUpgrade && 40 + 114 * A.upgrades.length > 1.4 * c
-                      ? (100 / 1.4) * k.get()
-                      : 0));
+                    (b.canSkill ? ((200 / 3 + 20) / 1.4) * a.get() : 0) +
+                    (b.canUpgrade ? (120 / 1.4) * k.get() : 0));
                 for (let b = Y.length - 1; 0 <= b; b--) {
                   let a = Y[b],
-                    f = a.text;
-                  null == a.textobj && (a.textobj = m());
-                  null == a.len && (a.len = ta(f, 14));
+                    e = a.text;
+                  null == a.textobj && (a.textobj = w());
+                  null == a.len && (a.len = ta(e, 14));
                   g.globalAlpha = 0.5 * a.alpha;
-                  K(c - a.len / 2, c + a.len / 2, d + 9, 18, l.black);
+                  let notificationBarColor;
+                  switch(a.text.slice(-2)) {
+                    case "\u200b\u200b": 
+                      notificationBarColor = l.blue;
+                      break;
+                    case "\u200b\u200c": 
+                      notificationBarColor = l.green;
+                      break;
+                    case "\u200b\u200d": 
+                      notificationBarColor = l.red;
+                      break;
+                    case "\u200b\u200e": 
+                      notificationBarColor = l.magenta;
+                      break;
+                    case "\u200b\u200f": 
+                      notificationBarColor = "#D68165";
+                      break;
+                    case "\u200c\u200b": 
+                      notificationBarColor = l.yellow;
+                      break;
+                    default:
+                      notificationBarColor = l.black;
+                  }
+                  J(c - a.len / 2, c + a.len / 2, d + 9, 18, notificationBarColor);
                   g.globalAlpha = Math.min(1, a.alpha);
-                  a.textobj.draw(f, c, d + 9, 14, l.guiwhite, "center", !0);
+                  a.textobj.draw(e, c, d + 9, 14, l.guiwhite, "center", true);
                   d += 22;
                   1 < a.status && (d -= 22 * (1 - Math.sqrt(a.alpha)));
                   1 < a.status
