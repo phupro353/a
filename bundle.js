@@ -3969,20 +3969,22 @@ function PlaySound213() {
                   d += 18;
                 }
               }
-              b.mobile && B(1 / 1.4);
+              b.mobile && L(1 / 1.4);
               {
-                b.canUpgrade = 0 < y.upgrades.length && !(b.mobile && b.died);
+                b.canUpgrade = 0 < A.upgrades.length && !(b.mobile && b.died);
                 k.set(+b.canUpgrade);
                 let a = k.get();
                 b.clickables.upgrade.hide();
                 if (b.canUpgrade) {
                   let c = 40 * a - 20,
-                    e = 20,
-                    f = e,
-                    k = 0,
-                    t = e;
-                  na += 0.01;
+                    d = 20,
+                    f = c,
+                    h = 0,
+                    k = d;
+                    //x = 0;
+                  la += 0.01;
                   let u = 0;
+                  //q = 0;
                   y.upgrades.forEach(n => {
                     e > t && (t = e);
                     k = c;
@@ -4084,8 +4086,119 @@ function PlaySound213() {
                   b.clickables.skipUpgrades.place(
                     0,
                     (r - n / 2) * h,
-                    
-                        }
+                    q * h,
+                    n * h,
+                    14 * h
+                  );
+                } else
+                  b.clickables.upgrade.hide(), b.clickables.skipUpgrades.hide();
+              }
+              if (b.mobile) {
+                b.canSkill =
+                  0 < y.points &&
+                  y.skills.some(b => b.amount < b.cap) &&
+                  !b.canUpgrade;
+                a.set(0 + (b.canSkill || b.died));
+                let c = a.get();
+                b.clickables.stat.hide();
+                let d = 200 / 3,
+                  e = 40 * c - 20,
+                  f = 0,
+                  k = y.getStatNames(L[y.type].statnames || -1);
+                b.canSkill &&
+                  (y.skills.forEach((a, t) => {
+                    let u = a.softcap;
+                    if (!(0 >= u)) {
+                      var n = a.amount,
+                        r = l[a.color];
+                      a = a.cap;
+                      var q = k[9 - t].split(/\s+/),
+                        v = Math.floor(q.length / 2),
+                        [m, E] =
+                          1 === q.length
+                            ? [q, null]
+                            : [q.slice(0, v), q.slice(v)];
+                      g.globalAlpha = 0.5;
+                      g.fillStyle = r;
+                      z(e, 20, 100, (2 * d) / 3);
+                      g.globalAlpha = 0.1;
+                      g.fillStyle = l.black;
+                      z(e, 20 + (((2 * d) / 3) * 2) / 3, 100, (2 * d) / 3 / 3);
+                      g.globalAlpha = 1;
+                      g.fillStyle = l.guiwhite;
+                      z(e, 20 + (2 * d) / 3, 100, (1 * d) / 3);
+                      g.fillStyle = r;
+                      z(e, 20 + (2 * d) / 3, (100 * n) / u, (1 * d) / 3);
+                      g.strokeStyle = l.black;
+                      g.lineWidth = 1;
+                      for (q = 1; q < a; q++)
+                        (v = e + (q / u) * 100),
+                          ma(v, 20 + (2 * d) / 3, v, 20 + d);
+                      n === a ||
+                        !y.points ||
+                        (u !== a && n === u) ||
+                        b.clickables.stat.place(
+                        9 - t,
+                          e * h,
+                          20 * h,
+                          100 * h,
+                          d * h
+                        );
+                      E
+                        ? (D[t].draw(
+                            E,
+                            e + 50,
+                            20 + 0.55 * d,
+                            d / 6,
+                            l.guiwhite,
+                            "center"
+                          ),
+                          D[t].draw(
+                            m,
+                            e + 50,
+                            20 + 0.3 * d,
+                            d / 6,
+                            l.guiwhite,
+                            "center"
+                          ))
+                        : D[t].draw(
+                        m,
+                            e + 50,
+                            20 + 0.425 * d,
+                            d / 6,
+                            l.guiwhite,
+                            "center"
+                          );
+                      0 < n &&
+                        N[t].draw(
+                          n >= u ? "MAX" : "+" + n,
+                          Math.round(e + 50) + 0.5,
+                          20 + 1.3 * d,
+                          d / 4,
+                          r,
+                          "center"
+                        );
+                      g.strokeStyle = l.black;
+                      g.globalAlpha = 1;
+                      g.lineWidth = 3;
+                      ma(e, 20 + (2 * d) / 3, e + 100, 20 + (2 * d) / 3);
+                      z(e, 20, 100, d, true);
+                      e += 114 * c;
+                      f++;
+                    }
+                  }),
+                  1 < y.points &&
+                   R.draw(
+                      "x" + y.points,
+                      Math.round(e) + 0.5,
+                      40.5,
+                      20,
+                      l.guiwhite,
+                      "left"
+                    ));
+              }
+              B(1 / h, true);
+                       } 
                     }
                 })(),
         Ta = (() => {
