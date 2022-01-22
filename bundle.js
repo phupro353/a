@@ -3985,42 +3985,41 @@ function PlaySound213() {
                   la += 0.01;
                   let u = 0;
                   //q = 0;
-                  y.upgrades.forEach(n => {
-                    e > t && (t = e);
-                    k = c;
+                  A.upgrades.forEach(m => {
+                    d > k && (k = d);
+                    h = c;
                     b.clickables.upgrade.place(
-                      u,
-                      c * h,
-                      e * h,
-                      100 * h,
-                      100 * h
+                      q,
+                      c * n,
+                      d * n,
+                      100 * n,
+                      100 * n
                     );
-                    var r = u % 9,
-                        q = getColorByID(u % 9);
                     g.globalAlpha = 0.5; // Upgrade Boxes
-                    g.fillStyle = [l.teal, l.lgreen, l.orange, l.gold, l.purple, l.magenta, l.pink, "#FFA268", "#D68165"][r];
-                    z(c, e, 100, 100);
+                    g.fillStyle = e(u + 10);
+                    G(c, d, 100, 100);
                     g.globalAlpha = 0.2;
-                    g.fillstyle = l.guiwhite;
-                    z(c, e, 100, 60);
+                    g.fillStyle = e(u);
+                    u++;
+                    G(c, d, 100, 60);
                     g.globalAlpha = 0.2;
                     g.fillStyle = l.black;
-                    z(c, e + 60, 100, 40);
+                    G(c, d + 60, 100, 40);
                     g.globalAlpha = 1;
-                    r = E(n, y.color);
-                    n = L[n].position;
-                    q = 60 / n.axis;
+                    let t = D(m, A.color);
+                    m = M[m].position;
+                    v = 60 / m.axis;
                     ba(
-                      c + 50 - q * n.middle.x * Math.cos(na),
-                      e + 50 - q * n.middle.x * Math.sin(na),
-                      r,
+                      c + 50 - v * n.middle.x * Math.cos(la),
+                      d + 50 - v * n.middle.x * Math.sin(la),
+                      t,
                       1,
                       1,
-                      q / r.size,
-                      na,
+                      v / t.size,
+                      la,
                       true
                     );
-                    n = (b.help[`KEY_CHOOSE_${u + 1}`] || "")
+                    n = (b.help[`KEY_CHOOSE_${x + 1}`] || "")
                       .toLowerCase()
                       .trim();
                     !b.mobile && n
