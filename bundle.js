@@ -4144,59 +4144,59 @@ function PlaySound213() {
                           d * n
                         );
                       y
-                        ? (D[t].draw(
-                            E,
-                            e + 50,
+                        ? (p[k].draw(
+                            y,
+                            f + 50,
                             20 + 0.55 * d,
                             d / 6,
                             l.guiwhite,
                             "center"
                           ),
-                          D[t].draw(
-                            m,
-                            e + 50,
+                          p[k].draw(
+                            y,
+                            f + 50,
                             20 + 0.3 * d,
                             d / 6,
                             l.guiwhite,
                             "center"
                           ))
-                        : D[t].draw(
-                        m,
-                            e + 50,
+                        : p[k].draw(
+                        y,
+                            f + 50,
                             20 + 0.425 * d,
                             d / 6,
                             l.guiwhite,
                             "center"
                           );
-                      0 < n &&
-                        N[t].draw(
-                          n >= u ? "MAX" : "+" + n,
-                          Math.round(e + 50) + 0.5,
+                      0 < m &&
+                        R[k].draw(
+                          m >= x ? "MAX" : "+" + m,
+                          Math.round(f + 50) + 0.5,
                           20 + 1.3 * d,
                           d / 4,
-                          r,
+                          u,
                           "center"
                         );
                       g.strokeStyle = l.black;
                       g.globalAlpha = 1;
                       g.lineWidth = 3;
-                      ma(e, 20 + (2 * d) / 3, e + 100, 20 + (2 * d) / 3);
-                      z(e, 20, 100, d, true);
-                      e += 114 * c;
-                      f++;
+                      ka(f, 20 + (2 * d) / 3, f + 100, 20 + (2 * d) / 3);
+                      G(f, 20, 100, d, true);
+                      f += 114 * c;
+                      e++;
                     }
                   }),
-                  1 < y.points &&
+                  1 < A.points &&
                    R.draw(
-                      "x" + y.points,
-                      Math.round(e) + 0.5,
+                      "x" + A.points,
+                      Math.round(f) + 0.5,
                       40.5,
                       20,
                       l.guiwhite,
                       "left"
                     ));
               }
-              B(1 / h, true);
+              L(1 / h, true);
                        } 
                     }
                 })(),
