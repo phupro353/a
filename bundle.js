@@ -4197,14 +4197,6 @@ function PlaySound213() {
               "center"
             );
             e.draw(
-              "Wait patiently!",
-              b.screenWidth / 2,
-              b.screenHeight / 2,
-              10,
-              l.guiwhite,
-              "center"
-            );
-            e.draw(
               b.message,
               b.screenWidth / 2,
               b.screenHeight / 2 + 30,
