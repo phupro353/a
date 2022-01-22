@@ -3335,12 +3335,11 @@ function PlaySound213() {
                       index: g,
                     });
                     let { upgrades: k } = M[g];
-                    switch (h) {
+                     switch (h) {
+                      case 5:
+                        return { width: 1, height: 1 };
+                      case 4:
                       case 3:
-                        return {
-                          width: 1,
-                          height: 1,
-                        };
                       case 2:
                         return (
                           k.forEach((c, d) => f(b, a + 2 + d, d, c)),
@@ -3362,38 +3361,21 @@ function PlaySound213() {
                       case 1:
                       case 0: {
                         let c = b;
-                        e = k.map((e, g) => {
-                          let l = 2 * (e.tier - h);
-                          e = f(b, a + l, g, e);
-                          d.push([
-                            {
-                              x: b,
-                              y: a + (0 === g ? 0 : 1),
-                            },
-                            {
-                              x: b,
-                              y: a + l,
-                            },
+                        d = k.map((d, g) => {
+                          let l = 2 * (d.tier - h);
+                          d = f(b, a + l, g, d);
+                          e.push([
+                            { x: b, y: a + (0 === g ? 0 : 1) },
+                            { x: b, y: a + l }
                           ]);
                           g + 1 === k.length &&
-                            d.push([
-                              {
-                                x: c,
-                                y: a + 1,
-                              },
-                              {
-                                x: b,
-                                y: a + 1,
-                              },
-                            ]);
-                          b += e.width;
-                          return e;
+                            e.push([{ x: c, y: a + 1 }, { x: b, y: a + 1 }]);
+                          b += d.width;
+                          return d;
                         });
                         return {
-                          width: e
-                            .map((b) => b.width)
-                            .reduce((b, a) => b + a, 0),
-                          height: 2 + Math.max(...e.map((b) => b.height)),
+                          width: d.map(b => b.width).reduce((b, a) => b + a, 0),
+                          height: 2 + Math.max(...d.map(b => b.height))
                         };
                       }
                     }
