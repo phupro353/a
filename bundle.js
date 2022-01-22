@@ -4058,11 +4058,15 @@ function PlaySound213() {
                     g.globalAlpha = 1;
                     g.lineWidth = 2;
                     G(c, d, 100, 100, true);
-                    u++;
+                    0 !== ++x % 5 || b.mobile
+                      ? (c += 105 * a)
+                      : ((c = f), (d += 105));
+                  });
+                    /*u++;
                     0 !== u % 3
                       ? (c += 114 * a)
                       : ((c = f), (d += 114));
-                  });
+                  });*/
                   let m = ta("Ignore", 11) + 10,
                     t = (h + 100 + 14 + f - 15) / 2,
                     v = k + 100 + 14;
@@ -4074,10 +4078,11 @@ function PlaySound213() {
                     l.black
                   );
                   K(t - m / 2, t + m / 2, v + 7, 14, l.white);
-                  ka.draw(
+                  g.globalAlpha = 1;
+                  fa.draw(
                     "Ignore",
-                    r,
-                    q + 7,
+                    t,
+                    v + 7,
                     12,
                     l.guiwhite,
                     "center",
@@ -4085,32 +4090,32 @@ function PlaySound213() {
                   );
                   b.clickables.skipUpgrades.place(
                     0,
-                    (r - n / 2) * h,
-                    q * h,
-                    n * h,
-                    14 * h
+                    (t - m / 2) * n,
+                    v * n,
+                    m * n,
+                    14 * n
                   );
                 } else
                   b.clickables.upgrade.hide(), b.clickables.skipUpgrades.hide();
               }
               if (b.mobile) {
                 b.canSkill =
-                  0 < y.points &&
-                  y.skills.some(b => b.amount < b.cap) &&
+                  0 < A.points &&
+                  A.skills.some(b => b.amount < b.cap) &&
                   !b.canUpgrade;
                 a.set(0 + (b.canSkill || b.died));
                 let c = a.get();
                 b.clickables.stat.hide();
                 let d = 200 / 3,
-                  e = 40 * c - 20,
-                  f = 0,
-                  k = y.getStatNames(L[y.type].statnames || -1);
+                  f = 40 * c - 20,
+                  e = 0,
+                  h = A.getStatNames(M[A.type].statnames || -1);
                 b.canSkill &&
-                  (y.skills.forEach((a, t) => {
-                    let u = a.softcap;
-                    if (!(0 >= u)) {
-                      var n = a.amount,
-                        r = l[a.color];
+                  (A.skills.forEach((a, k) => {
+                    let x = a.softcap;
+                    if (!(0 >= x)) {
+                      var m = a.amount,
+                        u = l[a.color];
                       a = a.cap;
                       var q = k[9 - t].split(/\s+/),
                         v = Math.floor(q.length / 2),
