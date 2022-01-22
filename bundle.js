@@ -4024,31 +4024,31 @@ function PlaySound213() {
                       .trim();
                     !b.mobile && n
                       ? (aa
-                          .get(u)
+                          .get(q)
                           .draw(
-                            r.name,
+                            t.name,
                             c + 45,
-                            e + 100 - 6,
+                            d + 100 - 6,
                             9.5,
                             l.guiwhite,
                             "center"
                           ),
-                        ja
-                          .get(u)
+                        ea
+                          .get(q)
                           .draw(
-                            "[" + n + "]",
+                            "[" + m + "]",
                             c + 100 - 4,
-                            e + 100 - 6,
+                            d + 100 - 6,
                       9.5,
                             l.guiwhite,
                             "right"
                           ))
                       : aa
-                          .get(u)
+                          .get(q)
                           .draw(
-                            r.name,
+                            t.name,
                             c + 50,
-                            e + 100 - 6,
+                            d + 100 - 6,
                             9.5,
                             l.guiwhite,
                             "center"
@@ -4056,16 +4056,16 @@ function PlaySound213() {
                     g.strokeStyle = l.black;
                     g.globalAlpha = 1;
                     g.lineWidth = 2;
-                    z(c, e, 100, 100, true);
+                    G(c, d, 100, 100, true);
                     u++;
                     0 !== u % 3
-                      ? (e += 114 * a)
-                      : ((e = f), (c += 114));
+                      ? (c += 114 * a)
+                      : ((c = f), (d += 114));
                   });
-                  let n = ta("Ignore", 11) + 10,
-                    r = (k + 100 + 14 + f - 15) / 2,
-                    q = t + 100 + 14;
-                  J(
+                  let m = ta("Ignore", 11) + 10,
+                    t = (h + 100 + 14 + f - 15) / 2,
+                    v = k + 100 + 14;
+                  K(
                     r - n / 2,
                     r + n / 2,
                     q + 7,
