@@ -3996,7 +3996,6 @@ function PlaySound213() {
                       100 * n
                     );
                     g.globalAlpha = 0.5; // Upgrade Boxes
-                    //g.fillStyle = [l.teal, l.lgreen, l.orange, l.gold, l.purple, l.magenta, l.pink, "#FFA268", "#D68165"][r];
                     g.fillStyle = e(u + 10);
                     G(c, d, 100, 100);
                     g.globalAlpha = 0.2;
@@ -4062,12 +4061,7 @@ function PlaySound213() {
                       ? (c += 105 * a)
                       : ((c = f), (d += 105));
                   });
-                    /*u++;
-                    0 !== u % 3
-                      ? (c += 114 * a)
-                      : ((c = f), (d += 114));
-                  });*/
-                  let m = ta("Ignore", 11) + 10,
+                    let m = ta("Ignore", 11) + 10,
                     t = (h + 100 + 14 + f - 15) / 2,
                     v = k + 100 + 14;
                   K(

@@ -1,0 +1,7 @@
+/*u++;
+                    0 !== u % 3
+                      ? (c += 114 * a)
+                      : ((c = f), (d += 114));
+                  });*/
+                  //g.fillStyle = [l.teal, l.lgreen, l.orange, l.gold, l.purple, l.magenta, l.pink, "#FFA268", "#D68165"][r];
+                    
