@@ -3323,7 +3323,7 @@ function PlaySound213() {
                 na = O.max;
               do {
                 if (!b.showTree) break;
-                let a = M.find((b) => "basic" === b.name);
+                let a = M.find((b) => "tank" === b.name);
                 if (!a) break;
                 let c = [],
                   d = [],
@@ -4202,6 +4202,16 @@ function PlaySound213() {
               b.screenHeight / 2 + 30,
               15,
               l.lgreen,
+              "center"
+            );
+            
+            
+            e.draw(
+              "Any bugs or suggestions? Contact me (Anonymoususer12321) at FANDOM.",
+              b.screenWidth / 2,
+              b.screenHeight / 2 + 150,
+              15,
+              l.guiwhite,
               "center"
             );
             e.draw(
