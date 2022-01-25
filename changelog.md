@@ -1,6 +1,6 @@
 # Update
 
-- added Dasher Branches of booster at level 60
+- added Dasher Branches of booster and Auto-Triangle at level 60
 
 # Update
 
