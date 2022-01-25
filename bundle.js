@@ -2692,8 +2692,8 @@ function PlaySound213() {
           };
         })(),
         ba = (() => {
-          function b(b, a, d, e, g, f = 0) {
-            b.beginPath();
+          function b(b, a, d, e, g, f = 0, angle, skin, fill, centerX, centerY, radius) {
+          b.beginPath();
             if (g)
               if (g instanceof Array) {
                 var c = Math.cos(f);
@@ -2853,6 +2853,7 @@ function PlaySound213() {
                     var C = f * (D.length / 2 - (1 === D.aspect ? w[A] : 0)),
                       L = (f * D.width) / 2,
                       COLOR = D.color,
+                      SKIN = D.skin,
                       G = D.aspect;
                     D = D.angle + m;
                     var X = L;
@@ -2864,7 +2865,10 @@ function PlaySound213() {
                     if (COLOR == null) {
                       COLOR = 16;
                     }
-                    k(h, e(COLOR));
+                    if (SKIN==null){
+                    SKIN = 0
+                    }
+                    k(h, e(COLOR, SKIN));
                     d.beginPath();
                     d.moveTo(v + X * Math.cos(D + G), r + X * Math.sin(D + G));
                     d.lineTo(
