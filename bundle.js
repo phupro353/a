@@ -429,7 +429,7 @@ function PlaySound213() {
           case "dom4":
           case "dbc4":
           case "mbc4":
-            return l.pink;
+            return l.purple;
           case "domx":
           case "dom0":
           case "dbc0":
