@@ -6308,31 +6308,7 @@ function PlaySound213() {
           paletteSize: 10,
           border: 0.4,
         },
-        brighter: {
-         teal:"#00db92",
-          83e800,"orange":"
-          ff9d00,"yellow":"
-          fce700,"lavender"
-          "#a778ff,"pink":"#f
-          5edc,"vlgrey":"
-          ffff00,"lgrey":"#
-          a9f9e,"guiwhite"
-          "#ffffff,"black":"#
-          00000,"blue":"#0
-          bbff,"green":"#
-          0ff00,"red":"#ff
-          000,"gold":"#e
-          c74b,"purple":"
-          7b00ff,"magenta":
-          #ff00ff,"grey":"#a
-          a7af,"dgrey":"#
-          d0000,"white":"#
-          fffff,"guiblack"
-          "#000000,"paletteSi
-          e":10,"bordr":"
-          .9"}}
-     ,
-         , ustom: {
+         custom: {
           teal: "#7ADBBC",
           lgreen: "#B9E87E",
           orange: "#E7896D",
