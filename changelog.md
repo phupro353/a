@@ -1,3 +1,7 @@
+# Update 
+
+- added a new boss Called Hexa Kepper
+
 # Update
 
 - added Dasher Branches of booster and Auto-Triangle at level 60
