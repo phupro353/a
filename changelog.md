@@ -1,5 +1,13 @@
 # Update 
 
+- Released Chiller Branches Of Sniper at Level 30
+
+- Redesign Ranger
+
+- Redesign Warden
+
+# Update 
+
 - added a new boss Called Hexa Kepper
 
 # Update
