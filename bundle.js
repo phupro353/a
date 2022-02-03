@@ -5781,6 +5781,88 @@ function PlaySound213() {
     function (r) {
       r.exports = {
         normal: {
+        /*"teal": {
+            "light": "#7ADBBC",
+            "dark": "#597b70"
+        },
+        "lgreen": {
+            "light": "#B9E87E",
+            "dark": "#6f805a"
+        },
+        "orange": {
+            "light": "#E7896D",
+            "dark": "#7f5e54"
+        },
+        "yellow": {
+            "light": "#FDF380",
+            "dark": "#87835b"
+        },
+        "lavender": {
+            "light": "#B58EFD",
+            "dark": "#6e6087"
+        },
+        "pink": {
+            "light": "#EF99C3",
+            "dark": "#826473"
+        },
+        "vlgrey": {
+            "light": "#E8EBF7",
+            "dark": "#808185"
+        },
+        "lgrey": {
+            "light": "#AA9F9E",
+            "dark": "#6a6666"
+        },
+        "guiwhite": {
+            "light": "#FFFFFF",
+            "dark": "#888888"
+        },
+        "black": {
+            "light": "#484848",
+            "dark": "#484848"
+        },
+        "blue": {
+            "light": "#3CA4CB",
+            "dark": "#436875"
+        },
+        "green": {
+            "light": "#8ABC3F",
+            "dark": "#5f7044"
+        },
+        "red": {
+            "light": "#E03E41",
+            "dark": "#7d4445"
+        },
+        "gold": {
+            "light": "#EFC74B",
+            "dark": "#827449"
+        },
+        "purple": {
+            "light": "#8D6ADF",
+            "dark": "#60537c"
+        },
+        "magenta": {
+            "light": "#CC669C",
+            "dark": "#765265"
+        },
+        "grey": {
+            "light": "#A7A7AF",
+            "dark": "#69696c"
+        },
+        "dgrey": {
+            "light": "#726F6F",
+            "dark": "#565555"
+        },
+        "white": {
+            "light": "#DBDBDB",
+            "dark": "#7b7b7b"
+        },
+        "guiblack": {
+            "light": "#000000",
+            "dark": "#2e2e2e"
+        }
+    },
+        normal: {*/
           teal: "#7ADBBC",
           lgreen: "#B9E87E",
           orange: "#E7896D",
@@ -5802,7 +5884,7 @@ function PlaySound213() {
           white: "#DBDBDB",
           guiblack: "#000000",
           paletteSize: 10,
-          border: 0.65,
+          border: 0.9,
         },
         terminal: {
           teal: "#ffffff",
@@ -5849,8 +5931,8 @@ function PlaySound213() {
           dgrey: "#545454",
           white: "#C0C0C0",
           guiblack: "#000000",
-          paletteSize: 15,
-          border: 0.5,
+          paletteSize: 10,
+          border: 0.9,
         },
         dark: {
           teal: "#8975B7",
