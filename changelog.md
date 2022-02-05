@@ -1,3 +1,7 @@
+# Update 
+
+- added Cxtton a Girl Discord Youtuber That Who Playing Cookie Run But With Acid Pounder Branches of Pounder at Level 30
+
 # Update
 
 - added Acid Branches of Sniper at level 30
