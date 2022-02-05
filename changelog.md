@@ -1,3 +1,7 @@
+# Update
+
+- added Acid Branches of Sniper at level 30
+
 # Update 
 
 - Released Chiller Branches Of Sniper at Level 30
