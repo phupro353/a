@@ -1,3 +1,7 @@
+# Update Cxtton Now!
+
+- renamed Deca-Trapper to Nona-Trapper
+
 # Update Cxtton needs to go in my server! 
 
 - added Deca Trapper Branches of Hepta Trapper At Level 75 Thanks to Tricky for adding this tank
