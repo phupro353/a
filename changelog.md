@@ -1,3 +1,9 @@
+# Update Cxtton Now Again!
+
+- added Gondola Branches of Underseer at Level 45
+
+- added Encanto Branches of Gondola at Level 60
+
 # Update Cxtton Now!
 
 - renamed Deca-Trapper to Nona-Trapper
