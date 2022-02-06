@@ -1,3 +1,9 @@
+# Update Cxtton's Favorite Tank!
+
+- added Cxttonbrid Branches of Cxtton at Level 45
+
+- added Cxttine Branches of Cxttonbrid at Level 60
+
 # Update 
 
 - added Cxtton a Girl Discord Youtuber That Who Playing Cookie Run But With Acid Pounder Branches of Pounder at Level 30
