@@ -1,3 +1,11 @@
+# Update bruh The Cxtton pfp is looks like reference to Glitchtale lol
+
+- added Cxttove Branches Of Destroyer And Cxtton at level 45
+
+- added Cxttovebrid Branches of Cxttonbrid and Hybrid at level 60
+
+- added Cxttover Branches of Annihilator and Cxttove at level 60
+
 # Update Cxtton Now Again!
 
 - added Gondola Branches of Underseer at Level 45
