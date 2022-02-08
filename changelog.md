@@ -1,3 +1,11 @@
+# Update Cxtton wake up!! you shit
+
+- added Twin Sniper Branches of Twin and Sniper at level 30
+
+- added Bulwark Branches of Twin and Trap Guard at level 45
+
+- added Bulwhacker Branches of Bushwhacker, Twin Sniper And Bulwark at level 60
+
 # Update bruh The Cxtton pfp is looks like reference to Glitchtale lol
 
 - added Cxttove Branches Of Destroyer And Cxtton at level 45
