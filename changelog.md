@@ -1,3 +1,7 @@
+# Update Tricky: Cxtton art pfp is Betty Noire in Glitchtale Confirmed!!!
+
+- added Fabricator Branches of Bent Double and Fighter at Level 60
+
 # Update Cxtton wake up!! you shit
 
 - added Twin Sniper Branches of Twin and Sniper at level 30
