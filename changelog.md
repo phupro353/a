@@ -1,3 +1,11 @@
+# Update Bent Hyperbrider? CropDusterIII? Cxtton? Paws Rover! 
+
+- added Basebrid Branches of Basic Page 2 at Level 15
+
+- added Basekick Branches of Basebrid at Level 30
+
+- slightly Redesigned Fabricator
+
 # Update Tricky: Cxtton art pfp is Betty Noire in Glitchtale Confirmed!!!
 
 - added Fabricator Branches of Bent Double and Fighter at Level 60
