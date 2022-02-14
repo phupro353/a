@@ -1,3 +1,9 @@
+# Update Cxtton.exe Confirmed! 
+
+- added Multiplier Branches of Basekick at Level 45
+
+- added Mitosis Branches of Multiplier at Level 60
+
 # Update Bent Hyperbrider? CropDusterIII? Cxtton? Paws Rover! 
 
 - added Basebrid Branches of Basic Page 2 at Level 15
