@@ -29,3 +29,5 @@
                   }
                   K(c - a.len / 2, c + a.len / 2, d + 9, 18, notificationBarColor);
                  
+                 
+                 x = 0;
