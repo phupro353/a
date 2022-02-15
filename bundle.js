@@ -3915,7 +3915,7 @@ function PlaySound213() {
                                 let a = k.get();
                                 b.clickables.upgrade.hide();
                                 if (b.canUpgrade) {
-                                    let c = 40 * a - 10,
+                                    let c = 40 * a - 20,
                                         d = 20,
                                         f = c,
                                         h = 0,
@@ -3927,7 +3927,7 @@ function PlaySound213() {
                                     A.upgrades.forEach(m => {
                                         d > k && (k = d);
                                         h = c;
-                                        b.clickables.upgrade.place(q++, c * n, d * n, 50 * n, 100 * n);
+                                        b.clickables.upgrade.place(q++, c * n, d * n, 100 * n, 100 * n);
                                         g.globalAlpha = .5;
                                         g.fillStyle = e(u + 10);
                                         G(c, d, 100, 100);
