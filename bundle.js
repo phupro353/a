@@ -1018,7 +1018,7 @@ function PlaySound213() {
         })();
         return {
           stat: b(10),
-          upgrade: b(100),
+          upgrade: b(10),
           hover: b(1),
           skipUpgrades: b(1),
         };
@@ -3853,7 +3853,7 @@ function PlaySound213() {
               b.mobile && L(1.25);
                             b.mobile && L(1.4);
                             if (!B.graphical.screenshotMode) {
-                                let c = b.screenWidth - 278,
+                                let c = b.screenWidth - 200 - 20,
                                     d = 48;
                                 b.mobile && (d += (b.canSkill ? 200 / 3 / 1.4 * a.get() : 0) + (b.canUpgrade && 40 + 114 * A.upgrades.length > 1.4 * c ? 100 / 1.4 * k.get() : 0));
                                 0 < O.data.length && V.draw("Leaderboard", Math.round(c + 100) + .5, Math.round(d - 10) + .5, 18,
