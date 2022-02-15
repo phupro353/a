@@ -3853,7 +3853,7 @@ function PlaySound213() {
               b.mobile && L(1.25);
                             b.mobile && L(1.4);
                             if (!B.graphical.screenshotMode) {
-                                let c = b.screenWidth - 200 - 20,
+                                let c = b.screenWidth - 278,
                                     d = 48;
                                 b.mobile && (d += (b.canSkill ? 200 / 3 / 1.4 * a.get() : 0) + (b.canUpgrade && 40 + 114 * A.upgrades.length > 1.4 * c ? 100 / 1.4 * k.get() : 0));
                                 0 < O.data.length && V.draw("Leaderboard", Math.round(c + 100) + .5, Math.round(d - 10) + .5, 18,
@@ -3915,8 +3915,8 @@ function PlaySound213() {
                                 let a = k.get();
                                 b.clickables.upgrade.hide();
                                 if (b.canUpgrade) {
-                                    let c = 10 * a - 20,
-                                        d = 10,
+                                    let c = 40 * a - 20,
+                                        d = 20,
                                         f = c,
                                         h = 0,
                                         k = d,
