@@ -3327,7 +3327,7 @@ function PlaySound213() {
                 na = O.max;
               do {
                 if (!b.showTree) break;
-                let a = M.find((b) => "tank" === b.name);
+                let a = M.find((b) => "basic" === b.name);
                 if (!a) break;
                 let c = [],
                   d = [],
@@ -3509,7 +3509,7 @@ function PlaySound213() {
                 let c = 200,
                   d = c,
                   f = -20 - 2 * c + a.get() * (40 + 2 * c),
-                  e = b.screenHeight - 20 - 15,
+                  e = b.screenHeight - 10 - 8,
                   h = 11,
                   k = A.getStatNames(M[A.type].statnames || -1);
                 A.skills.forEach(function (a) {
@@ -3915,8 +3915,8 @@ function PlaySound213() {
                                 let a = k.get();
                                 b.clickables.upgrade.hide();
                                 if (b.canUpgrade) {
-                                    let c = 40 * a - 20,
-                                        d = 20,
+                                    let c = 10 * a - 20,
+                                        d = 10,
                                         f = c,
                                         h = 0,
                                         k = d,
