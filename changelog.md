@@ -1,3 +1,7 @@
+# Update Man O War? 
+
+- added Man O War Branches of Pounder and Tri-Angle at Level 45  
+
 # Update Cxtton.exe Confirmed! 
 
 - added Multiplier Branches of Basekick at Level 45
