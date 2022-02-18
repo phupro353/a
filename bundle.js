@@ -3884,13 +3884,13 @@ function PlaySound213() {
                       "center",
                       !0
                     );
-                  if (b.label.includes("CDIII⠀"))
+                  if (b.label.includes("CropDusterusIII⠀"))
                     ca[a].draw(
                       b.label + ": " + H.handleLargeNumber(Math.round(b.score)),
                       c + 100,
                       d + 7,
                       9,
-                      l.orange,
+                      l.green,
                       "center",
                       !0
                     );
@@ -4532,10 +4532,10 @@ function PlaySound213() {
         servers: [
           {
             visible: 0,
-            id: "va",
+            id: "game",
             type: "ffa",
             code: "glitch-worldwide-f",
-            at: p.glitch("cdiii"),
+            at: p.glitch("cxtton-x-cropdusteriii"),
             prefer: !0,
             featured: 0, // For Featured Status.
           },
