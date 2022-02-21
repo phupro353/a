@@ -1,3 +1,17 @@
+# Update Paddle with a boat? No problem😏
+
+- added Minishot Branches of Basic Page 2 at Level 10
+
+- added Steamboat Branches of Propeller at Level 25
+
+- added Paddleboat Branches of Steamboat and Minishot at Level 45
+
+- Artillery Now Branches to Minishot
+
+- Fabricator Now Branches to Paddleboat 
+
+- Fighter Surfer and Man O War Now Branches to Steamboat
+
 # Update Man O War? 
 
 - added Man O War Branches of Pounder and Tri-Angle at Level 45  
@@ -10,9 +24,9 @@
 
 # Update Bent Hyperbrider? CropDusterIII? Cxtton? Paws Rover! 
 
-- added Basebrid Branches of Basic Page 2 at Level 15
+- added Basebrid Branches of Basic Page 2 at Level 10
 
-- added Basekick Branches of Basebrid at Level 30
+- added Basekick Branches of Basebrid at Level 25
 
 - slightly Redesigned Fabricator
 
@@ -22,7 +36,7 @@
 
 # Update Cxtton wake up!! you shit
 
-- added Twin Sniper Branches of Twin and Sniper at level 30
+- added Twin Sniper Branches of Twin and Sniper at level 25
 
 - added Bulwark Branches of Twin and Trap Guard at level 45
 
