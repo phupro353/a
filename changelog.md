@@ -1,3 +1,13 @@
+# Update Cxtton again? Let's go! 
+
+- added Harasser Branches of Minishot at Level 25
+
+- added Bully Branches of Harasser at Level 45
+
+- Triple Shot Now Branches to Minishot
+
+- Mortar, Spreadshot And Penta Shot Now Branches to Harasser
+
 # Update Paddle with a boat? No problem😏
 
 - added Minishot Branches of Basic Page 2 at Level 10
