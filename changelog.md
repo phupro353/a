@@ -6,7 +6,7 @@
 
 - Triple Shot Now Branches to Minishot
 
-- Mortar, Spreadshot And Penta Shot Now Branches to Harasser
+- Mortar And Spreadshot Now Branches to Harasser
 
 # Update Paddle with a boat? No problem😏
 
