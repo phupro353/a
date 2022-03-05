@@ -3751,11 +3751,11 @@
                     );
                   } else
                     W[6].draw(
-                      "Terratomereriaz.io",
+                      "tiky.io",
                       h + 200,
                       m - 42 - 2,
                       15,
-                      l.orange,
+                      l.gold,
                       "right"
                     );
                   W[2].draw(
