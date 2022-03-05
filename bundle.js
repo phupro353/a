@@ -1,59 +1,3 @@
-//just some code to make the sound work
-var clicksound = new Audio();
-clicksound.src =
-  "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/sysse_ok.ogg";
-function PlaySound210() {
-  clicksound.play();
-}
-var clicked = false;
-
-function doSomething() {
-  if (clicked) {
-    var optionclicksound = new Audio();
-    optionclicksound.src =
-      "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/cancel.wav";
-    optionclicksound.load();
-    optionclicksound.play();
-  } else {
-    clicksound.load();
-    clicksound.play();
-  }
-  clicked = !clicked;
-}
-var smallaudio2 = new Audio();
-smallaudio2.src =
-  "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/error.ogg";
-function PlaySound211() {
-  smallaudio2.play();
-}
-var smallaudio3 = new Audio(
-  "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/socket.wav"
-);
-
-smallaudio3.loop = false;
-function PlaySound212() {
-  smallaudio3.loop = false;
-  smallaudio3.play();
-}
-var smallaudio5 = new Audio();
-smallaudio5.src =
-  "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/poka.wav";
-function PlaySound214() {
-  smallaudio5.play();
-}
-var smallaudio6 = new Audio();
-smallaudio6.src =
-  "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/finish.wav";
-function PlaySound215() {
-  smallaudio6.play();
-}
-var camerasound = new Audio();
-camerasound.src =
-  "https://cloud-cube.s3.amazonaws.com/m660o440l0wv/public/camera.wav";
-function PlaySound213() {
-  camerasound.play();
-}
-
 ~function () {
   "use strict";
   var I = I || {};
@@ -4185,38 +4129,12 @@ function PlaySound213() {
             ],
             [
               "Have Fun!",
-              "Good Luck!",
+              "go to scenexe.io too!",
+              'Tip: this is a arras fanmade'
             ],
           ];
           c = c[Math.floor(Math.random() * c.length)];
-          let g = c[Math.floor(Math.random() * c.length)];
-          return () => {
-            F("#FF5733", /*"https://cdn.glitch.global/08236520-51ec-48b7-88da-b75e2eb19bca/video_image.jpeg?v=1642874378743",*/ 0.5);
-            a.draw(
-              "Connecting...",
-              b.screenWidth / 2,
-              b.screenHeight / 2,
-              30,
-              l.guiwhite,
-              "center"
-            );
-            e.draw(
-              b.message,
-              b.screenWidth / 2,
-              b.screenHeight / 2 + 30,
-              15,
-              l.lgreen,
-              "center"
-            );
-            e.draw(
-              "Pumpkin Pie Cookie Be Like:",
-              b.screenWidth / 2,
-              b.screenHeight / 2 + 55,
-              15,
-              "#FF5733", 
-              "center"
-            );
-          };
+          let g = c[Math.floor(Math.random() * c.length)]
         })(),
         Ua = (() => {
           var a = m(),
@@ -4535,19 +4453,19 @@ function PlaySound213() {
             id: "game",
             type: "ffa",
             code: "glitch-worldwide-f",
-            at: p.glitch("paddle-arras-source-code"),
+            at: p.glitch("dawn-changeable-silkworm"),
             prefer: !0,
             featured: 0, // For Featured Status.
           },
-          /*{
+          {
             visible: 0,
             id: "wa",
             type: "siege",
-            code: "glitch-worldwide-s",
-            at: p.glitch("cdiii-siege12"),
+            code: "glitch-worldwide-4",
+            at: p.glitch("tiky-server2"),
             prefer: !0,
             featured: 0, // For Featured Status.
-          },*/
+          },
         ]
           .map((a, e) => ({ data: a, i: e }))
           .sort((a, e) =>
