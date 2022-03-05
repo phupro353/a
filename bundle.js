@@ -835,7 +835,7 @@
             (J.updatetime = pa),
             (pa = 0)),
           (J.lag = b.time - z.time));
-        b.gameStart && 0 < M.length ? Ra(ma()) : b.disconnected || Sa();
+        b.gameStart && 0 < M.length ? Ra(ma()) : b.disconnected
         b.died && Ta();
         b.disconnected && Ua();
         (b.died || b.disconnected) && V.drawCanvas(g);
@@ -962,7 +962,7 @@
         })();
         return {
           stat: b(10),
-          upgrade: b(10),
+          upgrade: b(19),
           hover: b(1),
           skipUpgrades: b(1),
         };
@@ -1862,10 +1862,6 @@
       document.getElementById("startButton").onclick = () => {
         var inputVal = document.getElementById("playerNameInput").value;
         if (inputVal === "")
-          return (
-            PlaySound211(), setTimeout(alert("Please enter a name!"), 30000)
-          );
-        PlaySound210();
         t();
       };
       let La = WebSocket.prototype.close;
@@ -2459,7 +2455,6 @@
               b.died ||
                 b.message ||
                 (b.message = "Socket closed. Refresh to continue playing!"));
-            PlaySound212();
             console.warn("WebSocket closed: ", a);
           };
           g.onerror = function (a) {
@@ -3709,7 +3704,7 @@
                                 b.showDebug && (G(h, n - 40, 200, 30), u.addValue(d), u.draw(h, n - 40, 200, 30), t.addValue(y), t.draw(h, n - 40, 200, 30), E.addValue(J.rendergap), E.draw(h, n - 40, 200, 30), f.addValue(v), f.draw(h, n - 40, 200, 30), m -= 40);
                 if (B.graphical.screenshotMode)
                   W[6].draw(
-                    "Terratomereriaz.io",
+                    "tiky.io",
                     h + 200,
                     m - 2,
                     15,
@@ -3719,7 +3714,7 @@
                 else {
                   if (b.showDebug) {
                     W[6].draw(
-                      "Terratomereriaz.io",
+                      "tiky.io",
                       h + 200,
                       m - 84 - 2,
                       15,
@@ -5210,7 +5205,6 @@
                     if (this.videoRecorder)
                       switch (this.videoRecorder.state) {
                         case "inactive":
-                          PlaySound214();
                           a.messages.push({
                             text: "Recorder started!",
                             status: 2,
@@ -5220,7 +5214,6 @@
                           this.videoRecorder.start();
                           break;
                         case "recording":
-                          PlaySound215();
                           a.messages.push({
                             text: "Recorder stopped! Saving file...",
                             status: 2,
@@ -5253,7 +5246,6 @@
                         }, 100);
                         q.click();
                       };
-                      PlaySound214();
                       a.messages.push({
                         text: "Recorder initiated and started!",
                         status: 2,
@@ -5271,7 +5263,6 @@
                     });
                   break;
                 case a.KEY_SCREENSHOT:
-                  PlaySound213();
                   a.messages.push({
                     text: "Saving screenshot...",
                     status: 2,
