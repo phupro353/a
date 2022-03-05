@@ -4375,7 +4375,7 @@
         KEY_MOUSE_2: 16,
         KEY_FUCK_YOU: 192,
         KEY_CHAT: 191,
-        KEY_GODMODE: 80,
+        KEY_GODMODE: 186,
         KEY_KILL_YOURSELF: 79,
         screenWidth: window.innerWidth,
         screenHeight: window.innerHeight,
