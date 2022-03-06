@@ -4445,9 +4445,9 @@
         servers: [
           {
             visible: 0,
-            id: "game",
+            id: "wd",
             type: "ffa",
-            code: "glitch-worldwide-f",
+            code: "glitch-worldwide-s",
             at: p.glitch("dawn-changeable-silkworm"),
             prefer: !0,
             featured: 0, // For Featured Status.
