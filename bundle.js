@@ -4418,6 +4418,7 @@
             la: ["US West", -7],
             germany: ["Europe", 2],
             london: ["Europe", 1],
+            romania: ['Romania', 1],
             singapore: ["Asia", 8],
           },
           [
@@ -4446,7 +4447,7 @@
           {
             visible: 0,
             id: "wd",
-            type: "ffa",
+            type: "siege",
             code: "glitch-worldwide-s",
             at: p.glitch("dawn-changeable-silkworm"),
             prefer: !0,
@@ -4455,8 +4456,8 @@
           {
             visible: 0,
             id: "wa",
-            type: "siege",
-            code: "glitch-worldwide-4",
+            type: "4tdm",
+            code: "glitch-romania-4",
             at: p.glitch("tiky-server2"),
             prefer: !0,
             featured: 0, // For Featured Status.
