@@ -309,7 +309,7 @@
           case 39:
             return "#A177FC";
           case 40:
-            return "#56E012";
+            return "#adff2f";
           case 41:
             return "#15CD2D";
           case 42:
