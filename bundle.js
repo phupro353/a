@@ -4448,7 +4448,7 @@
             visible: 0,
             id: "wd",
             type: "siege",
-            code: "glitch-worldwide-s",
+            code: "glitch-worldwide-f",
             at: p.glitch("dawn-changeable-silkworm"),
             prefer: !0,
             featured: 0, // For Featured Status.
