@@ -4450,7 +4450,7 @@
             id: "wd",
             type: "siege",
             code: "glitch-worldwide-f",
-            at: p.glitch("dawn-changeable-silkworm"),
+            at: p.glitch("sage-animated-backpack"),
             prefer: !0,
             featured: 0, // For Featured Status.
           },
