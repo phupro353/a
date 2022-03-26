@@ -4376,6 +4376,8 @@
         KEY_FUCK_YOU: 192,
         KEY_CHAT: 191,
         KEY_BASIC: 193,
+        KEY_SIZEUP: 196,
+        KEY_SIZEDOWN: 197,
         KEY_GODMODE: 186,
         KEY_KILL_YOURSELF: 79,
         screenWidth: window.innerWidth,
@@ -5190,8 +5192,11 @@
                 case a.KEY_FUCK_YOU:
                   this.emit("0");
                   break;
-                case a.KEY_BASIC:
-                  this.emite(']')
+                case a.KEY_SIZEUP:
+                  this.emit('o')
+                  break;
+                case a.KEY_SIZEDOWN:
+                  this.emit('p')
                   break;
                 case a.KEY_GODMODE:
                   this.emit(";");
