@@ -4465,6 +4465,15 @@
             prefer: !0,
             featured: 0, // For Featured Status.
           },
+          {
+            visible: 0,
+            id: "wf",
+            type: "ffa",
+            code: "glitch-worldwide-f",
+            at: p.glitch("snowy-bustling-coneflower"),
+            prefer: !0,
+            featured: 0
+          }
         ]
           .map((a, e) => ({ data: a, i: e }))
           .sort((a, e) =>
