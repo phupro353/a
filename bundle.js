@@ -1410,7 +1410,6 @@
                 ? "translate(2px, -2px) rotate(45deg)"
                 : "rotate(-45deg)";
               h.innerText = b ? "close options" : "view options";
-              doSomething();
               b ? u.classList.add("slided") : u.classList.remove("slided");
               y[0].style.opacity = b ? 0 : 1;
               y[2].style.opacity = b ? 1 : 0;

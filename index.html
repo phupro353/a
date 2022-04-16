@@ -61,7 +61,7 @@
               </h3>
             </div>
             <div class="slider startMenuSlidingContent">
-              <div class="controlTable optionsHeader" title="More Controls" onclick="PlaySound3()" >Advanced Controls <i id="resetControls" class="reset resetControls" title="Reset controls"></i><i id="moreControls" class="moreControls cross" title="More controls"></i></div>
+              <div class="controlTable optionsHeader" title="More Controls" >Advanced Controls <i id="resetControls" class="reset resetControls" title="Reset controls"></i><i id="moreControls" class="moreControls cross" title="More controls"></i></div>
               <table class="controlTable" id="controlTable">
                 <tbody>
                   <tr>
@@ -156,28 +156,28 @@
               <table>
                 <tr>
                   <td><div>
-                    <label class="container"><input id="optScreenshotMode" onmouseover="PlaySound1()" onclick="PlaySound()" tabindex="-1" class="checkbox" type="checkbox"><span class="checkmark"></span>Screenshot Mode</label>
+                    <label class="container"><input id="optScreenshotMode" tabindex="-1" class="checkbox" type="checkbox"><span class="checkmark"></span>Screenshot Mode</label>
                   </div></td>
                   <td><div>
-                    <label class="container"><input id="optNoPointy" onclick="PlaySound()" tabindex="-1" class="checkbox" type="checkbox"><span class="checkmark"></span>Classic Traps</label>
-                  </div></td>
-                </tr><tr>
-                  <td><div>
-                    <label class="container"><input id="optFancy" onclick="PlaySound()" tabindex="-1" class="checkbox" type="checkbox"><span class="checkmark"></span>Low Graphics</label>
-                  </div></td>
-                  <td><div>
-                    <label class="container"><input id="optShield" onclick="PlaySound()" tabindex="-1" class="checkbox" type="checkbox"><span class="checkmark"></span>Separate Shield Bar</label>
+                    <label class="container"><input id="optNoPointy" tabindex="-1" class="checkbox" type="checkbox"><span class="checkmark"></span>Classic Traps</label>
                   </div></td>
                 </tr><tr>
                   <td><div>
-                    <label class="container"><input id="optAutoLevel" onclick="PlaySound()" tabindex="-1" class="checkbox" type="checkbox"><span class="checkmark"></span>Auto-Level Up</label>
+                    <label class="container"><input id="optFancy" tabindex="-1" class="checkbox" type="checkbox"><span class="checkmark"></span>Low Graphics</label>
                   </div></td>
                   <td><div>
-                    <label class="container"><input id="optPrediction" onclick="PlaySound()" tabindex="-1" class="checkbox" type="checkbox"><span class="checkmark"></span>Use New Interpolation</label>
+                    <label class="container"><input id="optShield" tabindex="-1" class="checkbox" type="checkbox"><span class="checkmark"></span>Separate Shield Bar</label>
                   </div></td>
                 </tr><tr>
                   <td><div>
-                    <label class="container"><input id="optPointy" onclick="PlaySound()" tabindex="-1" class="checkbox" type="checkbox"><span class="checkmark"></span>Sharp Edges</label>
+                    <label class="container"><input id="optAutoLevel" tabindex="-1" class="checkbox" type="checkbox"><span class="checkmark"></span>Auto-Level Up</label>
+                  </div></td>
+                  <td><div>
+                    <label class="container"><input id="optPrediction" tabindex="-1" class="checkbox" type="checkbox"><span class="checkmark"></span>Use New Interpolation</label>
+                  </div></td>
+                </tr><tr>
+                  <td><div>
+                    <label class="container"><input id="optPointy" tabindex="-1" class="checkbox" type="checkbox"><span class="checkmark"></span>Sharp Edges</label>
              </div></td>
                   <td><div>
                     <!-- label class="container"><input id="optSound" tabindex="-1" class="checkbox" type="checkbox" onclick="switchAudio()"><span class="checkmark"></span>Music</label-->
@@ -185,26 +185,23 @@
                 </tr>
               </table>
               <div id="bottomHolder">
-            <a style="background:#ffa500" onclick="PlaySound()" onmouseover="PlaySound1()" title="example" href="" target="_blank" rel="noopener noreferrer">example</a>
-            <a style="background:#ffa500" onclick="PlaySound()" onmouseover="PlaySound1()" title="example" href="" target="_blank" rel="noopener noreferrer">example</a>
-            <a style="background:#ffa500" onclick="PlaySound()" onmouseover="PlaySound1()" title="example" href="" target="_blank" rel="noopener noreferrer">example</a>
+            <a style="background:#ffa500" title="example" href="" target="_blank" rel="noopener noreferrer">example</a>
+            <a style="background:#ffa500" title="example" href="" target="_blank" rel="noopener noreferrer">example</a>
+            <a style="background:#ffa500" title="example" href="" target="_blank" rel="noopener noreferrer">example</a>
              </div>
             </div>
           </div>
           <div style="position: relative; bottom: -10px;">
-            <button id="startButton" onmouseover="PlaySound1()" title="Start the mayhem" tabindex="2">Play</button>
+            <button id="startButton" title="Start the mayhem" tabindex="2">Play</button>
           </div>
         </div>
         <div class="startMenuHolder shrinkable">
           <div class="changelogSelectorContainer">
           <div class="changelogSelector" id="changelogSelector">
-              <span data-type="changelog" onmouseover="PlaySound1()" title="More bullets than Touhou">Changelog</span>
+              <span data-type="changelog" title="More bullets than Touhou">Changelog</span>
             </div>
             </div>
           <div id="patchNotes" class="shadowScroll updates"></div>
-          <div>
-             <button id="startButton" tabindex="2">Play</button>
-          </div>
         </div>
       </div>
     </div>
