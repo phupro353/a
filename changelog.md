@@ -1,3 +1,6 @@
+# wow new gamemode AND EK-5 WHAAT
+- added mothership gamemode!
+- added EK-5
 # B L A C K  H O L E
 - added TON 618! a powerfull boss
 # event ended
