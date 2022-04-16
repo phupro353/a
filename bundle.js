@@ -1860,9 +1860,7 @@
         };
       }
       document.getElementById("startButton").onclick = () => {
-        var inputVal = document.getElementById("playerNameInput").value;
-        if (inputVal === "")
-        t();
+                t()
       };
       let La = WebSocket.prototype.close;
       WebSocket.prototype.close = function (...b) {
