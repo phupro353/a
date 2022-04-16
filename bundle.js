@@ -4440,7 +4440,7 @@
               { id: "d", to: "4DOM" },
               { id: "s", to: "Siege" },
               { id: "x", to: "Event" },
-              { id: "m", to: "Mothership", remove: "2" },
+              { id: "j", to: "Mothership", remove: "2" },
               { id: "a", to: "Assault", remove: "2" },
             ],
           ],
@@ -4471,6 +4471,15 @@
             type: "ffa",
             code: "glitch-worldwide-f",
             at: p.glitch("snowy-bustling-coneflower"),
+            prefer: !0,
+            featured: 0
+          },
+           {
+            visible: 0,
+            id: "m",
+            type: "ffa",
+            code: "glitch-worldwide-j",
+            at: p.glitch("wax-puddle-otter"),
             prefer: !0,
             featured: 0
           }
