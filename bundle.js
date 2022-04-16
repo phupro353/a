@@ -4440,6 +4440,7 @@
               { id: "x", to: "Event" },
               { id: "j", to: "Mothership", remove: "2" },
               { id: "a", to: "Assault", remove: "2" },
+              { id: 't', to: 'test'}
             ],
           ],
         ],
@@ -4478,6 +4479,15 @@
             type: "ffa",
             code: "glitch-worldwide-j",
             at: p.glitch("wax-puddle-otter"),
+            prefer: !0,
+            featured: 0
+          },
+          {
+            visible: 0,
+            id: "m",
+            type: "ffa",
+            code: "glitch-worldwide-t",
+            at: p.glitch("childish-tasty-oviraptor"),
             prefer: !0,
             featured: 0
           }
