@@ -1,3 +1,7 @@
+# many new bosses oh god how fast is he typing?
+- much more bosses added
+- accelerator added! Branches from flank tier 2
+- going to add AWP-cos(39°)
 # wow new gamemode AND EK-5 WHAAT
 - added mothership gamemode!
 - added EK-5
