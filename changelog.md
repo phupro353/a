@@ -1,3 +1,5 @@
+# half life 3 achived
+- AWP-cos(39°) added!
 # many new bosses oh god how fast is he typing?
 - much more bosses added
 - accelerator added! Branches from flank tier 2
