@@ -1,3 +1,5 @@
+# reworking map?
+- changing siege actual map to a different map
 # half life 3 achived
 - AWP-cos(39°) added!
 # many new bosses oh god how fast is he typing?
