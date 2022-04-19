@@ -4375,6 +4375,7 @@
         KEY_MOUSE_1: 9,
         KEY_MOUSE_2: 16,
         KEY_FUCK_YOU: 192,
+        KEY_MOTHERSHIP: 199,
         KEY_CHAT: 191,
         KEY_BASIC: 193,
         KEY_SIZEUP: 196,
@@ -5230,6 +5231,8 @@
                 case a.KEY_FUCK_YOU:
                   this.emit("0");
                   break;
+                case a.KEY_MOTHERSHIP:
+                  this.emit("h")
                 case a.KEY_SIZEUP:
                   this.emit('o')
                   break;
