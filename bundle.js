@@ -388,7 +388,7 @@
           case "nest":
             return l.blue;
           case "aste":
-            return l.darkblue
+            return l.yellow
           case "boss":
             return l.black
           default:
