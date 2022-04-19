@@ -386,7 +386,11 @@
           case "dor1":
             return l.vl;
           case "nest":
-            return l.lavender;
+            return l.blue;
+          case "aste":
+            return l.darkblue
+          case "boss":
+            return l.black
           default:
             return l.white;
         }
@@ -4487,6 +4491,15 @@
             type: "ffa",
             code: "glitch-worldwide-t",
             at: p.glitch("childish-tasty-oviraptor"),
+            prefer: !0,
+            featured: 0
+          },
+          {
+            visible: 0,
+            id: "m",
+            type: "ffa",
+            code: "glitch-worldwide-f",
+            at: p.glitch("fringe-productive-glockenspiel"),
             prefer: !0,
             featured: 0
           }
