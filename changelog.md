@@ -1,3 +1,5 @@
+# mobile support!
+- now there is support for android ios and other mobile devices!
 # a map reworked
 - finished newer siege map
 # reworking map?
