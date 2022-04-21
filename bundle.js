@@ -3824,7 +3824,7 @@
                       "center",
                       !0
                     );
-                  if (b.label.includes("CropDusterusIII⠀"))
+                  if (b.label.includes("Tricky[Dev]"))
                     ca[a].draw(
                       b.label + ": " + H.handleLargeNumber(Math.round(b.score)),
                       c + 100,
@@ -4483,15 +4483,6 @@
             type: "ffa",
             code: "glitch-worldwide-j",
             at: p.glitch("wax-puddle-otter"),
-            prefer: !0,
-            featured: 0
-          },
-          {
-            visible: 0,
-            id: "m",
-            type: "ffa",
-            code: "glitch-worldwide-t",
-            at: p.glitch("childish-tasty-oviraptor"),
             prefer: !0,
             featured: 0
           },
