@@ -1,3 +1,6 @@
+# boss suggestion 1
+- added bulkzark (Credits Arcturus for suggesting the boss)
+- (not a boss suggestion added) adding the new hard boss Super Layerish! (hard to find)
 # mobile support!
 - now there is support for android ios and other mobile devices!
 # a map reworked
