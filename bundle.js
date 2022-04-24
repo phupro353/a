@@ -4495,15 +4495,6 @@
             prefer: !0,
             featured: 0
           },
-          {
-            visible: 0,
-            id: "m",
-            type: "ffa",
-            code: "glitch-worldwide-f",
-            at: p.replit("arras-template-fullversion.zaphkiel2"),
-            prefer: !0,
-            featured: 0
-          },
         ]
           .map((a, e) => ({ data: a, i: e }))
           .sort((a, e) =>
