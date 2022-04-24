@@ -4494,6 +4494,14 @@
             at: p.glitch("fringe-productive-glockenspiel"),
             prefer: !0,
             featured: 0
+          },{
+            visible: 0,
+            id: "m",
+            type: "ffa",
+            code: "replit-worlwide-f",
+            at: p.replit("arras-template-fullversion"),
+            prefer: !0,
+            featured: 0
           }
         ]
           .map((a, e) => ({ data: a, i: e }))
