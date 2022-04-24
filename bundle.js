@@ -4472,8 +4472,8 @@
             visible: 0,
             id: "wf",
             type: "ffa",
-            code: "replit-worldwide-f",
-            at: p.replit("arras-template-fullversion"),
+            code: "glitch-worldwide-f",
+            at: p.glitch("lush-full-starfish"),
             prefer: !0,
             featured: 0
           },
@@ -4500,7 +4500,7 @@
             id: "m",
             type: "ffa",
             code: "glitch-worldwide-f",
-            at: p.replit("arras-template-fullversion.Zaphkiel2"),
+            at: p.replit("arras-template-fullversion.zaphkiel2"),
             prefer: !0,
             featured: 0
           },
