@@ -1,3 +1,7 @@
+# New XKX Boss In Elite.io
+- The Mike Rondo Rinan Has Been Added From Terrezerras.io (Secret Branch The V.I.P Players Have)
+- The Multiplier Had Been Added (Basic)
+- (https://terrezerras-io.glitch.me/)
 # boss suggestion 1
 - added bulkzark (Credits Arcturus for suggesting the boss)
 - (not a boss suggestion added) adding the new hard boss Super Layerish! (hard to find)
