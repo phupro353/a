@@ -4443,7 +4443,7 @@
               { id: "s", to: "Siege" },
               { id: "x", to: "Event" },
               { id: "j", to: "Mothership", remove: "2" },
-              { id: "a", to: "Assault", remove: "2" },
+              { id: "a", to: "dday", remove: "2" },
               { id: 't', to: 'test'}
             ],
           ],
@@ -4477,12 +4477,21 @@
             prefer: !0,
             featured: 0
           },
-           {
+          {
             visible: 0,
             id: "m",
             type: "ffa",
             code: "glitch-worldwide-j",
             at: p.glitch("wax-puddle-otter"),
+            prefer: !0,
+            featured: 0
+          },
+           {
+            visible: 0,
+            id: "m",
+            type: "ffa",
+            code: "glitch-worldwide-a",
+            at: p.glitch("coral-nonchalant-parenthesis"),
             prefer: !0,
             featured: 0
           },
