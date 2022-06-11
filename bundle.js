@@ -4440,6 +4440,7 @@
             ],
             [
               { id: "d", to: "4DOM" },
+              { id: "n", to: "nofood" },
               { id: "s", to: "Siege" },
               { id: "x", to: "Event" },
               { id: "j", to: "Mothership", remove: "2" },
@@ -4501,6 +4502,15 @@
             type: "ffa",
             code: "glitch-worldwide-f",
             at: p.glitch("fringe-productive-glockenspiel"),
+            prefer: !0,
+            featured: 0
+          },
+          {
+            visible: 0,
+            id: "hg",
+            type: "no food",
+            code: "glitch-worldwide-n",
+            at: p.glitch("hexagonal-fuchsia-phone"),
             prefer: !0,
             featured: 0
           },
