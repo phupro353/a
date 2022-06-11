@@ -4514,6 +4514,15 @@
             prefer: !0,
             featured: 0
           },
+          {
+            visible: 0,
+            id: "ed",
+            type: "thebackgrounds",
+            code: "glitch-singapore-f",
+            at: p.glitch("pastoral-sideways-rugby"),
+            prefer: !0,
+            featured: 0
+          },
         ]
           .map((a, e) => ({ data: a, i: e }))
           .sort((a, e) =>
