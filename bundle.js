@@ -3829,7 +3829,7 @@
                       b.label + ": " + H.handleLargeNumber(Math.round(b.score)),
                       c + 100,//When will we work in my name Richardson?
                       d + 7,
-                      9, // {"message":"Uncaught SyntaxError: Unexpected token '}'","source":"https://elite-io.glitch.me/bundle.js","lineno":3977,"colno":21,"error":"SyntaxError: Unexpected token '}'"}
+                      9, // The error ( just rewind )
                       l.blue,
                       "center",
                       !0
