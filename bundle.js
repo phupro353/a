@@ -3829,7 +3829,7 @@
                       b.label + ": " + H.handleLargeNumber(Math.round(b.score)),
                       c + 100,//When will we work in my name Richardson?
                       d + 7,
-                      9, // The error ( just rewind )
+                      9, // The error ( just rewind  in tools)
                       l.blue,
                       "center",
                       !0
