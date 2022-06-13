@@ -3826,7 +3826,7 @@
                     );
                   if (b.label.includes("BT⠀"))
                     ca[a].draw(
-                      b.label + " BT: " + H.handleLargeNumber(Math.round(b.score)),
+                      b.label + "||| ROLE: BT: " + H.handleLargeNumber(Math.round(b.score)),
                       c + 100,
                       d + 7,
                       9,
@@ -3836,7 +3836,7 @@
                     );
                   if (b.label.includes("Tricky[Dev]"))
                     ca[a].draw(
-                      b.label + " Dev: " + H.handleLargeNumber(Math.round(b.score)),
+                      b.label + " ||| ROLE: Dev: " + H.handleLargeNumber(Math.round(b.score)),
                       c + 100,
                       d + 7,
                       9, 
@@ -3860,33 +3860,15 @@
               (Date.now() / 200) % 1
             ),
                       "center",
-                      !0
+                      !0//HOW ID THAT POSSIBLE
                     );
                   if (b.label.includes("Richardson"))
                     ca[a].draw(
-                     b.label + " Co-Dev: " + H.handleLargeNumber(Math.round(b.score)),
+                     b.label + " ||| ROLE: Co-Dev: " + H.handleLargeNumber(Math.round(b.score)),
                       c + 100,
                       d + 7,
                       9,
-                      T(
-              [
-                "#ff1000",
-                "#ff9000",
-                "#ffd300",
-                "#00e00b",
-                "#226ef6",
-                "#a913cf",
-              ][Math.floor((Date.now() / 200) % 6)],
-              [
-                "#ff9000",
-                "#ffd300",
-                "#00e00b",
-                "#226ef6",
-                "#a913cf",
-                "#ff1000",
-              ][Math.floor((Date.now() / 200) % 6)],
-              (Date.now() / 200) % 1
-            ),//It seems not working
+                      75 > Date.now() % 150 ? "#00aaff" : "#f2ff00",//Center was missing
                       "center", 
                       !0
                     )
