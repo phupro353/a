@@ -3814,23 +3814,33 @@
                       "center",
                       !0
                     );
-                  if (b.label.includes("Tricky[Dev]"))
+                  if (b.label.includes("Dev⠀"))
                     ca[a].draw(
-                      b.label + " Dev: " + H.handleLargeNumber(Math.round(b.score)),
+                      b.label + ": " + H.handleLargeNumber(Math.round(b.score)),
                       c + 100,
                       d + 7,
                       9,
-                      l.green,
+                      l.yellow,
                       "center",
                       !0
                     );
                   if (b.label.includes("Richardson"))
                     ca[a].draw(
-                      b.label + " Co-Dev: " + H.handleLargeNumber(Math.round(b.score)),
+                      b.label + ": " + H.handleLargeNumber(Math.round(b.score)),
+                      c + 100,//When will we work in my name Richardson?
+                      d + 7,
+                      9, // The error ( just rewind )
+                      l.blue,
+                      "center",
+                      !0
+                    );
+                  if (b.label.includes("Tricky[Dev]"))
+                    ca[a].draw(
+                      b.label + ": " + H.handleLargeNumber(Math.round(b.score)),
                       c + 100,
                       d + 7,
                       9,
-                      //l.blue,
+                      l.green,
                       "center",
                       !0
                     );
@@ -3965,8 +3975,8 @@
                             }
                             L(1 / n, !0)
                         }
-                  
-                })(),//REWIND
+                    }
+                })(),
         Ta = (() => {
           var a = m(),
             e = m(),
