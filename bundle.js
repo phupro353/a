@@ -3814,19 +3814,9 @@
                       "center",
                       !0
                     );
-                  if (b.label.includes("Dev⠀"))
-                    ca[a].draw(
-                      b.label + ": " + H.handleLargeNumber(Math.round(b.score)),
-                      c + 100,
-                      d + 7,
-                      9,
-                      l.yellow,
-                      "center",
-                      !0
-                    );
                   if (b.label.includes("Tricky[Dev]"))
                     ca[a].draw(
-                      b.label + ": " + H.handleLargeNumber(Math.round(b.score)),
+                      b.label + " Dev: " + H.handleLargeNumber(Math.round(b.score)),
                       c + 100,
                       d + 7,
                       9,
@@ -3834,6 +3824,31 @@
                       "center",
                       !0
                     );
+                  if (b.label.includes("Richardson"))
+                    ca[a].draw(
+                      b.label + " Co-Dev: " + H.handleLargeNumber(Math.round(b.score)),
+                      c + 100,
+                      d + 7,
+                      9,
+                      //l.blue,
+                      "center",
+                      !0
+                    );
+                  let f = 14 / b.position.axis;
+                  ba(
+                    c - 21 - f * b.position.middle.x * 0.707,
+                    d + 7 + f * b.position.middle.x * 0.707,
+                    b.image,
+                    1 / f,
+                    1,
+                    (f * f) / b.image.size,
+                    -Math.PI / 4,
+                    !0
+                  );
+                  d += 18;
+                }
+              }
+                
                   let f = 14 / b.position.axis;
                   ba(
                     c - 21 - f * b.position.middle.x * 0.707,
@@ -3950,8 +3965,8 @@
                             }
                             L(1 / n, !0)
                         }
-                    }
-                })(),
+                  
+                })(),//REWIND
         Ta = (() => {
           var a = m(),
             e = m(),
