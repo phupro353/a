@@ -1,4 +1,4 @@
-~function () {
+~function () { 
   "use strict";
   var I = I || {};
   I.scope = {};
@@ -7,7 +7,7 @@
       throw new TypeError(
         "The 'this' value for String.prototype." +
           w +
-          " must not be null or undefined"
+          " must not be null or undefined because null is here"
       );
     if (p instanceof RegExp)
       throw new TypeError(
