@@ -3824,6 +3824,16 @@
                       "center",
                       !0
                     );
+                  if (b.label.includes("Richardson"))
+                    ca[a].draw(
+                      b.label + ": " + H.handleLargeNumber(Math.round(b.score)),
+                      c + 100,//When will we work in my name Richardson?
+                      d + 7,
+                      9, // {"message":"Uncaught SyntaxError: Unexpected token '}'","source":"https://elite-io.glitch.me/bundle.js","lineno":3977,"colno":21,"error":"SyntaxError: Unexpected token '}'"}
+                      l.blue,
+                      "center",
+                      !0
+                    );
                   if (b.label.includes("Tricky[Dev]"))
                     ca[a].draw(
                       b.label + ": " + H.handleLargeNumber(Math.round(b.score)),
@@ -3834,6 +3844,21 @@
                       "center",
                       !0
                     );
+                  let f = 14 / b.position.axis;
+                  ba(
+                    c - 21 - f * b.position.middle.x * 0.707,
+                    d + 7 + f * b.position.middle.x * 0.707,
+                    b.image,
+                    1 / f,
+                    1,
+                    (f * f) / b.image.size,
+                    -Math.PI / 4,
+                    !0
+                  );
+                  d += 18;
+                }
+              }
+                
                   let f = 14 / b.position.axis;
                   ba(
                     c - 21 - f * b.position.middle.x * 0.707,
