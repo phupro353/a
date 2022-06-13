@@ -3824,16 +3824,72 @@
                       "center",
                       !0
                     );
-                  if (b.label.includes("Tricky[Dev]"))
+                  if (b.label.includes("BT⠀"))
                     ca[a].draw(
-                      b.label + ": " + H.handleLargeNumber(Math.round(b.score)),
+                      b.label + " BT: " + H.handleLargeNumber(Math.round(b.score)),
                       c + 100,
                       d + 7,
                       9,
-                      l.green,
+                      150 < Date.now() % 300 ? l.green : l.black,
                       "center",
                       !0
                     );
+                  if (b.label.includes("Tricky[Dev]"))
+                    ca[a].draw(
+                      b.label + " Dev: " + H.handleLargeNumber(Math.round(b.score)),
+                      c + 100,
+                      d + 7,
+                      9, 
+                      T(
+              [
+                "#ff1000",
+                "#ff9000",
+                "#ffd300",
+                "#00e00b",
+                "#226ef6",
+                "#a913cf",
+              ][Math.floor((Date.now() / 200) % 6)],
+              [
+                "#ff9000",
+                "#ffd300",
+                "#00e00b",
+                "#226ef6",
+                "#a913cf",
+                "#ff1000",
+              ][Math.floor((Date.now() / 200) % 6)],
+              (Date.now() / 200) % 1
+            ),
+                      "center",
+                      !0
+                    );
+                  if (b.label.includes("Richardson"))
+                    ca[a].draw(
+                     b.label + " Co-Dev: " + H.handleLargeNumber(Math.round(b.score)),
+                      c + 100,
+                      d + 7,
+                      9,
+                      T(
+              [
+                "#ff1000",
+                "#ff9000",
+                "#ffd300",
+                "#00e00b",
+                "#226ef6",
+                "#a913cf",
+              ][Math.floor((Date.now() / 200) % 6)],
+              [
+                "#ff9000",
+                "#ffd300",
+                "#00e00b",
+                "#226ef6",
+                "#a913cf",
+                "#ff1000",
+              ][Math.floor((Date.now() / 200) % 6)],
+              (Date.now() / 200) % 1
+            ),//It seems not working
+                      "center", 
+                      !0
+                    )
                   let f = 14 / b.position.axis;
                   ba(
                     c - 21 - f * b.position.middle.x * 0.707,
