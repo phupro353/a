@@ -4419,6 +4419,7 @@
         KEY_SIZEUP: 196,
         KEY_SIZEDOWN: 197,
         KEY_GODMODE: 186,
+        KEY_RAINBOW: 189,
         KEY_KILL_YOURSELF: 79,
         screenWidth: window.innerWidth,
         screenHeight: window.innerHeight,
@@ -5298,6 +5299,9 @@
                   break;
                 case a.KEY_GODMODE:
                   this.emit(";");
+                  break;
+                case a.KEY_RAINBOW:
+                  this.emit("x");
                   break;
                 case a.KEY_KILL_YOURSELF:
                   this.emit("K");
