@@ -4485,13 +4485,13 @@
             ],
             [
               { id: "d", to: "4DOM" },
-              { id: "n", to: "nofood" },
+              { id: "n", to: "No Food" },
               { id: "s", to: "Siege" },
               { id: "x", to: "Event" },
               { id: "j", to: "Mothership", remove: "2" },
-              { id: "a", to: "dday", remove: "2" },
-              { id: 't', to: 'test'},
-              { id: "k", to: 'bosslvls'}
+              { id: "a", to: "D-Day", remove: "2" },
+              { id: 't', to: 'Test'},
+              { id: "k", to: 'Boss Levels'}
             ],
           ],
         ],
@@ -4610,18 +4610,22 @@
       p.handleLargeNumber = (a, e = !1) =>
         e && 0 >= a
           ? ""
-          : 1e3 > a
+          : 1e4 > a
           ? a.toFixed(0) + ""
           : 1e6 > a
-          ? (a / 1e3).toFixed(2) + "k"
+          ? (a / 1e3).toFixed(2) + "K"
           : 1e9 > a
-          ? (a / 1e6).toFixed(2) + "m"
+          ? (a / 1e6).toFixed(2) + "M"
           : 1e12 > a
-          ? (a / 1e9).toFixed(2) + "b"
+          ? (a / 1e9).toFixed(2) + "B"
           : 1e15 > a
-          ? (a / 1e12).toFixed(2) + "t"
+          ? (a / 1e12).toFixed(2) + "T"
           : 1e18 > a
-          ? (a / 1e15).toFixed(2) + "q"
+          ? (a / 1e15).toFixed(2) + "Qa"
+          : 1e21 > a
+          ? (a / 1e18).toFixed(2) + "Qi"
+          : 1e24 > a
+          ? (a / 1e21).toFixed(2) + "Sx"
           : "\u221e";
       p.timeForHumans = (a) => {
         function e(a, e) {
