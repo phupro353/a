@@ -340,6 +340,12 @@
             return "#0531CB";
           default:
             return "#ff0000";
+          case 53: 
+            return T(
+              ["#00aaff", "#f2ff00"][Math.floor((Date.now() / 400) % 2)],
+              ["#f2ff00", "#00aaff"][Math.floor((Date.now() / 400) % 2)],
+              (Date.now() / 400) % 1
+            );
         }
       }
 
