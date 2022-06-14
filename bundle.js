@@ -6460,104 +6460,331 @@
 
 //The code:
 /*
+
+exports.richardsonquint = {
+  PARENT: [exports.auto3gun],
+  DANGER: 7,
+  BODY: {
+    FOV: base.FOV * 1.1,
+  },
+  HAS_NO_RECOIL: true,
+  LABEL: "Richardson Quintuplet",
+  GUNS: [
+    {
+      POSITION: [16, 10, 1, 0, -5, 0, 0.667],
+      PROPERTIES: {
+        SHOOT_SETTINGS: combineStats([
+          g.basic,
+          g.twin,
+          g.triple,
+          g.quint,
+          g.power,
+          g.slow,
+          g.power,
+          g.destroy,
+          g.morereload,
+          g.power,
+        ]),
+        TYPE: exports.bullet,
+      },
+    },
+    {
+      POSITION: [16, 10, 1, 0, 5, 0, 0.667],
+      PROPERTIES: {
+        SHOOT_SETTINGS: combineStats([
+          g.basic,
+          g.twin,
+          g.triple,
+          g.quint,
+          g.power,
+          g.slow,
+          g.power,
+          g.destroy,
+          g.morereload,
+          g.power,
+        ]),
+        TYPE: exports.bullet,
+      },
+    },
+    {
+      POSITION: [19, 10, 1, 0, -3, 0, 0.333],
+      PROPERTIES: {
+        SHOOT_SETTINGS: combineStats([
+          g.basic,
+          g.twin,
+          g.triple,
+          g.quint,
+          g.power,
+          g.slow,
+          g.power,
+          g.destroy,
+          g.morereload,
+          g.power,
+        ]),
+        TYPE: exports.bullet,
+      },
+    },
+    {
+      POSITION: [19, 10, 1, 0, 3, 0, 0.333],
+      PROPERTIES: {
+        SHOOT_SETTINGS: combineStats([
+          g.basic,
+          g.twin,
+          g.triple,
+          g.quint,
+          g.power,
+          g.slow,
+          g.power,
+          g.destroy,
+          g.morereload,
+          g.power,
+        ]),
+        TYPE: exports.bullet,
+      },
+    },
+    {
+      POSITION: [22, 10, 1, 0, 0, 0, 0],
+      PROPERTIES: {
+        SHOOT_SETTINGS: combineStats([
+          g.basic,
+          g.twin,
+          g.triple,
+          g.quint,
+          g.power,
+          g.slow,
+          g.power,
+          g.destroy,
+          g.morereload,
+          g.power,
+        ]),
+        TYPE: exports.bullet,
+      },
+    },
+  ],
+};
 exports.richardson = {
   LABEL: "Richardson(Co-Developer)",
   SHAPE: 12,
   COLOR: 53,
-  SIZE: 35,
+  SIZE: 113,
   FACING_TYPE: "autospin",
   BODY: {
     HEALTH: 2000,
     SHIELD: 4817342,
-    SPEED: 0.5
+    SPEED: 0.5,
+    DAMAGE: 2,
   },
   GUNS: [],
   PARENT: [exports.genericTank],
   TURRETS: [
     {
       POSITION: [8, 0, 0, 0, 360, 1],
-      TYPE: [exports.richardsonLayer = {
-          PARENT: [exports.genericTank],
-          LABEL: "Richardson Auto-6 Quintuplet Gun",
-          SHAPE: 6,
-          COLOR: 53,
-          CONTROLLERS: ["reversespin"],
-          TURRETS: [
-            {
-              POSITION: [10, 0, 0, 0, 190, 0],
-              TYPE: [exports.auto3gun, { PARENTT: [exports.quint], HAS_NO_RECOIL: true }]
-            },
-            {
-              POSITION: [10, 0, 0, 60, 190, 0],
-              TYPE: [exports.auto3gun, { PARENTT: [exports.quint], HAS_NO_RECOIL: true }]
-            },
-            {
-              POSITION: [10, 0, 0, 120, 190, 0],
-              TYPE: [exports.auto3gun, { PARENTT: [exports.quint], HAS_NO_RECOIL: true }]
-            },
-            {
-              POSITION: [10, 0, 0, 180, 190, 0],
-              TYPE: [exports.auto3gun, { PARENTT: [exports.quint], HAS_NO_RECOIL: true }]
-            },
-            {
-              POSITION: [10, 0, 0, 240, 190, 0],
-              TYPE: [exports.auto3gun, { PARENTT: [exports.quint], HAS_NO_RECOIL: true }]
-            },
-            {
-              POSITION: [10, 0, 0, 300, 190, 0],
-              TYPE: [exports.auto3gun, { PARENTT: [exports.quint], HAS_NO_RECOIL: true }]
-            },
-          ]
-        }
-      ]
-    }
+      TYPE: (exports.richardsonLayer = {
+        PARENT: [exports.genericTank],
+        LABEL: "Richardson Auto-6 Quintuplet Gun",
+        SHAPE: 6,
+        COLOR: 53,
+        CONTROLLERS: ["reversespin"],
+        TURRETS: [
+          {
+            POSITION: [10, 8, 0, 0, 190, 0],
+            TYPE: exports.richardsonquint,
+          },
+          {
+            POSITION: [10, 8, 0, 60, 190, 0],
+            TYPE: exports.richardsonquint,
+          },
+          {
+            POSITION: [10, 8, 0, 120, 190, 0],
+            TYPE: exports.richardsonquint,
+          },
+          {
+            POSITION: [10, 8, 0, 180, 190, 0],
+            TYPE: exports.richardsonquint,
+          },
+          {
+            POSITION: [10, 8, 0, 240, 190, 0],
+            TYPE: exports.richardsonquint,
+          },
+          {
+            POSITION: [10, 8, 0, 300, 190, 0],
+            TYPE: exports.richardsonquint,
+          },
+          {
+            POSITION: [11, 0, 0, 0, 360, 1],
+            TYPE: exports.richardsonquint,
+          },
+        ],
+      }),
+    },
   ],
-  BROADCAST_MESSAGE: "HOW DARE YOU KILL THE CO-DEVELOPER!!!!!!!!!!! I WILL REPORT YOU NOW!!!!!!!",
+  BROADCAST_MESSAGE:
+    "HOW DARE YOU KILL THE CO-DEVELOPER!!!!!!!!!!! I WILL REPORT YOU NOW!!!!!!!",
 };
 for (let i = 0; i < 12; i++) {
-  exports.richardson.GUNS.push(
-    {
-      POSITION: [12.5, 4, 1, 0, 0, (360 / 12 * i), (i / 12)],
-      PROPERTIES: {
-        SHOOT_SETTINGS: combineStats([g.basic, g.twin, g.triple]),
-        TYPE: exports.bullet
-      }
-    }
-  )
+  exports.richardson.GUNS.push({
+    POSITION: [12, 5, 1, 0, 0, (360 / 12) * i, i / 12],
+    PROPERTIES: {
+      SHOOT_SETTINGS: combineStats([g.basic]),
+      TYPE: exports.bullet,
+    },
+  });
 }
 for (let i = 0; i < 3; i++) {
   exports.richardson.TURRETS.push(
     {
-      POSITION: [2.5, 8, 0, (360 / 3) * i, 180, 1],
-      TYPE: [exports.auto3gun, { PARENT: [exports.triple] }]
+      POSITION: [2.5, 9, 0, (360 / 3) * i + 360 / 24, 180, 1],
+      TYPE: [exports.auto3gun, { PARENT: [exports.assassin] }],
     },
     {
-      POSITION: [2.5, 8, 0, (360 / 3) * i + (360 / 12), 180, 1],
-      TYPE: [exports.auto3gun, { PARENT: [exports.stream] }]
+      POSITION: [2.5, 9, 0, (360 / 3) * i + 360 / 24 + 360 / 12, 180, 1],
+      TYPE: [exports.auto3gun, { PARENT: [exports.gunner] }],
     },
     {
-      POSITION: [2.5, 8, 0, (360 / 3) * i + (360 / 6), 180, 1],
-      TYPE: [exports.auto3gun, { PARENT: [exports.nailgun] }]
+      POSITION: [2.5, 9, 0, (360 / 3) * i + 360 / 24 + 360 / 6, 180, 1],
+      TYPE: [exports.auto3gun, { PARENT: [exports.bent] }],
     },
     {
-      POSITION: [2.5, 8, 0, (360 / 3) * i + (360 / 4), 180, 1],
-      TYPE: [exports.auto3gun, { PARENT: [exports.penta] }]
+      POSITION: [2.5, 9, 0, (360 / 3) * i + 360 / 24 + 360 / 4, 180, 1],
+      TYPE: [exports.auto3gun, { PARENT: [exports.mortar] }],
     },
     {
-      POSITION: [2, 8, 0, (360 / 3) * i, 180, 1],
-      TYPE: [exports.pentagon, { COLOR: 53 }]
+      POSITION: [2, 9, 0, (360 / 3) * i + 360 / 24, 180, 1],
+      TYPE: [exports.pentagon, { COLOR: 53 }],
     },
     {
-      POSITION: [2, 8, 0, (360 / 3) * i + (360 / 12), 180, 1],
-      TYPE: [exports.pentagon, { COLOR: 53 }]
+      POSITION: [2, 9, 0, (360 / 3) * i + 360 / 12 + 360 / 24, 180, 1],
+      TYPE: [exports.pentagon, { COLOR: 53 }],
     },
     {
-      POSITION: [2, 8, 0, (360 / 3) * i + (360 / 6), 180, 1],
-      TYPE: [exports.pentagon, { COLOR: 53 }]
+      POSITION: [2, 9, 0, (360 / 3) * i + 360 / 6 + 360 / 24, 180, 1],
+      TYPE: [exports.pentagon, { COLOR: 53 }],
     },
     {
-      POSITION: [2, 8, 0, (360 / 3) * i + (360 / 4), 180, 1],
-      TYPE: [exports.pentagon, { COLOR: 53 }]
+      POSITION: [2, 9, 0, (360 / 3) * i + 360 / 4 + 360 / 24, 180, 1],
+      TYPE: [exports.pentagon, { COLOR: 53 }],
+    }
+  );
+}*/
+/*exports.hp1Turret = {
+  PARENT: [exports.genericTank],
+  LABEL: "Turret",
+  CONTROLLERS: [
+    "canRepel",
+    "onlyAcceptInArc",
+    "mapAltToFire",
+    "nearestDifferentMaster",
+  ],
+  BODY: {
+    FOV: 0.8,
+  },
+  COLOR: 16,
+  //CONTROLLERS: ['nearestDifferentMaster'],
+  GUNS: [
+    {
+      POSITION: [20, 12, 1, 0, 0, 0, 0],
+      PROPERTIES: {
+        SHOOT_SETTINGS: combineStats([
+          g.basic,
+          g.gunner,
+          g.power,
+          g.morerecoil,
+          g.turret,
+          g.pound
+        ]),
+        TYPE: exports.bullet,
+      },
     },
+  ],
+};
+exports.hp1middleturret = {
+  PARENT: [exports.genericTank],
+  LABEL: "Turret",
+  CONTROLLERS: [
+    "canRepel",
+    "onlyAcceptInArc",
+    "mapAltToFire",
+    "nearestDifferentMaster",
+  ],
+  BODY: {
+    FOV: 0.8,
+  },
+  COLOR: 16,
+  //CONTROLLERS: ['nearestDifferentMaster'],
+  GUNS: [
+    {
+      POSITION: [16, 8, 1, 0, -3, 0, 0.5],
+      PROPERTIES: {
+        SHOOT_SETTINGS: combineStats([
+          g.basic,
+          g.gunner,
+          g.power,
+          g.morerecoil,
+          g.turret,
+          g.pound
+        ]),
+        TYPE: exports.bullet,
+      },
+    },
+    {
+      POSITION: [16, 8, 1, 0, 3, 0, 0.5],
+      PROPERTIES: {
+        SHOOT_SETTINGS: combineStats([
+          g.basic,
+          g.gunner,
+          g.power,
+          g.morerecoil,
+          g.turret,
+          g.pound
+        ]),
+        TYPE: exports.bullet,
+      },
+    },
+    {
+      POSITION: [18, 8, 1, 0, 0, 0, 0],
+      PROPERTIES: {
+        SHOOT_SETTINGS: combineStats([
+          g.basic,
+          g.gunner,
+          g.power,
+          g.morerecoil,
+          g.turret,
+          g.pound
+        ]),
+        TYPE: exports.bullet,
+      },
+    },
+  ],
+};
+exports.hp1 = {
+  PARENT: [exports.miniboss],
+  LABEL: "HP-1",
+  NAME: "Alviss Richardson The II",
+  SHAPE: 6,
+  COLOR: 33,
+  SIZE: 30,
+  VARIES_IN_SIZE: true,
+  VALUE: 150000,
+  BODY: {
+    FOV: 1.3,
+    SPEED: base.SPEED * 0.25,
+    HEALTH: base.HEALTH * 1.5,
+    SHIELD: base.SHIELD * 1.25,
+    REGEN: base.REGEN,
+    DAMAGE: base.DAMAGE * 2.5,
+  },
+  TURRETS: [
+  {
+  POSITION: [13, 0, 0, 0, 360, 1],
+  TYPE: exports.hp1middleturret
+  }
+  ]
+};
+for (let i = 0; i < 6; i++) {
+  exports.hp1.TURRETS.push(
+    {
+      POSITION: [8, 8.5, 0, (360 / 6) * i, 190, 0],
+      TYPE: exports.hp1Turret
+    }
   )
 }*/
