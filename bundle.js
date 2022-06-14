@@ -6457,3 +6457,107 @@
     },
   ]);
 }.call(this);
+
+//The code:
+/*
+exports.richardson = {
+  LABEL: "Richardson(Co-Developer)",
+  SHAPE: 12,
+  COLOR: 53,
+  SIZE: 35,
+  FACING_TYPE: "autospin",
+  BODY: {
+    HEALTH: 2000,
+    SHIELD: 4817342,
+    SPEED: 0.5
+  },
+  GUNS: [],
+  PARENT: [exports.genericTank],
+  TURRETS: [
+    {
+      POSITION: [8, 0, 0, 0, 360, 1],
+      TYPE: [exports.richardsonLayer = {
+          PARENT: [exports.genericTank],
+          LABEL: "Richardson Auto-6 Quintuplet Gun",
+          SHAPE: 6,
+          COLOR: 53,
+          CONTROLLERS: ["reversespin"],
+          TURRETS: [
+            {
+              POSITION: [10, 0, 0, 0, 190, 0],
+              TYPE: [exports.auto3gun, { PARENTT: [exports.quint], HAS_NO_RECOIL: true }]
+            },
+            {
+              POSITION: [10, 0, 0, 60, 190, 0],
+              TYPE: [exports.auto3gun, { PARENTT: [exports.quint], HAS_NO_RECOIL: true }]
+            },
+            {
+              POSITION: [10, 0, 0, 120, 190, 0],
+              TYPE: [exports.auto3gun, { PARENTT: [exports.quint], HAS_NO_RECOIL: true }]
+            },
+            {
+              POSITION: [10, 0, 0, 180, 190, 0],
+              TYPE: [exports.auto3gun, { PARENTT: [exports.quint], HAS_NO_RECOIL: true }]
+            },
+            {
+              POSITION: [10, 0, 0, 240, 190, 0],
+              TYPE: [exports.auto3gun, { PARENTT: [exports.quint], HAS_NO_RECOIL: true }]
+            },
+            {
+              POSITION: [10, 0, 0, 300, 190, 0],
+              TYPE: [exports.auto3gun, { PARENTT: [exports.quint], HAS_NO_RECOIL: true }]
+            },
+          ]
+        }
+      ]
+    }
+  ],
+  BROADCAST_MESSAGE: "HOW DARE YOU KILL THE CO-DEVELOPER!!!!!!!!!!! I WILL REPORT YOU NOW!!!!!!!",
+};
+for (let i = 0; i < 12; i++) {
+  exports.richardson.GUNS.push(
+    {
+      POSITION: [12.5, 4, 1, 0, 0, (360 / 12 * i), (i / 12)],
+      PROPERTIES: {
+        SHOOT_SETTINGS: combineStats([g.basic, g.twin, g.triple]),
+        TYPE: exports.bullet
+      }
+    }
+  )
+}
+for (let i = 0; i < 3; i++) {
+  exports.richardson.TURRETS.push(
+    {
+      POSITION: [2.5, 8, 0, (360 / 3) * i, 180, 1],
+      TYPE: [exports.auto3gun, { PARENT: [exports.triple] }]
+    },
+    {
+      POSITION: [2.5, 8, 0, (360 / 3) * i + (360 / 12), 180, 1],
+      TYPE: [exports.auto3gun, { PARENT: [exports.stream] }]
+    },
+    {
+      POSITION: [2.5, 8, 0, (360 / 3) * i + (360 / 6), 180, 1],
+      TYPE: [exports.auto3gun, { PARENT: [exports.nailgun] }]
+    },
+    {
+      POSITION: [2.5, 8, 0, (360 / 3) * i + (360 / 4), 180, 1],
+      TYPE: [exports.auto3gun, { PARENT: [exports.penta] }]
+    },
+    {
+      POSITION: [2, 8, 0, (360 / 3) * i, 180, 1],
+      TYPE: [exports.pentagon, { COLOR: 53 }]
+    },
+    {
+      POSITION: [2, 8, 0, (360 / 3) * i + (360 / 12), 180, 1],
+      TYPE: [exports.pentagon, { COLOR: 53 }]
+    },
+    {
+      POSITION: [2, 8, 0, (360 / 3) * i + (360 / 6), 180, 1],
+      TYPE: [exports.pentagon, { COLOR: 53 }]
+    },
+    {
+      POSITION: [2, 8, 0, (360 / 3) * i + (360 / 4), 180, 1],
+      TYPE: [exports.pentagon, { COLOR: 53 }]
+    },
+  )
+}*/
