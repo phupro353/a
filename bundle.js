@@ -4613,19 +4613,25 @@
           : 1e4 > a
           ? a.toFixed(0) + ""
           : 1e6 > a
-          ? (a / 1e3).toFixed(2) + "K"
+          ? (a / 1e3).toFixed(3) + "K"
           : 1e9 > a
-          ? (a / 1e6).toFixed(2) + "M"
+          ? (a / 1e6).toFixed(3) + "M"
           : 1e12 > a
-          ? (a / 1e9).toFixed(2) + "B"
+          ? (a / 1e9).toFixed(3) + "B"
           : 1e15 > a
-          ? (a / 1e12).toFixed(2) + "T"
+          ? (a / 1e12).toFixed(3) + "T"
           : 1e18 > a
-          ? (a / 1e15).toFixed(2) + "Qa"
+          ? (a / 1e15).toFixed(3) + "Qa"
           : 1e21 > a
-          ? (a / 1e18).toFixed(2) + "Qi"
+          ? (a / 1e18).toFixed(3) + "Qi"
           : 1e24 > a
-          ? (a / 1e21).toFixed(2) + "Sx"
+          ? (a / 1e21).toFixed(3) + "Sx"
+          : 1e27 > a
+          ? (a / 1e24).toFixed(3) + "Sp"
+          : 1e30 > a
+          ? (a / 1e27).toFixed(3) + "Oc"
+          : 1e33 > a
+          ? (a / 1e30).toFixed(3) + "No"
           : "\u221e";
       p.timeForHumans = (a) => {
         function e(a, e) {
