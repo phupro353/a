@@ -3602,11 +3602,11 @@
                   l.green
                 );
                 C.draw(
-                  "Score: " + H.formatLargeNumber(A.__s.getScore()),
+                  "Elite Score: " + H.formatLargeNumber(A.__s.getScore()),
                   c + 165,
                   d + a / 2,
                   a - 2,
-                  l.guiwhite,
+                  l.blue,
                   "center",
                   !0
                 );
@@ -4070,7 +4070,7 @@
               l.guiwhite
             );
             c.draw(
-              "Final score: " +
+              "Final Elite score: " +
                 H.formatLargeNumber(Math.round(b.finalScore.get())),
               d - 170,
               n + 25,
