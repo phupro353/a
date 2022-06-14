@@ -4484,7 +4484,8 @@
               { id: "x", to: "Event" },
               { id: "j", to: "Mothership", remove: "2" },
               { id: "a", to: "dday", remove: "2" },
-              { id: 't', to: 'test'}
+              { id: 't', to: 'test'},
+              { id: "k", to: 'bosslvls'}
             ],
           ],
         ],
@@ -4561,7 +4562,15 @@
             at: p.glitch("pastoral-sideways-rugby"),
             prefer: !0,
             featured: 0
-          },
+          },{
+            visible: 0,
+            id: "hj",
+            type: "Boss Level",
+            code: "glitch-singapore-k",
+            at: p.glitch("tidal-snow-ambulance"),
+            prefer: !0,
+            featured: 0
+          }
         ]
           .map((a, e) => ({ data: a, i: e }))
           .sort((a, e) =>
