@@ -350,7 +350,7 @@
       }
 
       function E(b) {
-        let d = B.graphical.neon ? l.white : l.black;
+        let d = B.graphical.neon ? l.guiblack : l.black;
         return B.graphical.darkBorders ? d : T(b, d, l.border);
       }
       //here are the map colors
