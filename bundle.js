@@ -4632,6 +4632,28 @@
           ? (a / 1e27).toFixed(3) + "Oc"
           : 1e33 > a
           ? (a / 1e30).toFixed(3) + "No"
+          : 1e36 > a
+          ? (a / 1e33).toFixed(3) + "Dc"
+          : 1e39 > a
+          ? (a / 1e36).toFixed(0) + "UDc"
+          : 1e42 > a
+          ? (a / 1e39).toFixed(3) + "DDc"
+          : 1e45 > a
+          ? (a / 1e42).toFixed(3) + "TDc"
+          : 1e48 > a
+          ? (a / 1e45).toFixed(3) + "QaDc"
+          : 1e51 > a
+          ? (a / 1e48).toFixed(3) + "QiDc"
+          : 1e54 > a
+          ? (a / 1e51).toFixed(3) + "SxDc"
+          : 1e57 > a
+          ? (a / 1e54).toFixed(3) + "SpDc"
+          : 1e60 > a
+          ? (a / 1e57).toFixed(3) + "OcDc"
+          : 1e63 > a
+          ? (a / 1e60).toFixed(3) + "NoDc"
+          : 1e66 > a
+          ? (a / 1e63).toFixed(3) + "Vg"
           : "\u221e";
       p.timeForHumans = (a) => {
         function e(a, e) {
