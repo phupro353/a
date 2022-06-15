@@ -4491,7 +4491,8 @@
               { id: "j", to: "Mothership", remove: "2" },
               { id: "a", to: "D-Day", remove: "2" },
               { id: 't', to: 'Test'},
-              { id: "k", to: 'Boss Levels'}
+              { id: "k", to: 'Boss Levels'},
+              { id: "v", to: "Rare Shape Hunt" },
             ],
           ],
         ],
@@ -4521,6 +4522,15 @@
             type: "ffa",
             code: "glitch-worldwide-f",
             at: p.glitch("lush-full-starfish"),
+            prefer: !0,
+            featured: 0
+          },
+          {
+            visible: 0,
+            id: "wv",
+            type: "ffa",
+            code: "glitch-worldwide-f",
+            at: p.glitch("rare-shape-hunt"),
             prefer: !0,
             featured: 0
           },
