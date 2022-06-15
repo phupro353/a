@@ -1,3 +1,9 @@
+# 15/6/22 - Added Elite Levels
+- Added Elite Level 1
+- Added Elite Level 2
+- Added Elite Level 3
+- Added Elite Level 4
+- Added Final Elite Level
 # New XKX Boss In Elite.io
 - The Mike Rondo Rinan Has Been Added From Terrezerras.io (Secret Branch The V.I.P Players Have)
 - The Multiplier Had Been Added (Basic)
