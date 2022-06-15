@@ -1,3 +1,5 @@
+# New Boss
+- Added New Boss: Elite Expander (no one requested)
 # 15/6/22 - Added Elite Levels
 - Added Elite Level 1
 - Added Elite Level 2
