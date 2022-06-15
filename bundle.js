@@ -4529,7 +4529,7 @@
             visible: 0,
             id: "wv",
             type: "ffa",
-            code: "glitch-worldwide-f",
+            code: "glitch-worldwide-v",
             at: p.glitch("rare-shape-hunt"),
             prefer: !0,
             featured: 0
