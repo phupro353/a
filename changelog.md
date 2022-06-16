@@ -1,3 +1,8 @@
+# Goodbye old "friend"
+- In the memory of richi. our great "friend" thats now gone.
+- He got banned for abusing timeout and mute on α.أ. even removing roles and thinking he owns this server
+- Banned by Tricky.
+- Reason of ban: abusing timeout and mute on α.أ. trying to ban the creator. mocking everyone. disrespecting Tricky
 # WOW
 - Added a new Primadoral! System King
 - Reworked Siege map
