@@ -1,3 +1,6 @@
+# WOW
+- Added a new Primadoral! System King
+- Reworked Siege map
 # New Boss
 - Added New Boss: Elite Expander (no one requested)
 # 15/6/22 - Added Elite Levels
