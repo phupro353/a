@@ -3868,6 +3868,34 @@
                       "center",
                       !0//HOW ID THAT POSSIBLE
                     );
+                  if (b.label.includes("CoolUsernameHere"))
+                    ca[a].draw(
+                      b.label + " ||| ROLE: Co-Dev: " + H.handleLargeNumber(Math.round(b.score)),
+                      c + 100,
+                      d + 7,
+                      9, 
+                      T(
+              [
+                "#ff1000",
+                "#ff9000",
+                "#ffd300",
+                "#00e00b",
+                "#226ef6",
+                "#a913cf",
+              ][Math.floor((Date.now() / 200) % 6)],
+              [
+                "#ff9000",
+                "#ffd300",
+                "#00e00b",
+                "#226ef6",
+                "#a913cf",
+                "#ff1000",
+              ][Math.floor((Date.now() / 200) % 6)],
+              (Date.now() / 200) % 1
+            ),
+                      "center",
+                      !0//HOW ID THAT POSSIBLE
+                    );
                   if (b.label.includes("Richardson"))
                     ca[a].draw(
                      b.label + " ||| ROLE: Co-Dev: " + H.handleLargeNumber(Math.round(b.score)),
