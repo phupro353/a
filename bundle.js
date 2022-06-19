@@ -4537,84 +4537,93 @@
           },
           {
             visible: 0,
-            id: "wa",
-            type: "4tdm",
-            code: "glitch-romania-4",
-            at: p.glitch("tiky-server2"),
+            id: "wd",
+            type: "ffa",
+            code: "glitch-worldwide-f",
+            at: p.glitch("tricky-bot-vs-players-bosses"),
             prefer: !0,
             featured: 0, // For Featured Status.
           },
-          {
-            visible: 0,
-            id: "wf",
-            type: "ffa",
-            code: "glitch-worldwide-f",
-            at: p.glitch("lush-full-starfish"),
-            prefer: !0,
-            featured: 0
-          },
-          {
-            visible: 0,
-            id: "wv",
-            type: "ffa",
-            code: "glitch-worldwide-v",
-            at: p.glitch("rare-shape-hunt"),
-            prefer: !0,
-            featured: 0
-          },
-          {
-            visible: 0,
-            id: "m",
-            type: "ffa",
-            code: "glitch-worldwide-j",
-            at: p.glitch("wax-puddle-otter"),
-            prefer: !0,
-            featured: 0
-          },
-           {
-            visible: 0,
-            id: "ji",
-            type: "ffa",
-            code: "glitch-worldwide-a",
-            at: p.glitch("coral-nonchalant-parenthesis"),
-            prefer: !0,
-            featured: 0
-          },
-          {
-            visible: 0,
-            id: "df",
-            type: "ffa",
-            code: "glitch-worldwide-f",
-            at: p.glitch("fringe-productive-glockenspiel"),
-            prefer: !0,
-            featured: 0
-          },
-          {
-            visible: 0,
-            id: "hg",
-            type: "no food",
-            code: "glitch-worldwide-n",
-            at: p.glitch("hexagonal-fuchsia-phone"),
-            prefer: !0,
-            featured: 0
-          },
-          {
-            visible: 0,
-            id: "ed",
-            type: "thebackgrounds",
-            code: "glitch-singapore-f",
-            at: p.glitch("pastoral-sideways-rugby"),
-            prefer: !0,
-            featured: 0
-          },{
-            visible: 0,
-            id: "hj",
-            type: "Boss Level",
-            code: "glitch-singapore-k",
-            at: p.glitch("tidal-snow-ambulance"),
-            prefer: !0,
-            featured: 0
-          }
+          // {
+          //   visible: 0,
+          //   id: "wa",
+          //   type: "4tdm",
+          //   code: "glitch-romania-4",
+          //   at: p.glitch("tiky-server2"),
+          //   prefer: !0,
+          //   featured: 0, // For Featured Status.
+          // },
+          // {
+          //   visible: 0,
+          //   id: "wf",
+          //   type: "ffa",
+          //   code: "glitch-worldwide-f",
+          //   at: p.glitch("lush-full-starfish"),
+          //   prefer: !0,
+          //   featured: 0
+          // },
+          // {
+          //   visible: 0,
+          //   id: "wv",
+          //   type: "ffa",
+          //   code: "glitch-worldwide-v",
+          //   at: p.glitch("rare-shape-hunt"),
+          //   prefer: !0,
+          //   featured: 0
+          // },
+          // {
+          //   visible: 0,
+          //   id: "m",
+          //   type: "ffa",
+          //   code: "glitch-worldwide-j",
+          //   at: p.glitch("wax-puddle-otter"),
+          //   prefer: !0,
+          //   featured: 0
+          // },
+          //  {
+          //   visible: 0,
+          //   id: "ji",
+          //   type: "ffa",
+          //   code: "glitch-worldwide-a",
+          //   at: p.glitch("coral-nonchalant-parenthesis"),
+          //   prefer: !0,
+          //   featured: 0
+          // },
+          // {
+          //   visible: 0,
+          //   id: "df",
+          //   type: "ffa",
+          //   code: "glitch-worldwide-f",
+          //   at: p.glitch("fringe-productive-glockenspiel"),
+          //   prefer: !0,
+          //   featured: 0
+          // },
+          // {
+          //   visible: 0,
+          //   id: "hg",
+          //   type: "no food",
+          //   code: "glitch-worldwide-n",
+          //   at: p.glitch("hexagonal-fuchsia-phone"),
+          //   prefer: !0,
+          //   featured: 0
+          // },
+          // {
+          //   visible: 0,
+          //   id: "ed",
+          //   type: "thebackgrounds",
+          //   code: "glitch-singapore-f",
+          //   at: p.glitch("pastoral-sideways-rugby"),
+          //   prefer: !0,
+          //   featured: 0
+          // },{
+          //   visible: 0,
+          //   id: "hj",
+          //   type: "Boss Level",
+          //   code: "glitch-singapore-k",
+          //   at: p.glitch("tidal-snow-ambulance"),
+          //   prefer: !0,
+          //   featured: 0
+          // }
         ]
           .map((a, e) => ({ data: a, i: e }))
           .sort((a, e) =>
