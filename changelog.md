@@ -1,3 +1,5 @@
+# 4/7/2022
+- siege and ffa will be the only gamemodes until its moved somewhere else...
 # Goodbye old "friend"
 - In the memory of richi. our great "friend" thats now gone.
 - He got banned for abusing timeout and mute on α.أ. even removing roles and thinking he owns this server
